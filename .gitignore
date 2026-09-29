@@ -1,0 +1,7 @@
+# secrets — trên Actions lấy từ secret GOOGLE_TOKEN_JSON
+token.json
+client_secret_*.json
+# trạng thái riêng từng máy (chặn chạy 2 lần/ngày khi dùng Task Scheduler)
+.daily_tracking_last_run
+__pycache__/
+.claude/

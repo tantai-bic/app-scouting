@@ -1,0 +1,16 @@
+com.dongbasiki.easycontrol.controlpanel.os
+easycontrol.controlcenter.controlpanel.simple
+com.control.widget.custom.panel.wallpaper.pack
+com.ioscontrol.themed.control.center.smart
+com.icontrol.easy.widgets.themes
+com.mahmoudzadah.glassifywidgets
+com.icons.widgets.control.center.pink.black.themely
+com.flyer.theme
+com.widget.icon.theme
+com.asianmobile.launcheros
+com.ios.lockscreen.liquid
+com.themebox.icons.widgets
+com.cdt.themebox.themeiconwidget
+com.controlapp.custompanel.app
+com.control.center.ioscontrol
+com.cute.emoji.battery.icon.widget.customize.emojisticker.statusbar

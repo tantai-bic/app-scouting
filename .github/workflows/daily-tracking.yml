@@ -1,0 +1,64 @@
+name: daily-tracking
+
+on:
+  schedule:
+    - cron: "0 1 * * *"  # 08:00 giờ VN; GitHub có thể trễ 15-60 phút, xem [env] utc_now trong log
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# không cho 2 lần chạy chồng nhau cùng ghi Dream100.csv
+concurrency:
+  group: daily-tracking
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Ghi token.json từ secret
+        env:
+          GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
+        run: |
+          if [ -z "$GOOGLE_TOKEN_JSON" ]; then echo "::error::thiếu secret GOOGLE_TOKEN_JSON"; exit 1; fi
+          printf '%s' "$GOOGLE_TOKEN_JSON" > token.json
+
+      - name: Chạy daily_tracking
+        env:
+          FORCE_RUN: "1"
+          # webdriver_manager gọi GitHub API để tải geckodriver cho mỗi pkg -> dùng token
+          # để khỏi dính rate limit 60 request/giờ của request không xác thực
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/daily_tracking.py
+
+      # always(): kể cả khi bước trên lỗi vẫn lưu số đã lấy được + log để debug
+      - name: Commit kết quả cho lần chạy sau
+        if: always()
+        run: |
+          rm -f token.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898183+github-actions[bot]@users.noreply.github.com"
+          git add data/ logs/
+          if git diff --cached --quiet; then echo "không có thay đổi"; exit 0; fi
+          git commit -m "daily tracking $(date -u +%F) (run ${{ github.run_id }})"
+          # có người push trong lúc job chạy -> rebase rồi thử lại
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-tracking-log-${{ github.run_id }}
+          path: logs/daily_tracking.log
+          retention-days: 30

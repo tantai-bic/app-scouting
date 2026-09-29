@@ -1,0 +1,208 @@
+FAIL:no-ads                  com.bytebloom.control.center.ioscontrol.bb iOS Control Center - Panel            1,205,918 May 11, 2026   ads=False iap=True
+PASS                         com.dongbasiki.easycontrol.controlpanel.os iControl Widgets: Themed Panel        1,987,541 Dec 30, 2025   ads=True iap=True
+PASS                         easycontrol.controlcenter.controlpanel.simple Control Center - Stable & Easy       13,882,246 Oct 28, 2024   ads=True iap=True
+FAIL:date?,dl/day<5k         com.control.center.ioscontrol.psma         iOS Control Center , Panel               39,168                ads=True iap=True
+PASS                         com.control.widget.custom.panel.wallpaper.pack Control Widget: Theme & Panels       10,945,931 Apr 16, 2026   ads=True iap=True
+FAIL:dl/day<5k               com.ivilamobie.controlcenter.handy         iControl Center: Color Widgets          122,761 Oct 25, 2025   ads=True iap=False
+FAIL:dl/day<5k               com.stormvortex.theme.control.panel        Control Center: Themes & Icons           18,379 May 18, 2026   ads=True iap=True
+FAIL:dl/day<5k               leva.controlcenterios.notificationcenter   Control Center iOS 26                 1,501,107 Oct 8, 2025    ads=True iap=True
+FAIL:date?,dl/day<5k         com.controlcenter.widget.themes            Control Center: Widget Themes            10,075                ads=True iap=False
+FAIL:too-old,dl/day<5k       com.os.controlcenter.iosstyle              Control Center: Quick Settings           44,950 May 3, 2024    ads=True iap=False
+FAIL:dl/day<5k               easypanel.controlpanel.controlwidget.theme.easycontrol Control Panel: Widget & Theme           466,961 May 21, 2026   ads=True iap=False
+PASS                         com.ioscontrol.themed.control.center.smart Control Widget - Themed Panels       28,192,221 Jun 12, 2025   ads=True iap=True
+FAIL:date?,dl/day<5k         centercontrol.ioscontrol.app               Control Center - Simple Panel            34,623                ads=True iap=False
+FAIL:dl/day<5k               os.control.center.status.navigation        Control Center                          266,774 Jan 8, 2025    ads=True iap=False
+FAIL:dl/day<5k               com.controla.ios.controlcenter.personalization iControl: Themes & Wallpapers           312,197 Mar 25, 2026   ads=True iap=True
+FAIL:dl/day<5k               control.center.ioscontrol.micontrol.controlcenter Control Widget: Panel Themes             96,458 Mar 2, 2026    ads=True iap=False
+FAIL:dl/day<5k               com.widgets.themed.control.center          Themia: Themed Control Widget           145,668 Feb 24, 2026   ads=True iap=False
+FAIL:dl/day<5k               widget.themes.icon.controller.app          Control Widget & Themed Panels           43,295 Apr 15, 2026   ads=True iap=False
+FAIL:dl/day<5k               com.tools.controlcenter.max.tool.easy      Control Center Max: Easy Tool           439,987 Nov 18, 2025   ads=True iap=False
+PASS                         com.icontrol.easy.widgets.themes           iControl: Easy Widgets Themes        39,415,457 May 23, 2025   ads=True iap=True
+FAIL:too-old                 com.treydev.micontrolcenter                Mi Control Center                    30,274,201 Jun 30, 2020   ads=True iap=True
+FAIL:dl/day<5k               com.zenpanel.control.widget.theme          ZenPanel: Control Widget Theme          195,830 Jan 14, 2026   ads=True iap=False
+FAIL:dl/day<5k               com.control.widget.theme.panel             Control Widget - Themed Panels           70,239 Jul 13, 2026   ads=True iap=False
+FAIL:dl/day<5k               com.wico.control.panel.theme.custom.center.setting Wico: Control Panel Widget              388,827 Jun 16, 2026   ads=True iap=True
+FAIL:dl/day<5k               com.quickios.controlcenter                 Control Center: Control Panel           210,372 Aug 12, 2025   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.jalan.control.center.mac               Control Center Mac Style                537,040 Mar 30, 2022   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.edgepro.controlcenterfold              Control Center Z Fold, Tablet             1,035 May 25, 2023   ads=False iap=False
+FAIL:too-old,dl/day<5k       com.jalan.control.center.oneplus           Control Center OnePhone Style            69,098 Nov 16, 2022   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.controlcenter.icontrol.os              Simple Control Center                   309,180 Jan 28, 2024   ads=True iap=True
+FAIL:dl/day<5k               com.control.center.ios.tool                Control Center iOS 27                    21,738 Jul 31, 2026   ads=True iap=False
+FAIL:too-old                 colorwidgets.ios.widget.topwidgets         Color Widgets, Theme: iWidgets       69,132,720 Mar 31, 2023   ads=True iap=True
+FAIL:too-old                 com.iconchanger.widget.theme.shortcut      Themepack - App Icons, Widgets      120,105,641 Mar 10, 2022   ads=True iap=True
+PASS                         com.mahmoudzadah.glassifywidgets           Glassify - Widgets & Themes             788,717 Apr 26, 2026   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.widgetclub                             WidgetClub:Widget, Theme, Icon        3,284,828 Aug 10, 2022   ads=True iap=True
+FAIL:date?,dl/day<5k         com.themezy.theme.iconwidgets              ThemeMix: Themes & Widgets            1,981,925                ads=True iap=False
+FAIL:no-ads,too-old          com.zerone.hidesktop                       iScreen - Widgets & Themes           12,594,599 Dec 21, 2022   ads=False iap=True
+FAIL:too-old                 com.eco.iconchanger.themes                 Theme, Widget & Icon changer         14,319,276 May 9, 2023    ads=True iap=True
+FAIL:dl/day<5k               ac.themes.wallpapers.widgets               Themepack - Icons and Widgets           983,584 Feb 17, 2026   ads=True iap=True
+PASS                         com.icons.widgets.control.center.pink.black.themely Themely - Icons & Widgets            13,083,631 May 30, 2025   ads=True iap=True
+FAIL:too-old                 com.blueskysoft.colorwidgets               Widgets OS 18 - Color Widgets        27,797,129 Jan 5, 2021    ads=True iap=True
+PASS                         com.flyer.theme                            Themes: Wallpaper & Widgets           2,445,677 Feb 9, 2026    ads=True iap=True
+FAIL:too-old,dl/day<5k       org.kustom.widget                          KWGT Kustom Widget Maker             16,313,013 Oct 14, 2015   ads=True iap=True
+FAIL:too-old                 com.bbk.theme                              Themes                             1,673,233,883 Jul 28, 2021   ads=True iap=True
+FAIL:too-old                 com.themekit.widgets.themes                ThemeKit - Themes & Widgets          61,604,918 Sep 9, 2022    ads=True iap=True
+FAIL:too-old                 com.remi.widget                            Widget 2026: Aesthetic Widgets       13,492,119 Jul 19, 2022   ads=True iap=True
+FAIL:date?,dl/day<5k         com.themeart.icons.widgets                 ThemeArt - Widgets, App icons        12,977,206                ads=True iap=True
+FAIL:dl/day<5k               com.themix.theme.widget.control            Themix: Theme, Widget, Control        1,301,076 Nov 27, 2025   ads=True iap=True
+FAIL:too-old                 com.azmobile.themepack                     ThemeApp: Theme & Icon Changer        9,224,153 Jul 21, 2024   ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.appslab.nothing.widgetspro             NewThing Widgets Pro                    136,181 Feb 8, 2025    ads=False iap=True
+FAIL:too-old                 com.themekit.lite.widgets.themes           ThemePro - Widget & Wallpaper        25,565,499 Mar 7, 2024    ads=True iap=True
+FAIL:too-old                 com.sm.mico                                Mico - Widget & Live Wallpaper       16,388,654 Feb 28, 2024   ads=True iap=True
+FAIL:too-old                 io.iftech.android.box                      Widget Lab:Wallpapers & Themes        9,210,436 Dec 9, 2021    ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.jndapp.nothing.widgets.pack            Everything Widgets                      135,210 Mar 31, 2025   ads=False iap=False
+FAIL:too-old                 slide.widgetFrenzy                         Widgets Color Widgets + Icons        13,845,612 Jan 19, 2021   ads=True iap=True
+FAIL:no-ads,too-old          ginlemon.flowerfree                        Smart Launcher 6 ‧ Home Screen       54,611,915 Jul 11, 2012   ads=False iap=True
+PASS                         com.widget.icon.theme                      Themie: Wallpapers & Themes          18,628,082 Oct 19, 2025   ads=True iap=True
+FAIL:too-old                 art.widgeet.android                        Widgeet-Color Widgets(Widget)        13,289,319 Jan 10, 2023   ads=True iap=True
+FAIL:dl/day<5k               com.themeflow.widgets.themes.appicon.wallpaper ThemeFlow: Themes & Widgets             276,930 Jun 22, 2026   ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.maxpatchs.hepta                        Hepta Theme, Icons, Widgets               2,350 Sep 15, 2023   ads=False iap=True
+FAIL:too-old,dl/day<5k       com.fossor.panels                          Panels - sidebar launcher               994,179 Jan 6, 2020    ads=True iap=True
+FAIL:date?,dl/day<5k         com.controltheme.custompanel               Control Theme: Custom Panel               1,437                ads=True iap=False
+FAIL:dl/day<5k               com.dt.control.widgets.themes.panel        Control Widgets: Themes Panel            25,291 Jul 1, 2026    ads=True iap=False
+FAIL:dl/day<5k               com.themed.widget.control.custom.panel.wallpaper Control Widget: Themed Panels             3,324 May 17, 2026   ads=True iap=False
+FAIL:dl/day<5k               com.lumi.control.center.widget.themes      Control Widget: Theme & Panel                 0 Sep 10, 2026   ads=True iap=False
+FAIL:no-ads,dl/day<5k        dev.lexip.hecate                           Adaptive Theme: Auto Dark Mode           19,616 Dec 30, 2025   ads=False iap=False
+FAIL:dl/day<5k               com.lutech.control.widget                  Control Panels & Wallpapers             192,546 May 8, 2026    ads=True iap=True
+FAIL:date?,dl/day<5k         simple.control.customstyle.panel.app       Custom Control Panel Simple           1,640,281                ads=True iap=False
+FAIL:dl/day<5k               com.center.control.quick.settings.panel    Easy Panel - Access Center              487,605 Apr 8, 2026    ads=True iap=False
+FAIL:too-old                 com.ilauncher.inoty.icenter.icontrol       Theme Launcher and Lock Screen       14,034,901 Feb 10, 2023   ads=True iap=True
+FAIL:dl/day<5k               com.controlo.easy.controlcenter.widget.theme Controlo: OS27 Glassify Panels          119,851 Jul 17, 2026   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.reactivstudios.android.edge4           Edge Card Launcher: Side Panel          287,539 Jan 16, 2022   ads=False iap=True
+FAIL:dl/day<5k               com.widget.cute.theme.diy.icon.kawaii.wallpaper.aesthetic.custom.homescreen Themedy: Widgets & Wallpapers            22,140 Jul 4, 2026    ads=True iap=True
+FAIL:dl/day<5k               com.nsapps.controlpanel                    iOS Control Center - Panel               94,218 Jul 2, 2025    ads=True iap=False
+FAIL:too-old                 com.luutinhit.controlcenter                Control Center iOS 15                88,141,439 Jul 10, 2017   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.oscontrol.androidcontrolcenter         Control Center OS 26                    235,383 Oct 28, 2021   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.locker.lockscreen.os12                 Lock Screen, Widgets - YoLock        11,453,336 Feb 9, 2018    ads=True iap=True
+FAIL:dl/day<5k               com.widgetvibes.iwidgy                     iWidgy: iOS Style Widgets                 2,522 Jul 12, 2026   ads=True iap=True
+FAIL:dl/day<5k               com.glassywidgets.app                      Glassy Widgets: Widget & Icons          102,412 Mar 28, 2026   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k smartiosstylewidgets.kustom.pack           Smart iOS Style widgets                   5,385 Aug 26, 2020   ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k com.photowidgets.magicwidgets              MagicWidgets - iOS Widgets            9,828,192 Mar 25, 2021   ads=False iap=True
+FAIL:too-old                 com.babydola.launcherios                   Launcher OS™                        101,803,978 May 19, 2020   ads=True iap=True
+FAIL:too-old                 com.widgetkit.widget.theme.wallpaper.icon.sceen.scape WidgetKit-OS18 Themes & Icons        31,935,171 Jun 25, 2023   ads=True iap=True
+FAIL:dl/day<5k               com.jndapp.minimal.widgets                 Minimal Widgets                         442,777 Apr 11, 2026   ads=True iap=True
+PASS                         com.asianmobile.launcheros                 Launcher OS - Themes & Widgets       10,918,027 Dec 5, 2024    ads=True iap=True
+FAIL:too-old,dl/day<5k       com.anime.girly.pink.cute.kawaii.wallpapers.backgrounds.uhd4k iThemes - Easy Widgets, Icons         7,043,753 Oct 22, 2021   ads=True iap=True
+FAIL:dl/day<5k               com.widget.aestheticwidgets                Widget : Aesthetic Widgets               70,051 Jan 17, 2026   ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.jndapp.i.widgets.pack                  iWidgets : iOS Widgets                   43,714 Dec 29, 2025   ads=False iap=False
+FAIL:dl/day<5k               studio.widgets.android                     Widget Studio: Custom Widgets            87,379 Jul 16, 2025   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.apple.launcher                         Launcher iOS Widgets                    261,999 Aug 19, 2022   ads=True iap=False
+FAIL:no-ads,dl/day<5k        com.appslab.glass.widgets                  Glass Widgets                           173,839 Aug 22, 2025   ads=False iap=True
+FAIL:no-ads,date?,dl/day<5k  tk.zwander.lockscreenwidgets               Widgets Anywhere                         30,156                ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k rk.android.app.lockscreen                  One Click Lock Screen                 2,889,656 Jan 22, 2021   ads=False iap=True
+FAIL:no-ads,too-old,dl/day<5k com.ios.lockscreeen                        LockScreen : OS                           7,927 Aug 7, 2024    ads=False iap=False
+FAIL:too-old                 com.babydola.lockscreen                    Lock Screen OS                       11,322,117 Mar 16, 2021   ads=True iap=True
+FAIL:too-old                 com.widgify.worldroid                      Widgify - DIY Phone Screen            8,446,211 Apr 26, 2024   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.iodkols.onekeylockscreen               Lock Screen-Turn off, Launcher        3,935,000 Jun 19, 2015   ads=False iap=False
+FAIL:too-old,dl/day<5k       com.wafour.widgetweather                   Lockscreen Widget - Weather             213,786 Jun 10, 2021   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.eywinapps.applocker                    AppLock - Lock Screen                 3,260,938 Oct 1, 2016    ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.jordigordillo.dtswidget                Screen Off Widget                       239,030 Oct 1, 2018    ads=False iap=True
+FAIL:no-ads,dl/day<5k        com.jndapp.oneui.widgets.pack              OneUI Widgets                            82,267 Jul 19, 2025   ads=False iap=True
+FAIL:no-ads,dl/day<5k        com.jndapp.neon.glass.pack                 Glass Widgets Pro                        80,138 Oct 7, 2025    ads=False iap=False
+FAIL:no-ads,dl/day<5k        com.appslab.darkglass.widgets              DarkGlass Widgets                        24,538 Dec 7, 2025    ads=False iap=True
+FAIL:no-ads,too-old,dl/day<5k com.mk.sign.spotifyv2                      Spotify Widgets – Widgetify             153,551 Oct 21, 2018   ads=False iap=True
+FAIL:no-ads,dl/day<5k        oneui.dd.klck                              One UI 7 Lockscreen for KLCK              4,299 Feb 9, 2025    ads=False iap=False
+PASS                         com.ios.lockscreen.liquid                  Liquid Lock Screen: KaLock            1,495,132 May 7, 2026    ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.sparkine.widgets                       Muviz Widgets: Clock, Music.,           428,280 Dec 17, 2025   ads=False iap=True
+FAIL:no-ads,too-old,dl/day<5k com.nice.widgets                           Nice Widgets                            360,384 Mar 30, 2023   ads=False iap=True
+FAIL:too-old                 themify.aesthetic.themes.widget.wallpaper.app.icon.changer.pack Themify: Theme & Icon Changer         7,897,153 Jan 31, 2023   ads=True iap=True
+PASS                         com.themebox.icons.widgets                 Themebox - App icons, Widgets        12,699,155 Aug 7, 2025    ads=True iap=True
+FAIL:dl/day<5k               com.iconchanger.themes.widget.controlcenter Theme, Widget & Icon changer            239,086 May 1, 2026    ads=True iap=False
+FAIL:dl/day<5k               themepack.widgets.icons.wallpaper.theme.customize.aesthetic ThemePack: Widgets & Icons              137,458 Apr 17, 2026   ads=True iap=True
+FAIL:dl/day<5k               com.themes.lab.diy.widget.icon.changer     ThemeLab: DIY Widget & Icons            654,636 Feb 2, 2026    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.fftools.iconchanger                    ThemePlus: Theme, Icon Changer          475,856 May 20, 2023   ads=True iap=False
+FAIL:date?,dl/day<5k         com.themepack.wallpapers.widget.appicons.themify.iconchanger Themes: Widgets & Wallpapers          1,303,660                ads=True iap=True
+FAIL:date?,dl/day<5k         com.theme.icon.widget.control.themely      Themely: Icons, Widgets & Wall            5,210                ads=True iap=True
+FAIL:no-ads,too-old          com.myicon.themeiconchanger                MyICON - Icon Changer, Themes        20,502,562 Mar 29, 2021   ads=False iap=True
+FAIL:dl/day<5k               com.themeshub.widgets.iconchanger          ThemeHub: Themes, Widget Icons          659,565 Dec 11, 2025   ads=True iap=True
+PASS                         com.cdt.themebox.themeiconwidget           Themes Box: Icons & Widgets           5,443,209 Sep 15, 2025   ads=True iap=True
+FAIL:date?,dl/day<5k         com.themes.color.widgets.icons.wallpaper   Themes: Color Widgets & Icons            35,931                ads=True iap=False
+FAIL:too-old,dl/day<5k       com.yotheme.icon.widget                    Theme Icon: Widgets, Wallpaper          101,924 Apr 25, 2024   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k leedroiddevelopments.volumepanel           Volume Control Panel Pro                 50,269 Sep 12, 2019   ads=False iap=False
+PASS                         com.controlapp.custompanel.app             Smart Control Panel Android             538,858 Aug 11, 2026   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.jalan.control.center.android14         Controls Android 17 Style               470,872 May 31, 2023   ads=True iap=False
+FAIL:too-old,dl/day<5k       leedroiddevelopments.volumepanelads        Volume Control Panel                    246,204 Sep 17, 2019   ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.cobrasecond.gen                        18R2 Control Panel Gen 2                  3,788 Nov 11, 2024   ads=False iap=False
+FAIL:dl/day<5k               com.temporal.android16.control.center      Control Center Android 16 Styl           43,462 Sep 4, 2025    ads=True iap=False
+PASS                         com.control.center.ioscontrol              Control Panel Plus - Center           7,742,951 Oct 23, 2024   ads=True iap=True
+FAIL:dl/day<5k               com.bigsoft.controlpanel.controlcenter     Control Center - Smart Panel            127,815 Mar 16, 2025   ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.edgepro.controlcenter.freegg           Quick Settings Lite                      77,737 Jul 18, 2024   ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k com.tombayley.miui                         MIUI-ify: Quick Settings Panel        2,998,887 May 19, 2019   ads=False iap=True
+FAIL:dl/day<5k               com.controlpanel.icons.widgets.panels      Control Panel: Icons & Widgets            4,513 Jun 7, 2026    ads=True iap=True
+FAIL:dl/day<5k               com.nexify.controlcenter.quicksettings     Control Center & Simple Panel           219,463 Apr 9, 2026    ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.tombayley.bottomquicksettings          Bottom Quick Settings                 2,914,163 Nov 3, 2018    ads=False iap=True
+FAIL:no-ads,too-old,dl/day<5k com.edgepro.controlcenter                  Quick Settings                           44,011 May 12, 2021   ads=False iap=False
+FAIL:dl/day<5k               com.panelcontrol.contolcenter              Control Center - Panel Android              425 Aug 15, 2026   ads=True iap=False
+FAIL:too-old                 com.jamworks.dynamicspot                   dynamicSpot - Dynamic Island         14,351,113 Sep 29, 2022   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.dynamicisland.notchscreenview          Dynamic Notch Notification Bar        7,008,331 Sep 27, 2022   ads=True iap=True
+FAIL:dl/day<5k               com.dynamic.island.dynamicisland.app       Dynamic Island - Smart Notch             36,361 May 3, 2026    ads=True iap=False
+FAIL:dl/day<5k               tr.com.eywin.dynamic.island.notch          Dynamic Island Pro - Notch Bar          914,984 Apr 10, 2025   ads=True iap=True
+FAIL:dl/day<5k               com.dynamic.island.dynamicisland.notch     Dynamic Island - Notch iOS 16           121,522 Feb 9, 2026    ads=True iap=True
+FAIL:too-old,dl/day<5k       net.hubalek.android.reborn.beta            Battery Widget Reborn                 7,923,245 Jun 15, 2012   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.oneapps.batterywidget                  Battery Widget: Level & Color            69,142 Sep 3, 2022    ads=True iap=True
+FAIL:date?,dl/day<5k         com.geekyouup.android.widgets.battery      Battery Widget % Level Plus          16,184,072                ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k net.hubalek.android.apps.reborn.pro        Battery Widget Reborn 2026              158,548 Aug 2, 2012    ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k com.lstapps.batterywidget                  Battery Widget                          270,326 Oct 9, 2022    ads=False iap=True
+FAIL:too-old,dl/day<5k       net.hubalek.android.gaugebattwidget        Gauge Battery Widget & Monitor        7,736,059 May 31, 2010   ads=True iap=True
+FAIL:no-ads,dl/day<5k        io.github.ifa.glancewidget                 Battery Meter & Widget                   37,408 Sep 25, 2024   ads=False iap=True
+PASS                         com.cute.emoji.battery.icon.widget.customize.emojisticker.statusbar Emoji Battery Icon Customize         14,331,197 Apr 22, 2026   ads=True iap=True
+FAIL:no-ads,dl/day<5k        redpi.apps.batteryhero                     Battery Hero: Health & Widgets           39,512 Apr 12, 2026   ads=False iap=False
+FAIL:no-ads,date?,dl/day<5k  com.darshancomputing.BatteryIndicator      BatteryBot Battery Indicator          9,334,114                ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k ch.smalltech.battery.pro                   Battery HD Pro                          147,724 Mar 26, 2012   ads=False iap=False
+FAIL:too-old,dl/day<5k       com.elvison.batterywidget                  Battery Widget Builder               17,641,726 Jun 12, 2011   ads=True iap=False
+FAIL:no-ads,dl/day<5k        com.andris.batterywidget                   Battery % Widget                            175 Apr 9, 2026    ads=False iap=False
+FAIL:too-old,dl/day<5k       com.ctrmksw.battery                        Battery Widget Plus                     546,290 Feb 13, 2021   ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.powertoyou.powertoyou                  PowerToYou - Battery Widget                 903 Sep 2, 2021    ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k it.braincrash.android.batteryace           Battery Ace Pro                           2,719 Oct 15, 2011   ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k com.fulminesoftware.batteryindicatorpro    Battery Indicator Pro                    16,884 May 12, 2012   ads=False iap=False
+FAIL:too-old                 ch.smalltech.battery.free                  Battery HD                           30,276,772 Mar 26, 2012   ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.yuandroid.Battery.Widget               Battery Widget                           53,719 May 2, 2019    ads=False iap=False
+FAIL:no-ads,date?,dl/day<5k  com.darshancomputing.BatteryIndicatorPro   BatteryBot Pro                          111,339                ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k com.glgjing.thor                           Battery manager and monitor               3,890 Aug 7, 2016    ads=False iap=False
+FAIL:date?,dl/day<5k         com.maize.digitalClock                     Digital Clock Widget                 24,049,235                ads=True iap=False
+FAIL:too-old,dl/day<5k       sk.michalec.SimpleDigiClockWidget          DIGI Clock Widget                    13,959,233 Jul 28, 2011   ads=True iap=True
+FAIL:too-old,dl/day<5k       br.com.zetabit.ios_standby                 StandBy Mode: Clock & Widgets         2,019,432 Jun 6, 2023    ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.atomdev.digital.clock.widget.android.pro Digital Clock Widget Premium              2,991 Nov 27, 2023   ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k rk.android.app.clockwidget                 Clock Widget (Material You)               2,038 Dec 16, 2021   ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k sk.michalec.DigiClockWidgetPro             DIGI Clock Widget Plus                   76,177 Mar 6, 2013    ads=False iap=False
+FAIL:too-old,dl/day<5k       clock.widget                               Magic Clock Widget                    2,039,194 Jul 17, 2024   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.bytenine.androidclockwidgets           Android Clock Widgets                 1,442,726 May 10, 2020   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.sonyericsson.digitalclockwidget2       Digital Clock & Weather Widget       17,406,878 Apr 30, 2012   ads=True iap=True
+FAIL:too-old,dl/day<5k       twelve.clock.mibrahim                      Pixel Clock Widgets & Themes          1,058,258 May 18, 2021   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.chibatching.worldclockwidget           Simple World Clock Widget             1,996,554 Feb 21, 2014   ads=False iap=True
+FAIL:too-old,dl/day<5k       com.nbow.photowidget                       Photo Widget Easy                     2,793,156 Mar 15, 2022   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.light.simplephotowidget                Simple Photo Widget                      60,934 Nov 10, 2019   ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k com.fibelatti.photowidget                  Material Photo Widget                   695,231 Nov 15, 2023   ads=False iap=False
+FAIL:no-ads,dl/day<5k        com.appslab.photo.widgetspro               Photo Widget Pro                          7,893 May 5, 2025    ads=False iap=True
+FAIL:dl/day<5k               com.photo.widget                           Widget Gallery: Photo Widget             23,166 Apr 4, 2026    ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.galew.photo_widget                     Photo Widget That Just Works              7,783 Jun 13, 2021   ads=False iap=False
+FAIL:too-old,dl/day<5k       com.mx.apps.widget.photowidget             Photo Widget - Albums                   739,491 Jan 26, 2022   ads=True iap=True
+FAIL:too-old                 com.locket.Locket                          Locket Widget                        35,938,192 Apr 15, 2022   ads=True iap=True
+FAIL:too-old,dl/day<5k       developer.laijiajing.photowidget           Photo Widget                          4,713,941 Jun 7, 2019    ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.vector123.pixmoji                      Widgetora:Emoji & Photo Widget            1,648 Feb 3, 2025    ads=False iap=True
+FAIL:no-ads,dl/day<5k        com.photowidget.plus                       Photo Widget Plus: Home Screen            1,985 Aug 13, 2026   ads=False iap=True
+FAIL:no-ads,too-old,dl/day<5k com.hikaru.photowidget                     Animated Photo Widget +                 109,162 Dec 11, 2012   ads=False iap=False
+FAIL:dl/day<5k               com.hexatech.pixwidget                     PixWidget – Photo Widgets                 1,602 Jan 17, 2026   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.blueskysoft.photowidget                Photo Widget: Pic Widget              1,605,767 Dec 23, 2020   ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.photo.widgets.pro                      Photo Widget Pro                             39 Apr 29, 2026   ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k locket.live                                PicPat - Photos Widget & Share        1,456,629 Jan 28, 2022   ads=False iap=True
+FAIL:no-ads,dl/day<5k        com.one4studio.one4widgets                 One4Widgets: Aesthetic Widgets            4,581 Jul 6, 2026    ads=False iap=True
+FAIL:no-ads,dl/day<5k        com.dci.dev.somethingwidgets               Something OS Widgets                     72,236 Nov 17, 2024   ads=False iap=True
+FAIL:no-ads,too-old,dl/day<5k com.vector123.photowidget.squarephotowidget Square Photo Widget                      16,231 Mar 6, 2023    ads=False iap=True
+FAIL:no-ads,dl/day<5k        com.appslab.materialyou.widgetspro         Material You Widgets                     92,405 May 28, 2025   ads=False iap=True
+FAIL:no-ads,date?,dl/day<5k  com.socialnmobile.dictapps.notepad.color.note ColorNote Notepad Notes             206,974,790                ads=False iap=True
+FAIL:no-ads,too-old,dl/day<5k com.symcoding.legacy.stickynotes           Sticky Notes + Widget                   619,725 Apr 10, 2024   ads=False iap=True
+FAIL:big-dev,no-ads,too-old  com.google.android.keep                    Google Keep - Notes and lists      4,087,197,189 Mar 20, 2013   ads=False iap=False
+FAIL:too-old,dl/day<5k       com.happyneko.stickit                      Another Note Widget: Sticky           2,657,316 Nov 27, 2013   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k sk.mildev84.noteswidgetreminder            Notes Widget Reminder                   684,398 Jul 25, 2014   ads=False iap=True
+FAIL:too-old,dl/day<5k       com.q61.note                               Wondr Note: Fun Notes & Tools           433,785 Dec 2, 2020    ads=True iap=True
+FAIL:big-dev,no-ads,too-old  com.samsung.android.app.notes              Samsung Notes                      2,171,800,296 Aug 15, 2016   ads=False iap=False
+FAIL:too-old                 easynotes.notes.notepad.notebook.privatenotes.note EasyNotes: Notes, Memo & Lists       35,695,664 Oct 29, 2020   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.nbow.stickynotewidget                  Sticky Notes + Widget                    55,309 Jul 14, 2022   ads=True iap=True
+FAIL:no-ads,too-old          notion.id                                  Notion: Notes, Tasks, AI             43,278,956 Jun 5, 2018    ads=False iap=True
+FAIL:no-ads,dl/day<5k        com.jotter.widget.notes                    Jotter - Widget Notes & Tasks               876 Mar 22, 2026   ads=False iap=True
+FAIL:too-old                 notes.notepad.checklist.calendar.todolist.notebook Notepad, Notes, Easy Notebook        31,739,882 Apr 8, 2022    ads=True iap=True
+FAIL:date?,dl/day<5k         com.evernote                               Evernote - Note Organizer           378,607,109                ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.bigzapps.paddi                         Paddi - Sticky Notes Widget                  98 May 21, 2026   ads=False iap=False
+FAIL:big-dev,no-ads,too-old  com.microsoft.office.onenote               Microsoft OneNote: Save Notes      1,011,101,709 Feb 7, 2012    ads=False iap=False
+FAIL:too-old,dl/day<5k       com.jsvmsoft.stickynotes                   Floating Notes                        2,402,957 Jun 5, 2014    ads=True iap=True

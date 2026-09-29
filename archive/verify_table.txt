@@ -1,0 +1,41 @@
+PASS                         com.emojibattery.custom.statusbar.petonscreen Emoji Battery: Icons & Pets             759,736 Aug 22, 2026   ads=True iap=True
+FAIL:no-ads                  boo.noce.launcher                          Nocebo Launcher                         413,925 Jul 8, 2026    ads=False iap=False
+FAIL:too-old,dl/day<5k       com.ghost.horror.scary.wallpaper.offline   Scary Wallpaper: Horror Photos          708,094 Mar 23, 2021   ads=True iap=True
+PASS                         com.livewallpaper.sillysmiles              Fun Smile Silly Live Wallpaper        6,818,261 Jan 16, 2026   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.wave.keyboard.theme.tigeranimatedkeyboard Tiger Live Wallpaper 4K               6,302,923 Feb 25, 2019   ads=True iap=False
+FAIL:dl/day<5k               com.uhd.livevideo.wallpaper                Live Wallpaper 4K HD                    375,666 May 11, 2026   ads=True iap=True
+PASS                         com.ikeyboard.theme.pink.aura.love.theme   Pink Aura Love Theme                  1,587,324 Jan 21, 2026   ads=True iap=False
+FAIL:too-old,dl/day<5k       launcher.alpha                             Alpha Hybrid Launcher 4D theme        9,288,677 Jun 17, 2019   ads=True iap=True
+PASS                         com.azmobile.broken.screen.wallpaper       Broken Screen: Magic Wallpaper        4,452,697 Mar 6, 2025    ads=True iap=True
+FAIL:too-old                 com.rare.wallpapers                        Wallpapers HD - Backgrounds 4K       60,059,446 Oct 25, 2019   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.neon3d.mechanical.keyboard             Mechanical Keyboard: SwitchKey        1,646,242 Dec 19, 2023   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.radiant.battery.charging.animation     3D Battery Charging Animation         5,361,723 Aug 1, 2023    ads=True iap=True
+FAIL:too-old                 com.mediapro.entertainment.freeringtone    Music ringtones for android          17,205,177 Jul 30, 2019   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.mx.apps.iconchanger.customizeicon      Icon Changer - Customize Icon         1,858,386 Feb 12, 2023   ads=True iap=True
+FAIL:dl/day<5k               com.skin.clothes.editor                    Skin Editor for RBX                     506,825 Apr 22, 2026   ads=True iap=False
+FAIL:too-old                 com.vksoft.iosemojis.keyboard              iOS Emojis For Android               11,300,664 May 19, 2023   ads=True iap=False
+PASS                         com.dongbasiki.easycontrol.controlpanel.os iControl Widgets: Themed Panel        1,987,541 Dec 30, 2025   ads=True iap=True
+PASS                         com.icontrol.easy.widgets.themes           iControl: Easy Widgets Themes        39,415,457 May 23, 2025   ads=True iap=True
+FAIL:too-old                 com.iconchanger.widget.theme.shortcut      Themepack - App Icons, Widgets      120,105,641 Mar 10, 2022   ads=True iap=True
+FAIL:too-old                 com.ikeyboard.theme.neon.love              Neon Love Theme                     138,337,696 Apr 22, 2019   ads=True iap=True
+PASS                         com.tstudio.emojibatteryicon               Emoji Battery Icon Customize         10,067,533 Mar 25, 2026   ads=True iap=True
+FAIL:date?,dl/day<5k         com.control.center.ioscontrol.psma         iOS Control Center , Panel               39,168                ads=True iap=True
+FAIL:dl/day<5k               com.photo.sticker.stickermaker             Photo stickers: Sticker maker            17,992 Sep 5, 2026    ads=True iap=False
+FAIL:date?,dl/day<5k         com.leapailabs.themes.widget.custom.panel  Themei: Wallpaper Theme & Icon           17,352                ads=True iap=True
+FAIL:dl/day<5k               com.zipper.lockscreen.customize.wallpapers.themes Zipper Lock Screen Wallpapers            14,366 Aug 30, 2026   ads=True iap=False
+FAIL:date?,dl/day<5k         com.controlcenter.widget.themes            Control Center: Widget Themes            10,075                ads=True iap=False
+FAIL:dl/day<5k               com.pet.anime.shimeji.screen               Anime Shimeji Screen Pets                 6,165 Sep 3, 2026    ads=True iap=False
+FAIL:date?,dl/day<5k         com.create.catmaker.kitty.sdutio           Cat Maker: Kitty Lab                     28,153                ads=True iap=False
+FAIL:dl/day<5k               com.skyit.wallpaper.theme                  ThemePack: Wallpaper & Widget             6,013 Sep 9, 2026    ads=True iap=True
+FAIL:dl/day<5k               com.palette.themekeyboard                  Palette Keyboard: Color Themes            3,376 Aug 30, 2026   ads=True iap=False
+FAIL:dl/day<5k               com.livewall.app                           LiveWall                                  6,477 Sep 3, 2026    ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.ffpanel.darkaura                       SADX Freestyle Dark Aura Panel            5,746 Aug 6, 2026    ads=False iap=False
+FAIL:date?,dl/day<5k         com.themes.hdwallpapers                    Themes, Wallpapers & Widgets              3,857                ads=True iap=True
+FAIL:dl/day<5k               com.emoji.battery.statusbar.cute.widget    Customize Icon - Emoji Battery            5,053 Sep 4, 2026    ads=True iap=True
+FAIL:dl/day<5k               com.wallchemy.livewall                     Wallchemy: Live Wallpapers                2,379 Aug 31, 2026   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.photoeditor.wishes.quotes              Mica: AI Photo & Video Maker          7,003,036 Oct 15, 2022   ads=True iap=True
+PASS                         com.photo.art.designer.studio              AI Photo Lab: Generate & Edit         3,055,679 May 30, 2026   ads=True iap=False
+PASS                         com.snaptune.ai.photoeditor.collagemaker   Pix Editor: AI Photo Maker           16,250,115 Oct 29, 2025   ads=True iap=True
+PASS                         instagramstory.maker.playvo                Video Status Maker: Playvo           15,990,497 Feb 11, 2026   ads=True iap=True
+FAIL:too-old,dl/day<5k       photoeditor.photocollage.ai.editor.photoart AI Photo Editor - PhotoArt            3,325,408 Nov 7, 2023    ads=True iap=True
+FAIL:too-old                 com.editingappsforphotos.hdphotoeditor     PerfectPic－Photo Edit・Collage         5,386,708 Feb 27, 2024   ads=True iap=True

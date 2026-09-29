@@ -1,0 +1,183 @@
+FAIL:too-old                 app.artfonts                               ArtFonts: Stylish Text               10,596,599 Feb 14, 2023   ads=True iap=True
+FAIL:dl/day<5k               app.emoji.keyboard                         Keyboard Themes: Photo, Emoji             6,800 Aug 6, 2026    ads=True iap=True
+FAIL:too-old,dl/day<5k       app.potato.fancy.kb                        Fonts Type – Fonts Keyboard           3,123,892 May 22, 2020   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k ch.icoaching.typewise                      Typewise Custom Keyboard              2,710,811 Dec 11, 2019   ads=False iap=True
+FAIL:dl/day<5k               com.akmobile.ledkeyboard.flash             Keyboard - Neon Love Theme            1,077,518 Nov 27, 2025   ads=True iap=True
+FAIL:dl/day<5k               com.appqubit.ledkeyboard                   LED Keyboard                              1,424 Apr 26, 2026   ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.arawa.fonts.keyboard                   LED Keyboard Neon Themes                 40,728 Jul 8, 2026    ads=False iap=True
+FAIL:no-ads,dl/day<5k        com.arawastudios.keyboard.rgb.themes       LED Keyboard: RGB Neon Theme             60,761 May 12, 2026   ads=False iap=True
+PASS                         com.artkeyboard.aikeyboard.fonts.keyboard  Keyboard Themes - Fonts, Emoji        3,311,078 Oct 16, 2025   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.as.glittercolorkeyboard.theme.stylish.girlsfashion Glitter Keyboard                            166 May 19, 2021   ads=True iap=False
+FAIL:dl/day<5k               com.asianmobile.emojikeyboard              Font Keyboard Emoji & Themes            143,224 May 18, 2026   ads=True iap=True
+PASS                         com.asianmobile.fontskeyboard              Emoji Font Keyboard & Themes         23,288,982 Dec 16, 2024   ads=True iap=True
+FAIL:date?,dl/day<5k         com.aura.ledkeyboard.app                   LED Keyboard                             74,586                ads=True iap=False
+FAIL:dl/day<5k               com.aurax.neonledkeyboard.xboard.theme     RGB & LED Keyboard - xBoard              51,044 Jun 26, 2026   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.bigkeyboardeasylauncher.biggerkeybuttonandroidlauncherapp Big Keyboard: Easy Homescreen         3,487,242 Dec 21, 2023   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.brainpub.phonedecor                    Deco Keyboard - emoji, fonts         22,464,553 Feb 8, 2012    ads=True iap=True
+FAIL:date?,dl/day<5k         com.catkeyboard.diywallpaper.catlangugae   Cat Keyboard: DIY Wallpaper             152,559                ads=True iap=False
+PASS                         com.cem.cute.cat.keyboard                  Cat Keyboard - Cute Kitty Skin        2,000,693 Aug 18, 2025   ads=True iap=True
+FAIL:dl/day<5k               com.cem.keyboard.designer.custom.theme     Keyboard Design: Sticker Theme          446,160 Feb 24, 2026   ads=True iap=False
+FAIL:no-ads,dl/day<5k        com.clsoftneonkeyboard                     Neon Keyboard                            18,430 May 22, 2025   ads=False iap=True
+FAIL:too-old,dl/day<5k       com.codepundit.fontskeyboard.fonts         Fancy Fonts Keyboard Cool Text          242,567 Sep 4, 2020    ads=True iap=True
+FAIL:date?,dl/day<5k         com.customkeyboard.keypadapp               Fancy Font Keyboard Themes                  421                ads=True iap=False
+FAIL:dl/day<5k               com.cute.bear.super.theme.input.app        Cute Bear Super Theme                    62,830 Mar 20, 2026   ads=True iap=False
+FAIL:dl/day<5k               com.cute.bow.cat.super.theme.input.app     Cute Bow Cat Super Theme                 29,366 Jun 17, 2026   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.cutestudio.emoji.keyboard              Emoji Keyboard: Themes & Fonts        8,268,206 Jun 1, 2020    ads=True iap=True
+FAIL:too-old                 com.cutestudio.neonledkeyboard             Neon LED Keyboard: RGB & Emoji       72,955,439 Apr 3, 2020    ads=True iap=True
+FAIL:too-old                 com.designkeyboard.keyboard                Design Keyboard - Fonts, Emoji       22,879,422 Dec 5, 2016    ads=True iap=True
+PASS                         com.diy.rgb.led.mechanical.keyboard.custom.keyboard.game.keyboard Mechanical Keyboard: RGB Theme        2,850,909 Apr 9, 2026    ads=True iap=True
+FAIL:dl/day<5k               com.dtp.themes.wallpaper.widget.keyboard   Theme - Wallpaper, Keyboard             309,553 Dec 27, 2024   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.emoji.colorkeyboard.neonled            Neon Led Keyboard: Emoji, Font          389,294 Jun 12, 2022   ads=True iap=True
+FAIL:too-old                 com.emoji.coolkeyboard                     Emoji keyboard - Themes, Fonts      316,730,920 Jan 8, 2015    ads=True iap=True
+PASS                         com.emoji.cutekeyboard.themes.fontkeyboard Cute Keyboard: Sound & Emoji          3,893,389 Mar 20, 2026   ads=True iap=True
+FAIL:dl/day<5k               com.emoji.keyboard.fonts.theme             Emoji Keyboard: Custom Themes           343,296 Jan 18, 2026   ads=True iap=False
+PASS                         com.emoji.keyboard.soundtheme              Keyboard Emoji & Sound Themes         2,987,496 Jan 27, 2026   ads=True iap=False
+FAIL:dl/day<5k               com.emoji.keyboard.stylish.fonts           Keyboard Themes: Custom Emoji           801,335 Mar 13, 2026   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.emojifamily.emoji.keyboard             Emoji Keyboard Lite                  14,385,251 Sep 27, 2014   ads=False iap=False
+FAIL:too-old,dl/day<5k       com.faceboard.emoji.keyboard               Faceboard: Font,Emoji Keyboard        1,769,214 Jul 21, 2023   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.facemoji.ledkeyboard.neonkeyboard.theme Neon LED Keyboard - RGB Themes           77,673 Nov 14, 2022   ads=True iap=False
+FAIL:too-old                 com.facemoji.lite                          Facemoji Emoji Keyboard Pro          38,552,196 Aug 4, 2017    ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.facemoji.lite.indian                   Facemoji Emoji Keyboard Lite:D       13,687,862 Dec 7, 2018    ads=False iap=False
+FAIL:too-old,dl/day<5k       com.facemoji.lite.xiaomi.gp                Emoji Keyboard Lite-Emoji             7,999,355 Oct 1, 2018    ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.fanytextguru                           Fancy Text - Font Keyboard              166,406 Apr 28, 2019   ads=False iap=True
+FAIL:too-old                 com.flashkeyboard.leds                     LED Keyboard Neon Themes Glow        95,234,230 Jan 9, 2019    ads=True iap=True
+FAIL:too-old,dl/day<5k       com.fontchanger.pixsterstudio              Fonts app keyboard & Changer          3,507,754 Aug 10, 2015   ads=True iap=True
+FAIL:too-old                 com.fontkeyboard.fonts                     Font Keyboard: Text Fonts+           30,648,417 Jul 28, 2020   ads=True iap=True
+FAIL:too-old                 com.fonts.emoji.fontkeyboard.free          Fonts Keyboard - Fonts & Emoji       15,668,923 Jul 1, 2020    ads=True iap=True
+FAIL:too-old                 com.fontskeyboard.fonts                    Fonts Keyboard                      145,681,484 Aug 21, 2019   ads=True iap=True
+FAIL:too-old                 com.fontskeyboard.fonts.stylishkeyboard    Font Keyboard: Cute font style       15,378,846 May 2, 2023    ads=True iap=True
+PASS                         com.fontskeyboard.maker.theme              Keyboard Themes: Emoji Fonts          4,837,289 Oct 17, 2025   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.free.samira.HD                         Glitter Bunny Keyboard                   41,970 Jan 28, 2019   ads=True iap=False
+FAIL:big-dev,no-ads,too-old  com.google.android.inputmethod.latin       Gboard - the Google Keyboard       13,696,563,372 Jun 5, 2013    ads=False iap=False
+PASS                         com.grownapp.myfontskeyboard               Font Keyboard Themes, Emoji           6,848,696 Oct 17, 2025   ads=True iap=True
+FAIL:dl/day<5k               com.gsmobile.ledkeyboard                   LED Keyboard – RGB Themes             1,753,062 May 20, 2025   ads=True iap=True
+PASS                         com.highsecure.ledkeyboard                 LED Keyboard: RGB Themes              5,522,978 Dec 10, 2024   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.iappcreation.pastelkeyboard            Pastel Keyboard Themes Color             20,837 Jul 20, 2018   ads=False iap=True
+FAIL:no-ads,too-old,dl/day<5k com.iappcreation.pastelkeyboardfree        Pastel Keyboard - VIP Premium           782,871 Aug 13, 2019   ads=False iap=True
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.PinkGlitter            Pink Glitter Emoji Keyboard           1,695,684 Dec 24, 2015   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.aesthetic.butterfly    Aesthetic Butterfly Theme             1,331,421 May 16, 2021   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.anime.cool.man         Anime Cool Man Theme                    688,091 Sep 20, 2021   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.anime.mask.man         Anime Mask Man Theme                  1,298,508 Dec 3, 2020    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.black.red.tech         Black Red Tech Keyboard Theme           994,041 Apr 23, 2019   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.butterfly.anime.man    Butterfly Anime Man Theme               355,188 Sep 21, 2021   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.cat.boy.anime          Cat Boy Anime Theme                       9,984 Nov 9, 2021    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.color.neon.tech        Color Neon Tech Keyboard Theme          124,153 Nov 3, 2019    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.crystal.diamonds       Diamond Live 3D Keyboard Backg          193,868 Sep 18, 2019   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.flaming.skull_3d       Flaming Skull 3D Theme                  700,899 Mar 24, 2019   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.girly.minny            Girly Glitter Minny Keyboard T        1,840,949 Dec 10, 2018   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.glitter.black.pink     Glitter Black Pink Keyboard Ba           85,424 Aug 11, 2021   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.heart_3d.galaxy        Heart 3d Galaxy Keyboard Theme            6,051 Jul 24, 2018   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.hero.anime.boy         Cool Anime Boy Theme                    240,841 Nov 7, 2021    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.ice.wolf_3d            Ice Wolf 3D Keyboard Theme              195,900 Jun 4, 2019    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.luxury.mechanical      Luxury Mechanical Keyboard The           86,558 Sep 26, 2019   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.moba.games_3d.mechanical 3D Mechanical Theme                      67,398 Mar 21, 2018   ads=True iap=False
+FAIL:too-old                 com.ikeyboard.theme.neon.love              Neon Love Theme                     138,337,696 Apr 22, 2019   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.neon.red.heartbeat     Neon Red Heartbeat Theme             10,976,547 Jul 19, 2020   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.neon.tech_3d           Neon Tech 3D Theme                       19,584 Nov 13, 2019   ads=True iap=False
+PASS                         com.ikeyboard.theme.pink.aura.love.theme   Pink Aura Love Theme                  1,587,324 Jan 21, 2026   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.pink.berry.cheers      Pink Berry Cheers Keyboard Bac          338,738 Jul 28, 2021   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.pink.gold.glitter      Pink Gold Glitter Keyboard Bac            4,954 Feb 2, 2021    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.rgb.live.hd            RGB Live HD Theme                       844,778 Sep 13, 2020   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.rose.gold.glitter      Rose Gold Glitter Keyboard The           17,619 May 18, 2020   ads=True iap=False
+PASS                         com.ikeyboard.theme.sticker.emoji.memes.maker Sticker & Emoji - Memes Maker         8,466,747 Jul 23, 2025   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.super.neon_3d          Super Neon 3D Theme                   3,127,794 Sep 2, 2019    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.tech.live_3d           Tech Live 3D Keyboard Backgrou            2,550 Sep 14, 2020   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.ikeyboard.theme.white_3d.galaxy        White 3D Galaxy Keyboard Theme          169,750 Jun 10, 2019   ads=True iap=False
+FAIL:too-old                 com.jb.gokeyboard                          GO Keyboard Lite - Many Theme       140,724,084 Apr 6, 2011    ads=True iap=True
+FAIL:too-old,dl/day<5k       com.jb.gokeyboard.theme.twpinklovekeyboardds Cute Keyboard - Write with AI         5,919,570 Jan 16, 2014   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.jb.gokeyboardpro                       GO Keyboard Pro - Emoji, GIF,        16,448,788 May 6, 2016    ads=True iap=True
+FAIL:too-old,dl/day<5k       com.jb.theme.gokeyboard                    GO Keyboard - Themes & Emojis         2,245,854 Aug 25, 2022   ads=True iap=True
+FAIL:dl/day<5k               com.jkleo.mechanical.keyboard.themes.switchkey Mechanical Keyboard Themes                3,823 Apr 22, 2025   ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.keyboard.font                          Font Keyboard: Fonts & Emoji          7,983,394 Nov 18, 2019   ads=False iap=True
+FAIL:too-old,dl/day<5k       com.keyboard.neonkeyboard.ledkeyboard      Neon LED Keyboard                        14,946 Jan 5, 2023    ads=True iap=True
+PASS                         com.keyboard.theme.fontboard.mask.stylish  My Keyboard: Themes & Fonts           5,144,082 Aug 3, 2026    ads=True iap=False
+FAIL:date?,dl/day<5k         com.keyboard.themes.customkeyboard         Cute Themes - Custom Keyboard           235,091                ads=True iap=False
+FAIL:date?,dl/day<5k         com.keyboardstheme.animewallpapers         Anime Wallpapers & Keyboards                849                ads=True iap=False
+FAIL:no-ads                  com.keyboardthemes.designkeyboard.stylish.fancy Emoji Keyboard: Fonts & Themes        4,523,975 Sep 22, 2024   ads=False iap=False
+FAIL:dl/day<5k               com.keyza.keyboard.themes                  Keyza: Font Keyboard Themes              11,418 May 4, 2026    ads=True iap=False
+FAIL:too-old                 com.kitkatandroid.keyboard                 Keyboard - Emoji, Emoticons          34,187,737 Nov 28, 2013   ads=True iap=False
+FAIL:date?,dl/day<5k         com.kyvora.ledkeyboard.vibe                LED Keyboard                                331                ads=True iap=False
+FAIL:too-old                 com.ladybird.fontskeyboard.stylishkeyboard.fancytext Stylish Fonts Keyboard                8,695,799 Jan 15, 2023   ads=True iap=True
+FAIL:dl/day<5k               com.led.keyboard.emoji.fonts.aesthetic     Led Keyboard - Neon Themes               49,521 May 20, 2026   ads=True iap=False
+FAIL:no-ads,date?,dl/day<5k  com.ledkeyboard.fontsflash                 Led Keyboard: RGB Keyboard App           13,066                ads=False iap=False
+FAIL:too-old,dl/day<5k       com.ledkeyboard.neonkeyboard.coloringkeyboard Neon LED Keyboard - RGB Themes          162,202 Apr 7, 2022    ads=True iap=True
+FAIL:date?,dl/day<5k         com.ledlight.keycustom.app2025             LED Keyboard - RGB LED Theme          1,130,979                ads=True iap=False
+FAIL:no-ads,dl/day<5k        com.love.photo.keyboard.theme              Photo Love Keyboard - Themes            332,940 Dec 26, 2024   ads=False iap=False
+FAIL:no-ads,too-old,dl/day<5k com.mazzocchibrothers.emojiup.emoji.avatar Emoji Up genmoji sticker maker        3,426,465 Jul 16, 2020   ads=False iap=True
+FAIL:dl/day<5k               com.mechanical.keyboard.rgb.led            Mechanical Keyboard: RGB LED                321 Jun 11, 2026   ads=True iap=True
+ERR                          com.mechanicalkeyboard.simulator                                                         0 None           ads=None iap=None
+FAIL:dl/day<5k               com.mediatech.ledkeyboardtheme             LED Keyboard: RGB, Neon Theme                60 Sep 7, 2026    ads=True iap=True
+FAIL:dl/day<5k               com.mtk.themekeyboardanime                 Anime Live Theme Keyboard                 3,417 Apr 7, 2026    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.neon3d.mechanical.keyboard             Mechanical Keyboard: SwitchKey        1,646,242 Dec 19, 2023   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.neonlove.keyboardtheme                 Neon Love Keyboard Theme                 27,795 Mar 24, 2024   ads=False iap=False
+FAIL:too-old,dl/day<5k       com.neupanedinesh.fonts.fontskeyboard      Fonts Aa - Keyboard Fonts            10,369,325 Jun 7, 2020    ads=True iap=True
+FAIL:too-old                 com.neupanedinesh.fonts.stylishletters     Letter Fonts - Stylish Text          27,793,929 Apr 8, 2021    ads=True iap=True
+FAIL:too-old,dl/day<5k       com.newapp.emoji.keyboard                  Emoji Keyboard 2025                   5,428,315 Jan 25, 2016   ads=True iap=False
+FAIL:dl/day<5k               com.nexa.neon.emoji.keyboard.soundtheme    Neon Love: Keyboard Themes              270,223 Jun 13, 2026   ads=True iap=False
+FAIL:date?,dl/day<5k         com.ntd.mechanical.rgb.keyboard.led.themes.custom Mechanical RGB Keyboard Themes               20                ads=True iap=True
+FAIL:date?,dl/day<5k         com.nylvex.led.stage                       LED Keyboard RGB Glow Themes                  1                ads=True iap=False
+FAIL:dl/day<5k               com.photokeyboard.aifontkeyboard           Photo Keyboard themes & Fonts            19,466 Jul 28, 2025   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.preff.kb.xm.gp                         Emoji Keyboard                        1,896,888 Feb 14, 2021   ads=True iap=False
+FAIL:dl/day<5k               com.purple.cherry.super.theme.input.app    Purple Cherry Super Theme               430,669 Apr 23, 2026   ads=True iap=False
+FAIL:too-old                 com.redraw.keyboard                        2026 Keyboard                        51,355,761 Sep 7, 2016    ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.redraw.keyboard.theme.newkeyboard2018  Keyboard Pro 2025                     3,556,179 Jul 6, 2017    ads=False iap=False
+FAIL:too-old,dl/day<5k       com.redraw.keyboard.theme.t3dkeyboardnew2017version 3D Keyboard                           2,468,510 May 15, 2018   ads=True iap=False
+FAIL:too-old                 com.remi.keyboard.keyboardtheme            Keyboard Maker: Keyboard Theme       10,973,323 Jun 3, 2022    ads=True iap=True
+FAIL:too-old,dl/day<5k       com.sami.lockscreen                        Glitter Heart Keyboard                   15,753 Jul 31, 2019   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.sami.nature.apps                       Anime Cool Keyboard –Fonts Art           91,207 Jan 9, 2023    ads=True iap=False
+FAIL:dl/day<5k               com.sd.custom.keyboard.stylish.emoji.font  All Keyboard Themes-Font Style          179,278 Apr 15, 2026   ads=True iap=True
+FAIL:too-old                 com.simejikeyboard                         Facemoji AI Emoji Keyboard          245,279,699 Apr 27, 2016   ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.smartailabs.key.morph                  LED Keyboard: Neon Glow Themes               16 Sep 11, 2026   ads=False iap=False
+FAIL:dl/day<5k               com.smartkeyboard.emojikeyboard.fontskeyboard.multilingual.keyboard Fonts Keyboard Theme Cute Font            4,708 Sep 7, 2026    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.smarttechapps.emoji                    Emoji Keyboard                       15,813,794 Dec 15, 2017   ads=True iap=True
+FAIL:no-ads,date?,dl/day<5k  com.soft.app.keyboard                      KKeyboard-Color Skins                        32                ads=False iap=False
+FAIL:dl/day<5k               com.studioapp.soundboardkeyboard           Keyboard: RGB & Emoji Custom              1,282 Jul 6, 2026    ads=True iap=True
+FAIL:too-old,dl/day<5k       com.stylishkeyboard.fonts                  Stylish Keyboard-Fonts & Emoji           41,380 Apr 4, 2023    ads=True iap=True
+FAIL:dl/day<5k               com.tairsoft.animekeyboardtheme            Anime Keyboard Themes                     5,435 Feb 11, 2026   ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k com.takeofflabs.fontmaker                  Fontmaker - Font Keyboard App         6,127,702 Nov 26, 2021   ads=False iap=True
+FAIL:date?,dl/day<5k         com.tapbrainx.aafont.fontkeyboard          Aa+ Font Keyboard: Theme, Font           60,177                ads=True iap=True
+FAIL:dl/day<5k               com.tapbrainx.yokey.emojifontkeyboard      Emoji Font Keyboard: YoKey              319,823 Jan 22, 2026   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.techapps.neonledkeyboard.ikeyboard.love.neon.theme Neon LED Keyboard: RGB & Emoji        3,035,716 May 11, 2023   ads=True iap=True
+FAIL:dl/day<5k               com.theme.keyboard.fonts                   Keyboard Themes: Fonts & Emoji           57,125 Jul 3, 2026    ads=True iap=True
+FAIL:too-old                 com.theruralguys.stylishtext               Stylish Text - Fonts Keyboard        45,185,994 Oct 26, 2016   ads=True iap=True
+FAIL:too-old,dl/day<5k       com.toaug.frtyone                          LED Keyboard - RGB Lighting             116,626 Aug 12, 2021   ads=True iap=False
+FAIL:too-old                 com.touchtype.swiftkey                     Microsoft SwiftKey AI Keyboard     1,948,466,075 Sep 22, 2010   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.types                                  TYPE S LED                              507,803 Jan 27, 2015   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.typing.fancyfonts.photokeyboard        Photo Keyboard Themes & Fonts           220,185 Aug 27, 2023   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k com.uprightgeeks.stylishtextmaker          Stylish Text Maker: Cool Fonts          119,060 Jun 10, 2023   ads=False iap=True
+FAIL:too-old,dl/day<5k       com.uspwinage.at.keyboard                  LED Keyboard: Neon Truck                  1,771 Nov 30, 2017   ads=True iap=False
+FAIL:dl/day<5k               com.wallpaperscraft.keby                   Keby Cute Keyboard Themes             1,146,736 Jul 17, 2025   ads=True iap=True
+FAIL:no-ads,dl/day<5k        com.watchfacestudio.mechanicalwatch        Mechanical Watch                             98 Aug 16, 2025   ads=False iap=False
+FAIL:too-old                 com.wave.keyboard                          Wave Animated Keyboard Emoji         32,226,692 Dec 4, 2015    ads=True iap=True
+FAIL:too-old,dl/day<5k       com.wave.keyboard.theme.steampunk2animatedkeyboard Steampunk 2 Animated Keyboard            11,241 Jul 21, 2016   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.wave.keyboard.theme.steampunkanimatedkeyboard Mechanical Live Wallpaper HD          7,728,090 Dec 4, 2015    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.xp.fancy.text.generator                Fancy Text Generator                    708,789 Dec 5, 2022    ads=True iap=False
+FAIL:too-old,dl/day<5k       com.y2kdesignworks.mechanicalkeyboard      Glass RGB Mechanical Keyboard           127,505 Aug 10, 2016   ads=True iap=False
+FAIL:too-old,dl/day<5k       com.yaoming.keyboard.emoji.meme            Emoji Keyboard: Fonts, Emojis         3,190,084 May 28, 2021   ads=True iap=False
+FAIL:no-ads,dl/day<5k        com.zama.led.keyboard.rgb.themes           Neon LED Keyboard: RGB Themes               482 Jul 7, 2026    ads=False iap=False
+FAIL:no-ads,dl/day<5k        com.ziipin.softkeyboard.en                 AImoji Keyboard - AI Stickers            42,082 Feb 6, 2026    ads=False iap=True
+FAIL:no-ads,too-old          cool.fonts.symbol.keyboard.custom.fancy.text.editor Fonts Art - Keyboard Fonts           36,442,020 Jul 1, 2020    ads=False iap=True
+FAIL:date?,dl/day<5k         cool.keyboard.fonts.keyboardtheme.sticker  Fonts Keyboard Theme & Sticker        1,539,642                ads=True iap=True
+FAIL:no-ads,dl/day<5k        cute.keyboard.app                          Cute Keyboard                                24 Sep 2, 2026    ads=False iap=False
+FAIL:dl/day<5k               dark.theme.keyboard.neon.black             Dark Theme Keyboard-Neon Black          253,899 May 1, 2026    ads=True iap=True
+FAIL:too-old,dl/day<5k       darvininfo.trsx.ftotrsxmyphotoemojikeyboard Keyboard - My Photo keyboard          2,292,717 Feb 25, 2021   ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k de.humbergsoftware.keyboarddesigner        Custom Keyboard Designer                264,812 Dec 20, 2018   ads=False iap=True
+FAIL:too-old,dl/day<5k       droid.photokeypad.myphotokeyboard.glitter  Glitter Keyboard                          6,089 Jun 27, 2017   ads=True iap=False
+FAIL:too-old,dl/day<5k       droid.photokeypad.myphotokeyboard.neon3d   Neon 3D Keyboard                          7,823 Aug 3, 2017    ads=True iap=False
+FAIL:too-old,dl/day<5k       droid.photokeypad.myphotokeyboard.pinkglitter Pink Glitter Keyboard                     5,085 Nov 10, 2017   ads=True iap=False
+FAIL:no-ads,too-old          emoji.keyboard.emoticonkeyboard            Emoji Keyboard Cute Emoticons        79,453,582 Jan 8, 2015    ads=False iap=False
+FAIL:too-old                 fonts.keyboard.fontboard.stylish           Fonts Keyboard Themes & Emoji        61,790,209 Oct 21, 2021   ads=True iap=True
+FAIL:too-old,dl/day<5k       ice.wallpaper.live.keyboard.lone.wolf      Ice Wallpaper + Keyboard: Wolf        3,779,393 Jun 2, 2020    ads=True iap=False
+FAIL:date?,dl/day<5k         io.ledkeyboard.neonkeyboard.flashkeyboard  LED Neon Keyboard Theme Maker         4,032,004                ads=True iap=False
+FAIL:no-ads,too-old,dl/day<5k io.onelightapps.fonts                      Stylish Fonts & Fancy Keyboard        4,905,100 Feb 23, 2022   ads=False iap=True
+FAIL:too-old                 jack.martin.mykeyboard.myphotokeyboard     My Photo Keyboard With Themes        22,051,145 Aug 24, 2016   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k juloo.keyboard2                            Unexpected Keyboard                     832,022 Aug 16, 2015   ads=False iap=False
+FAIL:too-old                 kika.emoji.keyboard.teclados.clavier       Kika Keyboard: Custom themes         56,769,535 Jan 24, 2019   ads=True iap=True
+FAIL:too-old,dl/day<5k       kr.bitbyte.playkeyboard                    PlayKeyboard - Fonts, Emoji           3,471,444 Jan 26, 2018   ads=True iap=True
+FAIL:too-old,dl/day<5k       krk.anime.animekeyboard                    Anime Keyboard                        1,214,360 May 27, 2017   ads=True iap=False
+FAIL:too-old,dl/day<5k       me.aestheticsymbols                        Aesthetic Symbols                       302,054 Jan 19, 2023   ads=True iap=True
+FAIL:too-old,dl/day<5k       multimedia.custom.keyboard                 My Photo Keyboard                    12,606,586 Nov 7, 2015    ads=True iap=True
+FAIL:too-old                 my.photo.picture.keyboard.keyboard.theme   Photo Keyboard themes, Font          36,197,484 Nov 30, 2018   ads=True iap=True
+FAIL:no-ads,too-old,dl/day<5k org.futo.inputmethod.latin.playstore       FUTO Keyboard                           469,279 Jun 8, 2024    ads=False iap=False
+FAIL:too-old,dl/day<5k       symbolsshortcuts2.gr8ly.co.za.symbolshortcuts2 Custom Keyboard for Android             138,734 Jul 11, 2017   ads=True iap=True
+FAIL:too-old                 tomrctregt.tregt.lovephotokeyboardthemes   Love Photo Keyboard Theme 2023       30,341,172 Apr 2, 2021    ads=True iap=False

@@ -1,0 +1,28 @@
+2026-09-28 08:29:36 === bắt đầu daily_tracking ===
+2026-09-28 09:06:46 Widget / Control Panel: asolytics 61/61 pkg OK
+2026-09-28 09:06:46 Widget / Control Panel: dream100.py -> Dream100.md: 16 PASS, 192 loại, 61 asolytics block
+Dream100.csv: +16 dòng (ngày 2026-09-28)
+2026-09-28 09:30:19 Keyboard Theme: asolytics 41/41 pkg OK
+2026-09-28 09:30:19 Keyboard Theme: dream100.py -> Dream100.md: 12 PASS, 171 loại, 41 asolytics block
+Dream100.csv: +12 dòng (ngày 2026-09-28)
+2026-09-28 09:32:07 Sticker/Quote/Ringtone Maker: asolytics 3/3 pkg OK
+2026-09-28 09:32:07 Sticker/Quote/Ringtone Maker: dream100.py -> Dream100.md: 1 PASS, 44 loại, 3 asolytics block
+Dream100.csv: +1 dòng (ngày 2026-09-28)
+2026-09-28 09:34:18 Wallpaper/Coloring/Collage/GIF Maker: asolytics 4/4 pkg OK
+2026-09-28 09:34:18 Wallpaper/Coloring/Collage/GIF Maker: dream100.py -> Dream100.md: 2 PASS, 41 loại, 4 asolytics block
+Dream100.csv: +2 dòng (ngày 2026-09-28)
+2026-09-28 09:35:24 Font/Icon Pack/Video Status Maker: asolytics 2/2 pkg OK
+2026-09-28 09:35:24 Font/Icon Pack/Video Status Maker: dream100.py -> Dream100.md: 2 PASS, 43 loại, 2 asolytics block
+Dream100.csv: +2 dòng (ngày 2026-09-28)
+2026-09-28 09:35:24 push_tracking.py -> Traceback (most recent call last):
+  File "D:\app-scouting\push_tracking.py", line 48, in <module>
+    values.append([apps[p], p, delta(p), *(cell.get((p, d), "") for d in dates)])
+                               ~~~~~^^^
+  File "D:\app-scouting\push_tracking.py", line 42, in delta
+    vals = [cell[(pkg, d)] for d in dates if cell.get((pkg, d)) != ""]
+            ~~~~^^^^^^^^^^
+KeyError: ('easycontrol.controlcenter.controlpanel.simple', '2026-09-23')
+2026-09-28 09:35:28 push_merged.py -> OK — 33 app
+https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit
+2026-09-28 09:35:28 === xong ===
+
