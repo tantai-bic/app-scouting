@@ -62,7 +62,13 @@ app-scouting/
 |---|---|
 | `Dream100` | `push_merged.py`: gộp mọi app PASS của các ngách |
 | `Tracking` | `push_tracking.py`: mỗi app một dòng, mỗi ngày một cột Lifetime installs, kèm cột Δ hôm nay |
-| `Dashboard`, `Dashboard Genre` | `push_dashboard.py`: tăng trưởng theo ngách và theo genre |
+| `Tracking Genre` | `push_tracking.py`: mỗi genre một dòng, mỗi ngày một cột = installs **tăng/ngày** so với lần chạy trước |
+| `Tracking Category` | `push_tracking.py`: như trên, nhưng tách theo category con của Personalization / Photography / Casual |
+| `Dashboard`, `Dashboard Genre`, `Dashboard Category` | `push_dashboard.py`: tăng trưởng + chart theo ngách / genre / category con |
+
+**Category con:** Play Store không có cấp dưới genre, nên category con được phân loại theo **từ khoá trong tên app** (`SUBCATEGORIES` trong `scripts/common.py`). Tên app không khớp từ khoá nào thì dò theo tên ngách; vẫn không khớp thì xếp vào "Khác". Khi thấy app bị xếp sai, thêm từ khoá hoặc đổi thứ tự ở đó (khớp đầu tiên thắng). Muốn đi sâu thêm genre khác thì thêm vào `FOCUS_GENRES`.
+
+Giá trị tăng/ngày chỉ cộng các app có mặt ở **cả 2** lần chạy, rồi chia cho số ngày giữa 2 lần chạy. Nhờ vậy số không bị nhảy khi tập app PASS thay đổi.
 
 Cả ba script đều **ghi đè toàn bộ tab** mỗi lần chạy. Sửa tay trên Sheet sẽ mất ở lần chạy sau. Mọi script `push_*.py` đều có `--dry-run` để xem trước dữ liệu mà không gọi Google.
 

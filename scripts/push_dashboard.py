@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""2 tab dashboard tăng trưởng, dựa trên số app + realInstalls:
-  'Dashboard'       — nhóm theo ngách scouting
-  'Dashboard Genre' — nhóm theo genre Play Store
+"""3 tab dashboard tăng trưởng, dựa trên số app + realInstalls:
+  'Dashboard'          — nhóm theo ngách scouting
+  'Dashboard Genre'    — nhóm theo genre Play Store
+  'Dashboard Category' — category con của FOCUS_GENRES (common.subcategory)
 
 - Số app quét / PASS: từ verify_*.json (trạng thái hiện tại, 1 pkg đếm 1 lần).
 - Tăng/ngày: từ lịch sử Dream100.csv. Mỗi kỳ (2 lần chạy liên tiếp) chỉ cộng
@@ -12,15 +13,17 @@ Xoá + tạo lại tab mỗi lần chạy (để xoá chart cũ).
 Usage: python scripts/push_dashboard.py [--dry-run]
 """
 import csv, datetime, json, sys
-from common import DATA, DREAM_CSV, NICHES, SHEET_URL, SID, sheets
+from common import DATA, DREAM_CSV, FOCUS_GENRES, NICHES, SHEET_URL, SID, sheets, subcategory
 
-apps = {}  # pkg -> {"niche", "genre", "pass"}; pkg nằm ở nhiều ngách -> ngách đầu tiên thắng
+apps = {}  # pkg -> {"niche", "genre", "category", "pass"}; pkg nằm ở nhiều ngách -> ngách đầu tiên thắng
 for vf, _, label in NICHES:
     if (DATA / vf).exists():
         for a in json.load(open(DATA / vf, encoding="utf-8")):
             if "error" not in a:
-                apps.setdefault(a["pkg"], {"niche": label, "genre": a.get("genre") or "?",
-                                           "pass": a.get("verdict") == "PASS"})
+                genre = a.get("genre") or "?"
+                apps.setdefault(a["pkg"], {"niche": label, "genre": genre, "pass": a.get("verdict") == "PASS",
+                    # None = genre ngoài FOCUS_GENRES -> không vào tab Category
+                    "category": f"{genre} › {subcategory(a.get('title'), label)}" if genre in FOCUS_GENRES else None})
 
 inst = {}  # (date, pkg) -> installs, lần chạy cuối trong ngày thắng
 with open(DREAM_CSV, encoding="utf-8", newline="") as f:
@@ -45,6 +48,8 @@ def build_values(key, name):
 
     scanned, passed = {}, {}
     for a in apps.values():
+        if a[key] is None:
+            continue
         scanned[a[key]] = scanned.get(a[key], 0) + 1
         passed[a[key]] = passed.get(a[key], 0) + a["pass"]
     labels = [l for _, _, l in NICHES if l in scanned] if key == "niche" else \
@@ -72,7 +77,8 @@ def build_values(key, name):
     return values, {"n": len(labels), "m": len(tracked), "s1": 3, "s2": s2, "s3": s3, "end": len(values)}
 
 
-TABS = [("Dashboard", "niche", "Ngách"), ("Dashboard Genre", "genre", "Genre")]
+TABS = [("Dashboard", "niche", "Ngách"), ("Dashboard Genre", "genre", "Genre"),
+        ("Dashboard Category", "category", "Category")]
 built = [(t, *build_values(k, n)) for t, k, n in TABS]
 
 if "--dry-run" in sys.argv:

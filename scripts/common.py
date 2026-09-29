@@ -26,6 +26,37 @@ NICHES = [
     ("verify_content3.json", "asolytics_content3.txt", "Font/Icon Pack/Video Status Maker"),
 ]
 
+# Genre Play Store được đi sâu theo category con (tab Tracking Category / Dashboard Category)
+FOCUS_GENRES = ("Personalization", "Photography", "Casual")
+
+# Play Store không có category con -> phân loại theo từ khoá trong tên app, khớp đầu tiên thắng
+# (thứ tự quan trọng: "Emoji Font Keyboard" phải vào Keyboard trước Font).
+# ponytail: heuristic theo title; app bị xếp sai thì thêm/đổi thứ tự từ khoá ở đây.
+SUBCATEGORIES = [
+    ("Keyboard", ("keyboard",)),
+    ("Control Center", ("control", "panel")),
+    ("Lock Screen", ("lock screen", "lockscreen")),
+    ("Battery / Charging", ("battery", "charging")),
+    ("Sticker", ("sticker",)),
+    ("Coloring", ("color by", "coloring", "paint by")),
+    ("Video / Status Maker", ("video", "status")),
+    ("Theme Kit (Icons & Widgets)", ("widget", "icon", "launcher")),
+    ("Wallpaper", ("wallpaper",)),
+    ("Font", ("font",)),
+    ("Ringtone", ("ringtone",)),
+    ("Collage / Photo Editor", ("collage", "photo")),
+]
+
+
+def subcategory(title, niche=""):
+    """Khớp từ khoá theo tên app trước, không có thì theo tên ngách scouting, cuối cùng 'Khác'."""
+    for text in ((title or "").lower(), niche.lower()):
+        for name, kws in SUBCATEGORIES:
+            if any(k in text for k in kws):
+                return name
+    return "Khác"
+
+
 # asolytics in tiếng Ukraina: "Середня кількість завантажень на добу: від X до Y"
 # (= download trung bình/ngày: từ X đến Y). Thiếu dòng này = asolytics hỏng dù exit 0.
 ASO_MARKER = "Середня кількість завантажень на добу"
