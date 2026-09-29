@@ -138,7 +138,7 @@
   "ads": true,
   "iap": true,
   "score": 4.75,
-  "ratings": 24605,
+  "ratings": 24602,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -170,7 +170,7 @@
   "ads": true,
   "iap": true,
   "score": 4.589041,
-  "ratings": 1096,
+  "ratings": 1095,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -185,8 +185,8 @@
   "dl_per_day_rough": 36039,
   "ads": true,
   "iap": true,
-  "score": 4.5826874,
-  "ratings": 299008,
+  "score": 4.5784698,
+  "ratings": 298940,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -218,7 +218,7 @@
   "ads": true,
   "iap": true,
   "score": 4.857143,
-  "ratings": 612,
+  "ratings": 609,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -282,7 +282,7 @@
   "ads": true,
   "iap": true,
   "score": 4.644809,
-  "ratings": 48795,
+  "ratings": 48796,
   "genre": "Entertainment",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -362,7 +362,7 @@
   "ads": true,
   "iap": false,
   "score": 4.4545455,
-  "ratings": 283,
+  "ratings": 282,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -378,7 +378,7 @@
   "ads": true,
   "iap": false,
   "score": 4.6,
-  "ratings": 129,
+  "ratings": 127,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -441,8 +441,8 @@
   "dl_per_day_rough": 16890,
   "ads": true,
   "iap": true,
-  "score": 4.41,
-  "ratings": 6837,
+  "score": 4.4215684,
+  "ratings": 6831,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -457,8 +457,8 @@
   "dl_per_day_rough": 491,
   "ads": true,
   "iap": true,
-  "score": 4.5742574,
-  "ratings": 1076,
+  "score": 4.57,
+  "ratings": 1075,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -505,8 +505,8 @@
   "dl_per_day_rough": 20519,
   "ads": true,
   "iap": true,
-  "score": 4.2444444,
-  "ratings": 19018,
+  "score": 4.235955,
+  "ratings": 19011,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -522,7 +522,7 @@
   "ads": true,
   "iap": false,
   "score": 4.03,
-  "ratings": 877,
+  "ratings": 876,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -537,8 +537,8 @@
   "dl_per_day_rough": 12624,
   "ads": true,
   "iap": false,
-  "score": 4.406504,
-  "ratings": 14007,
+  "score": 4.383333,
+  "ratings": 14001,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -553,8 +553,8 @@
   "dl_per_day_rough": 4091,
   "ads": true,
   "iap": true,
-  "score": 4.133333,
-  "ratings": 1485,
+  "score": 4.1216216,
+  "ratings": 1483,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -777,8 +777,8 @@
   "dl_per_day_rough": 14328,
   "ads": true,
   "iap": true,
-  "score": 4.5339804,
-  "ratings": 15758,
+  "score": 4.5288463,
+  "ratings": 15749,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -826,7 +826,7 @@
   "ads": true,
   "iap": true,
   "score": 4.4220185,
-  "ratings": 60633,
+  "ratings": 60679,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -858,7 +858,7 @@
   "ads": true,
   "iap": true,
   "score": 4.645299,
-  "ratings": 31573,
+  "ratings": 31566,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -1226,7 +1226,7 @@
   "ads": true,
   "iap": false,
   "score": 4.7659574,
-  "ratings": 2952,
+  "ratings": 2944,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -1610,7 +1610,7 @@
   "ads": true,
   "iap": false,
   "score": 4,
-  "ratings": 164,
+  "ratings": 163,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -1839,7 +1839,7 @@
   "ads": true,
   "iap": false,
   "score": 4.5869565,
-  "ratings": 591,
+  "ratings": 585,
   "genre": "Tools",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -1919,7 +1919,7 @@
   "ads": true,
   "iap": false,
   "score": 4.869565,
-  "ratings": 1335,
+  "ratings": 1314,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -2031,7 +2031,7 @@
   "ads": true,
   "iap": true,
   "score": 4.0833335,
-  "ratings": 630,
+  "ratings": 629,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -2239,7 +2239,7 @@
   "ads": true,
   "iap": true,
   "score": 4.9166665,
-  "ratings": 141,
+  "ratings": 143,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -2367,7 +2367,7 @@
   "ads": true,
   "iap": true,
   "score": 4.45,
-  "ratings": 5607,
+  "ratings": 5602,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -2574,8 +2574,8 @@
   "dl_per_day_rough": 1767,
   "ads": true,
   "iap": true,
-  "score": 4.1973686,
-  "ratings": 618,
+  "score": 4.1866665,
+  "ratings": 615,
   "genre": "Communication",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"

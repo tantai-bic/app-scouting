@@ -106,7 +106,7 @@
   "ads": true,
   "iap": true,
   "score": 4.519608,
-  "ratings": 31351,
+  "ratings": 31346,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -393,8 +393,8 @@
   "dl_per_day_rough": 21867,
   "ads": true,
   "iap": true,
-  "score": 4.5384617,
-  "ratings": 22289,
+  "score": 4.5404253,
+  "ratings": 22291,
   "genre": "Casual",
   "big_dev": false,
   "verdict": "PASS"

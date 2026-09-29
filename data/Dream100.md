@@ -6,8 +6,8 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 
 | App | Package | Dev | Phát hành | Lifetime installs | DL/ngày (TB vòng đời) | DL/ngày (asolytics) | Ads | IAP | Rating | Cùng network |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Video Status Maker: Playvo](https://play.google.com/store/apps/details?id=instagramstory.maker.playvo) | `instagramstory.maker.playvo` | AI Dreamweaver | Feb 11, 2026 | 16,376,537 | 71,202 | 43,403 – 217,017 | ✅ | ✅ | 4.2 (19,456) | — |
-| [Status Video Maker: Stagefy](https://play.google.com/store/apps/details?id=video.filter.stagefy) | `video.filter.stagefy` | Mivo studio | Feb 25, 2026 | 3,321,091 | 15,375 | 4,621 – 23,105 | ✅ | ✅ | 0 (0) | — |
+| [Video Status Maker: Playvo](https://play.google.com/store/apps/details?id=instagramstory.maker.playvo) | `instagramstory.maker.playvo` | AI Dreamweaver | Feb 11, 2026 | 16,376,537 | 71,202 | 43,435 – 217,177 | ✅ | ✅ | 4.2 (19,450) | — |
+| [Status Video Maker: Stagefy](https://play.google.com/store/apps/details?id=video.filter.stagefy) | `video.filter.stagefy` | Mivo studio | Feb 25, 2026 | 3,321,091 | 15,375 | 4,624 – 23,123 | ✅ | ✅ | 0 (0) | — |
 
 ## Bị loại
 
@@ -67,7 +67,7 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 [32mНазва додатка: Video Status Maker: Playvo[37m
 Загальна кількість відгуків: 19300.0
 Загальна кількість завантажень: від 10000001 до 50000000
-Середня кількість завантажень на добу: від 43403 до 217017
+Середня кількість завантажень на добу: від 43435 до 217177
 Середня кількість оцінок на добу: 83
 ```
 </details>
@@ -80,7 +80,7 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 [32mНазва додатка: Status Video Maker: Stagefy[37m
 Загальна кількість відгуків: 22
 Загальна кількість завантажень: від 1000001 до 5000000
-Середня кількість завантажень на добу: від 4621 до 23105
+Середня кількість завантажень на добу: від 4624 до 23123
 Середня кількість оцінок на добу: 0
 ```
 </details>
