@@ -79,6 +79,7 @@ Cả ba script đều **ghi đè toàn bộ tab** mỗi lần chạy. Sửa tay 
    gh repo clone tantai-bic/app-scouting D:\app-scouting
    cd D:\app-scouting
    pip install -r requirements.txt
+   pip install --no-deps -r requirements-asolytics.txt   # asolytics ghim numpy cũ, không cài deps của nó
    ```
 4. Kiểm tra:
    ```powershell

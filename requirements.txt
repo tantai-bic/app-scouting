@@ -2,5 +2,11 @@ google-play-scraper==1.2.7
 google-api-python-client==2.198.0
 google-auth==2.56.2
 google-auth-oauthlib==1.4.1
-requests
-asolytics==1.3.1
+requests==2.34.2
+# runtime deps của asolytics — asolytics tự cài bằng --no-deps (xem requirements-asolytics.txt)
+selenium==4.47.0
+webdriver-manager==4.1.2
+colorama==0.4.6
+prettytable==3.18.0
+langdetect==1.0.9
+yake==0.7.3
