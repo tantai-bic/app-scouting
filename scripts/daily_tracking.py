@@ -17,9 +17,10 @@ from verify import check, verdict as compute_verdict
 
 SCRIPTS = ROOT / "scripts"
 LOG = LOGS / "daily_tracking.log"
-LAST_RUN = ROOT / ".daily_tracking_last_run"
+LAST_RUN = LOGS / ".daily_tracking_last_run"  # theo LOGS_DIR -> chạy test không chặn lần chạy thật
 TODAY = datetime.date.today().isoformat()
 ERRORS = []  # lỗi nghiêm trọng -> exit 1 ở cuối
+LOGS.mkdir(parents=True, exist_ok=True)
 
 def log(msg):
     line = f"{datetime.datetime.now():%Y-%m-%d %H:%M:%S} {msg}"

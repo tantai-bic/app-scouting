@@ -4,12 +4,13 @@ import os, pathlib, re, subprocess, sys
 sys.stdout.reconfigure(encoding="utf-8")  # ponytail: Windows console mặc định cp1252, vỡ tiếng Việt
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-DATA = ROOT / "data"
-LOGS = ROOT / "logs"
+# DATA_DIR / LOGS_DIR / SHEET_ID: override khi chạy test (xem .github/workflows/test-tracking.yml)
+DATA = pathlib.Path(os.environ.get("DATA_DIR") or ROOT / "data")
+LOGS = pathlib.Path(os.environ.get("LOGS_DIR") or ROOT / "logs")
 TOKEN = ROOT / "token.json"          # bí mật, không commit (xem README mục 2.2)
 DREAM_CSV = DATA / "Dream100.csv"    # lịch sử 1 dòng/app/ngày — mọi tab tăng trưởng đọc từ đây
 
-SID = "1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw"
+SID = os.environ.get("SHEET_ID") or "1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw"
 SHEET_URL = f"https://docs.google.com/spreadsheets/d/{SID}/edit"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets",
           "https://www.googleapis.com/auth/drive.file"]

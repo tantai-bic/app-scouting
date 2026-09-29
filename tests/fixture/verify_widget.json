@@ -1,0 +1,18 @@
+[
+ {
+  "pkg": "com.controlapp.custompanel.app",
+  "title": "Smart Control Panel Android",
+  "dev": "Techvio",
+  "released": "Aug 11, 2026",
+  "age_days": 49,
+  "realInstalls": 539700,
+  "dl_per_day_rough": 11014,
+  "ads": true,
+  "iap": false,
+  "score": null,
+  "ratings": null,
+  "genre": "Personalization",
+  "big_dev": false,
+  "verdict": "PASS"
+ }
+]

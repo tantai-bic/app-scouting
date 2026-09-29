@@ -1,0 +1,57 @@
+name: test-tracking
+
+# Chạy toàn bộ daily_tracking.py với 1 app (tests/fixture/) lên Sheet TEST riêng.
+# Không đụng data/ thật, không commit gì về repo, không ghi Sheet thật. Chỉ chạy tay.
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SHEET_ID: 1rJ7ZwJIwb-yCor6UWbzJXbo2GHAV51hLPoSeQ6Vuuko  # "Dream 100 — TEST (app-scouting CI)"
+      DATA_DIR: /tmp/test/data
+      LOGS_DIR: /tmp/test/logs
+      FORCE_RUN: "1"
+      GH_TOKEN: ${{ github.token }}  # webdriver_manager tải geckodriver qua GitHub API
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Ghi token.json từ secret
+        env:
+          GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
+        run: |
+          if [ -z "$GOOGLE_TOKEN_JSON" ]; then echo "::error::thiếu secret GOOGLE_TOKEN_JSON"; exit 1; fi
+          printf '%s' "$GOOGLE_TOKEN_JSON" > token.json
+
+      - name: Chuẩn bị data test (1 app)
+        run: mkdir -p "$DATA_DIR" && cp tests/fixture/* "$DATA_DIR"/
+
+      - name: Chạy daily_tracking (test)
+        run: python scripts/daily_tracking.py
+
+      # kiểm tra đầu ra thật sự có số, không chỉ exit 0
+      - name: Kiểm tra kết quả
+        run: |
+          set -e
+          grep -q "Середня кількість завантажень на добу" "$DATA_DIR/asolytics_widget.txt" \
+            || { echo "::error::asolytics không ra số download/ngày"; cat "$DATA_DIR/asolytics_widget.txt"; exit 1; }
+          test "$(wc -l < "$DATA_DIR/Dream100.csv")" -ge 2 || { echo "::error::Dream100.csv không có dòng dữ liệu"; exit 1; }
+          echo "OK — xem Sheet test: https://docs.google.com/spreadsheets/d/$SHEET_ID/edit"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-tracking-${{ github.run_id }}
+          path: |
+            /tmp/test/logs/
+            /tmp/test/data/
+          retention-days: 7

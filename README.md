@@ -27,6 +27,7 @@ app-scouting/
 │   ├── asolytics_<ngách>.txt
 │   └── ads_txt/, ads_txt_groups.json, ads_txt_report.md
 ├── logs/daily_tracking.log    # log từng lần chạy, dùng để debug
+├── tests/fixture/             # data 1 app cho workflow test-tracking
 ├── archive/                   # file cũ / trung gian, không script nào đọc nữa
 ├── requirements.txt
 ├── token.json                 # BÍ MẬT, không commit (mục 3.2)
@@ -112,7 +113,7 @@ $env:FORCE_RUN=1; python scripts/daily_tracking.py   # ép chạy lại trong c�
 
 - Chạy mất khoảng **60–70 phút**. asolytics chậm, mất khoảng 20–40 giây mỗi app.
 - Chỉ theo dõi app có verdict `PASS` hoặc `FAIL:dl/day<5k`. Các lý do FAIL khác (quá cũ, không có ads, big dev) là cố định, không bao giờ tự hết.
-- Chạy thành công thì trả exit code 0 và ghi ngày vào `.daily_tracking_last_run`. Có lỗi thì trả exit code 1, cuối log có dòng `=== xong với N lỗi: ... ===`.
+- Chạy thành công thì trả exit code 0 và ghi ngày vào `logs/.daily_tracking_last_run`. Có lỗi thì trả exit code 1, cuối log có dòng `=== xong với N lỗi: ... ===`.
 
 ### 4.2 Chạy tự động trên máy (Task Scheduler)
 
@@ -158,6 +159,30 @@ File workflow: `.github/workflows/daily-tracking.yml`. Workflow chạy lúc **08
    ```
 5. Chạy thử OK (xanh, có commit `daily tracking YYYY-MM-DD`) thì **tắt Task Scheduler trên máy** (mục 4.2). Nếu để cả hai cùng chạy, máy local sẽ ghi CSV riêng, lệch với repo.
 6. Từ giờ, trước khi sửa code hoặc chạy tay trên máy thì `git pull` để lấy dữ liệu mới nhất.
+
+#### Test trước khi chạy thật (`test-tracking`)
+
+File `.github/workflows/test-tracking.yml` **chỉ chạy tay**. Workflow chạy toàn bộ `daily_tracking.py` với **1 app** (`tests/fixture/verify_widget.json`) và ghi vào **Sheet test riêng**:
+https://docs.google.com/spreadsheets/d/1rJ7ZwJIwb-yCor6UWbzJXbo2GHAV51hLPoSeQ6Vuuko/edit
+
+- Mất khoảng 3–5 phút. Không đụng `data/` thật, không commit, không ghi Sheet thật.
+- Pass khi asolytics ra số download/ngày và `Dream100.csv` có dữ liệu. Log và data test được upload thành artifact.
+- Nên chạy mỗi khi sửa `scripts/` hoặc `requirements.txt`, hoặc khi vừa đổi token.
+
+```powershell
+gh workflow run test-tracking --repo tantai-bic/app-scouting
+gh run watch --repo tantai-bic/app-scouting
+```
+
+Chạy test ngay trên máy (cùng cơ chế; `logs/.daily_tracking_last_run` thật không bị ảnh hưởng):
+```powershell
+$env:SHEET_ID="1rJ7ZwJIwb-yCor6UWbzJXbo2GHAV51hLPoSeQ6Vuuko"; $env:DATA_DIR="$env:TEMP\scout-test\data"; $env:LOGS_DIR="$env:TEMP\scout-test\logs"; $env:FORCE_RUN=1
+New-Item -ItemType Directory -Force $env:DATA_DIR | Out-Null; Copy-Item tests\fixture\* $env:DATA_DIR
+python scripts/daily_tracking.py
+Remove-Item Env:SHEET_ID, Env:DATA_DIR, Env:LOGS_DIR, Env:FORCE_RUN   # QUAN TRỌNG: xoá biến để lần sau không ghi nhầm
+```
+
+Biến môi trường dùng để override (định nghĩa trong `scripts/common.py`): `SHEET_ID` (Sheet đích), `DATA_DIR` (thay `data/`), `LOGS_DIR` (thay `logs/`), `FORCE_RUN=1` (bỏ chặn 1 lần/ngày).
 
 #### Giới hạn
 
