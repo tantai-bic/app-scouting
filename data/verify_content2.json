@@ -105,8 +105,8 @@
   "dl_per_day_rough": 18185,
   "ads": true,
   "iap": true,
-  "score": 4.54,
-  "ratings": 31560,
+  "score": 4.58,
+  "ratings": 31570,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -314,7 +314,7 @@
   "ads": true,
   "iap": true,
   "score": 4.89,
-  "ratings": 10121,
+  "ratings": 10124,
   "genre": "Board",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"
@@ -393,8 +393,8 @@
   "dl_per_day_rough": 21975,
   "ads": true,
   "iap": true,
-  "score": 4.5845513,
-  "ratings": 22726,
+  "score": 4.584867,
+  "ratings": 22781,
   "genre": "Casual",
   "big_dev": false,
   "verdict": "PASS"
@@ -473,8 +473,8 @@
   "dl_per_day_rough": 396,
   "ads": true,
   "iap": true,
-  "score": 4.71,
-  "ratings": 1260,
+  "score": 4.712871,
+  "ratings": 1263,
   "genre": "Board",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"

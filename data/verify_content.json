@@ -106,7 +106,7 @@
   "ads": true,
   "iap": true,
   "score": 4.77451,
-  "ratings": 38330,
+  "ratings": 38410,
   "genre": "Personalization",
   "big_dev": false,
   "verdict": "PASS"
@@ -666,7 +666,7 @@
   "ads": true,
   "iap": true,
   "score": 4.6,
-  "ratings": 374,
+  "ratings": 375,
   "genre": "Music & Audio",
   "big_dev": false,
   "verdict": "FAIL:dl/day<5k"

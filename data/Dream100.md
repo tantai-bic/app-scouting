@@ -6,8 +6,8 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 
 | App | Package | Dev | Phát hành | Lifetime installs | DL/ngày (TB vòng đời) | DL/ngày (asolytics) | Ads | IAP | Rating | Cùng network |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Video Status Maker: Playvo](https://play.google.com/store/apps/details?id=instagramstory.maker.playvo) | `instagramstory.maker.playvo` | AI Dreamweaver | Feb 11, 2026 | 16,452,743 | 70,917 | 43,086 – 215,433 | ✅ | ✅ | 4.2 (19,599) | — |
-| [Status Video Maker: Stagefy](https://play.google.com/store/apps/details?id=video.filter.stagefy) | `video.filter.stagefy` | Mivo studio | Feb 25, 2026 | 3,345,418 | 15,346 | 4,585 – 22,926 | ✅ | ✅ | 0 (0) | — |
+| [Video Status Maker: Playvo](https://play.google.com/store/apps/details?id=instagramstory.maker.playvo) | `instagramstory.maker.playvo` | AI Dreamweaver | Feb 11, 2026 | 16,452,743 | 70,917 | 43,042 – 215,212 | ✅ | ✅ | 4.2 (19,624) | — |
+| [Status Video Maker: Stagefy](https://play.google.com/store/apps/details?id=video.filter.stagefy) | `video.filter.stagefy` | Mivo studio | Feb 25, 2026 | 3,345,418 | 15,346 | 4,580 – 22,901 | ✅ | ✅ | 0 (0) | — |
 
 ## Bị loại
 
@@ -67,8 +67,8 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 [32mНазва додатка: Video Status Maker: Playvo[37m
 Загальна кількість відгуків: 19500.0
 Загальна кількість завантажень: від 10000001 до 50000000
-Середня кількість завантажень на добу: від 43086 до 215433
-Середня кількість оцінок на добу: 84
+Середня кількість завантажень на добу: від 43042 до 215212
+Середня кількість оцінок на добу: 83
 ```
 </details>
 
@@ -80,7 +80,7 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 [32mНазва додатка: Status Video Maker: Stagefy[37m
 Загальна кількість відгуків: 22
 Загальна кількість завантажень: від 1000001 до 5000000
-Середня кількість завантажень на добу: від 4585 до 22926
+Середня кількість завантажень на добу: від 4580 до 22901
 Середня кількість оцінок на добу: 0
 ```
 </details>
