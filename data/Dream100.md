@@ -1,13 +1,13 @@
 # Dream 100 — ngách Font/Icon Pack/Video Status Maker
 
-_Cập nhật 2026-10-04 · nguồn: AppBrain (discover) + google-play-scraper (verify) + asolytics (download/ngày)_
+_Cập nhật 2026-10-05 · nguồn: AppBrain (discover) + google-play-scraper (verify) + asolytics (download/ngày)_
 
 Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ngày trung bình ≥ 5.000 · dev không thuộc big-company blacklist.
 
 | App | Package | Dev | Phát hành | Lifetime installs | DL/ngày (TB vòng đời) | DL/ngày (asolytics) | Ads | IAP | Rating | Cùng network |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Video Status Maker: Playvo](https://play.google.com/store/apps/details?id=instagramstory.maker.playvo) | `instagramstory.maker.playvo` | AI Dreamweaver | Feb 11, 2026 | 16,681,201 | 70,984 | 42,496 – 212,480 | ✅ | ✅ | 4.2 (19,676) | — |
-| [Status Video Maker: Stagefy](https://play.google.com/store/apps/details?id=video.filter.stagefy) | `video.filter.stagefy` | Mivo studio | Feb 25, 2026 | 3,426,429 | 15,504 | 4,518 – 22,592 | ✅ | ✅ | 0 (0) | — |
+| [Video Status Maker: Playvo](https://play.google.com/store/apps/details?id=instagramstory.maker.playvo) | `instagramstory.maker.playvo` | AI Dreamweaver | Feb 11, 2026 | 16,681,356 | 70,684 | 42,316 – 211,582 | ✅ | ✅ | 4.2 (19,699) | — |
+| [Status Video Maker: Stagefy](https://play.google.com/store/apps/details?id=video.filter.stagefy) | `video.filter.stagefy` | Mivo studio | Feb 25, 2026 | 3,426,478 | 15,435 | 4,498 – 22,490 | ✅ | ✅ | 0 (0) | — |
 
 ## Bị loại
 
@@ -67,8 +67,8 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 [32mНазва додатка: Video Status Maker: Playvo[37m
 Загальна кількість відгуків: 19600.0
 Загальна кількість завантажень: від 10000001 до 50000000
-Середня кількість завантажень на добу: від 42496 до 212480
-Середня кількість оцінок на добу: 83
+Середня кількість завантажень на добу: від 42316 до 211582
+Середня кількість оцінок на добу: 82
 ```
 </details>
 
@@ -80,7 +80,7 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 [32mНазва додатка: Status Video Maker: Stagefy[37m
 Загальна кількість відгуків: 22
 Загальна кількість завантажень: від 1000001 до 5000000
-Середня кількість завантажень на добу: від 4518 до 22592
+Середня кількість завантажень на добу: від 4498 до 22490
 Середня кількість оцінок на добу: 0
 ```
 </details>
