@@ -10,6 +10,18 @@ LOGS = pathlib.Path(os.environ.get("LOGS_DIR") or ROOT / "logs")
 TOKEN = ROOT / "token.json"          # bí mật, không commit (xem README mục 2.2)
 DREAM_CSV = DATA / "Dream100.csv"    # lịch sử 1 dòng/app/ngày — mọi tab tăng trưởng đọc từ đây
 
+
+
+def logged_pkgs():
+    """Package đã từng có dòng trong Dream100.csv -> tiếp tục theo dõi dù sau đó FAIL
+    (vd DL/ngày TB vòng đời tụt dưới 5k chỉ vì app già thêm), biết đâu lại đi lên."""
+    import csv
+    if not DREAM_CSV.exists():
+        return set()
+    with DREAM_CSV.open(encoding="utf-8", newline="") as f:
+        return {r["Package"] for r in csv.DictReader(f)}
+
+
 SID = os.environ.get("SHEET_ID") or "1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw"
 SHEET_URL = f"https://docs.google.com/spreadsheets/d/{SID}/edit"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets",
@@ -24,6 +36,7 @@ NICHES = [
     ("verify_content.json", "asolytics_content.txt", "Sticker/Quote/Ringtone Maker"),
     ("verify_content2.json", "asolytics_content2.txt", "Wallpaper/Coloring/Collage/GIF Maker"),
     ("verify_content3.json", "asolytics_content3.txt", "Font/Icon Pack/Video Status Maker"),
+    ("verify_coloring.json", "asolytics_coloring.txt", "Coloring / Color by Number"),
 ]
 
 # Genre Play Store được đi sâu theo category con (tab Tracking Category / Dashboard Category)

@@ -12,7 +12,7 @@ Log: logs/daily_tracking.log (append, để xem lịch sử chạy khi không ng
 Exit code != 0 khi có bước hỏng (push lỗi, niche 0 pkg OK...) -> Actions báo đỏ.
 """
 import datetime, json, os, platform, shutil, subprocess, sys, time, traceback
-from common import ASO_MARKER, DATA, LOGS, NICHES, ROOT, TOKEN, run_asolytics
+from common import ASO_MARKER, DATA, LOGS, NICHES, ROOT, TOKEN, logged_pkgs, run_asolytics
 from verify import check, verdict as compute_verdict
 
 SCRIPTS = ROOT / "scripts"
@@ -74,8 +74,9 @@ def log_env():
 # ponytail: verdict trong verify_*.json là tĩnh (dream100.py không tính lại từ
 # asolytics) — too-old/no-ads/big-dev/date? không bao giờ tự hết FAIL theo ngày,
 # chỉ dl/day<5k mới có cơ hội đổi. Bỏ 3 nhóm kia khỏi asolytics -> giảm ~80% call.
-def _worth_tracking(a):
-    return a.get("verdict") in ("PASS", "FAIL:dl/day<5k")
+# App đã từng vào Dream100.csv thì luôn theo dõi tiếp, bất kể verdict hiện tại.
+def _worth_tracking(a, logged=frozenset()):
+    return a.get("verdict") in ("PASS", "FAIL:dl/day<5k") or a["pkg"] in logged
 
 def refresh_installs(verify_path, pkgs):
     """Re-scrape realInstalls/age/verdict qua Google Play — nếu không, Lifetime
@@ -155,8 +156,9 @@ def main():
             log(f"[bỏ qua] thiếu {verify_file}")
             continue
         log(f"--- {title} ---")
+        logged = logged_pkgs()
         pkgs = [a["pkg"] for a in json.load(open(DATA / verify_file, encoding="utf-8"))
-                if "error" not in a and _worth_tracking(a)]
+                if "error" not in a and _worth_tracking(a, logged)]
         log(f"{title}: {len(pkgs)} pkg cần theo dõi")
         refresh_installs(DATA / verify_file, pkgs)
         total, ok = refresh_asolytics(DATA / aso_file, pkgs)

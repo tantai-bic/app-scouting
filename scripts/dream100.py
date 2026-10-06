@@ -3,7 +3,7 @@ Usage: python scripts/dream100.py asolytics_<ngách>.txt --verify verify_<ngách
 Tên file tương đối so với data/.
 """
 import argparse, csv, datetime, json
-from common import DATA, DREAM_CSV, read_asolytics, dlday_range as _range
+from common import DATA, DREAM_CSV, logged_pkgs, read_asolytics, dlday_range as _range
 
 p = argparse.ArgumentParser()
 p.add_argument("aso")
@@ -81,14 +81,17 @@ CSV_HEADER = ["Ngày", "App", "Package", "Developer", "Phát hành", "Tuổi (ng
               "Lifetime installs", "DL/ngày (TB vòng đời)", "DL/ngày min (asolytics)",
               "DL/ngày max (asolytics)", "Ads", "IAP", "Rating", "Số đánh giá", "Cùng network"]
 today = datetime.date.today().isoformat()
+# CSV = lịch sử tracking: app đã từng vào Dream100 vẫn ghi tiếp dù giờ FAIL (bảng .md vẫn chỉ PASS)
+seen = logged_pkgs()
+csv_rows = rows + [a for a in apps.values() if a["pkg"] in seen and a not in rows and "error" not in a]
 with DREAM_CSV.open("a", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
     if f.tell() == 0:
         w.writerow(CSV_HEADER)
-    for a in rows:
+    for a in csv_rows:
         lo, hi = dlday_range(a["pkg"])
         w.writerow([today, a["title"], a["pkg"], a["dev"], a["released"], a["age_days"],
                     a["realInstalls"], a["dl_per_day_rough"], lo, hi,
                     "Có" if a["ads"] else "Không", "Có" if a["iap"] else "Không",
                     round(a["score"] or 0, 2), a["ratings"], network_label(a["pkg"])])
-print(f"Dream100.csv: +{len(rows)} dòng (ngày {today})")
+print(f"Dream100.csv: +{len(csv_rows)} dòng (ngày {today})")
