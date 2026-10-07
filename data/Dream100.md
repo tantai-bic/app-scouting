@@ -1,86 +1,99 @@
-# Dream 100 — ngách Font/Icon Pack/Video Status Maker
+# Dream 100 — ngách Coloring / Color by Number
 
-_Cập nhật 2026-10-06 · nguồn: AppBrain (discover) + google-play-scraper (verify) + asolytics (download/ngày)_
+_Cập nhật 2026-10-07 · nguồn: AppBrain (discover) + google-play-scraper (verify) + asolytics (download/ngày)_
 
 Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ngày trung bình ≥ 5.000 · dev không thuộc big-company blacklist.
 
 | App | Package | Dev | Phát hành | Lifetime installs | DL/ngày (TB vòng đời) | DL/ngày (asolytics) | Ads | IAP | Rating | Cùng network |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Video Status Maker: Playvo](https://play.google.com/store/apps/details?id=instagramstory.maker.playvo) | `instagramstory.maker.playvo` | AI Dreamweaver | Feb 11, 2026 | 16,682,758 | 70,391 | 42,133 – 210,665 | ✅ | ✅ | 4.2 (19,770) | — |
-| [Status Video Maker: Stagefy](https://play.google.com/store/apps/details?id=video.filter.stagefy) | `video.filter.stagefy` | Mivo studio | Feb 25, 2026 | 3,426,967 | 15,368 | 4,477 – 22,387 | ✅ | ✅ | 0 (0) | — |
+| [Jewel Coloring](https://play.google.com/store/apps/details?id=color.number.paint.pixle.art.sort.jigsaw) | `color.number.paint.pixle.art.sort.jigsaw` | TaTa Game Technology Limited | Feb 25, 2026 | 13,284,225 | 59,305 | 44,577 – 222,888 | ✅ | — | 4.7 (196,989) | — |
+| [Paint by Number: Coloring Game](https://play.google.com/store/apps/details?id=com.oakever.paintbynumber) | `com.oakever.paintbynumber` | Oakever Games | Mar 27, 2026 | 8,992,035 | 46,351 | 25,729 – 51,459 | ✅ | ✅ | 4.8 (15,547) | — |
+| [Brilliant Sort™ Diamond Puzzle](https://play.google.com/store/apps/details?id=com.belkagames.ds) | `com.belkagames.ds` | BELKA GAMES | Jun 5, 2025 | 3,950,542 | 8,079 | 2,043 – 10,218 | ✅ | ✅ | 4.5 (38,293) | — |
+| [Color Aura: Paint by number](https://play.google.com/store/apps/details?id=com.oakever.coloraura) | `com.oakever.coloraura` | Oakever Games | Nov 21, 2025 | 3,064,806 | 9,578 | 3,121 – 15,608 | ✅ | ✅ | 4.5 (6,702) | — |
+| [Colorever: Gem Art Puzzle](https://play.google.com/store/apps/details?id=com.oakever.gemcoloring) | `com.oakever.gemcoloring` | Oakever Games | Apr 15, 2026 | 1,351,110 | 7,721 | 5,703 – 28,517 | ✅ | ✅ | 4.7 (8,552) | — |
+| [Diamond Color Sort - Gems Art](https://play.google.com/store/apps/details?id=com.nimblemind.gems.art.coloring.puzzle) | `com.nimblemind.gems.art.coloring.puzzle` | NimbleMind Network Inc. | Jul 2, 2026 | 787,079 | 8,114 | 5,137 – 10,274 | ✅ | ✅ | 4.8 (7,167) | — |
 
 ## Bị loại
 
 | App | Package | Lý do |
 |---|---|---|
-| lettering Tattoo - Font Design | `com.twocreativedesigners.tattify` | FAIL:no-ads,dl/day<5k |
-| Simply Adaptive Icon Pack | `com.italiano.simplyadaptive` | FAIL:no-ads,dl/day<5k |
-| OneYou Themed Icon Pack | `com.pashapuma.oneyou.themed` | FAIL:no-ads,dl/day<5k |
-| Fonts Art - Keyboard Fonts | `cool.fonts.symbol.keyboard.custom.fancy.text.editor` | FAIL:no-ads,too-old |
-| Fontmaker - Font Keyboard App | `com.takeofflabs.fontmaker` | FAIL:no-ads,too-old,dl/day<5k |
-| Stylish Text Maker: Cool Fonts | `com.uprightgeeks.stylishtextmaker` | FAIL:no-ads,too-old,dl/day<5k |
-| Add Text & Story Font - Hitext | `com.softeam.fontly` | FAIL:no-ads,too-old,dl/day<5k |
-| Stylish Text - Letter Fonts | `com.wssc.stylishtext.pro` | FAIL:no-ads,too-old,dl/day<5k |
-| Stylish Fonts & Fancy Keyboard | `io.onelightapps.fonts` | FAIL:no-ads,too-old,dl/day<5k |
-| Font Style AI: text & emoji | `com.ayush.fancyfonts` | FAIL:no-ads,too-old,dl/day<5k |
-| Icon Pack Studio | `ginlemon.iconpackstudio` | FAIL:no-ads,too-old,dl/day<5k |
-| TouchWiz - Icon Pack | `com.dtaf.alonso.icon6` | FAIL:no-ads,too-old,dl/day<5k |
-| Icon Packer | `cn.ommiao.iconpacker` | FAIL:no-ads,too-old,dl/day<5k |
-| Nova Icon Pack | `cs14.pixelperfect.iconpack.nova` | FAIL:no-ads,too-old,dl/day<5k |
-| Verticons Icon Pack | `com.spaceman.verticonspro` | FAIL:no-ads,too-old,dl/day<5k |
-| LineX Icon Pack | `com.jndapp.line.x.iconpack` | FAIL:no-ads,too-old,dl/day<5k |
-| Vera Outline Icon Pack | `cs14.pixelperfect.iconpack.veraoutline` | FAIL:no-ads,too-old,dl/day<5k |
-| Outline Icons - Icon Pack | `uk.co.randomvector.outline` | FAIL:no-ads,too-old,dl/day<5k |
-| Simplit Icon Pack | `com.edzondm.simplit` | FAIL:no-ads,too-old,dl/day<5k |
-| Retro Mode - Icon Pack (Neon) | `app.moertel.retro.iconpack.neon` | FAIL:no-ads,too-old,dl/day<5k |
-| Perfect Icon Pack | `perfect.icon.pack.ddt` | FAIL:no-ads,too-old,dl/day<5k |
-| Vera Outline Black: Icon Pack | `cs14.pixelperfect.iconpack.veraoutlineblack` | FAIL:no-ads,too-old,dl/day<5k |
-| Fonts Keyboard Themes & Emoji | `fonts.keyboard.fontboard.stylish` | FAIL:too-old |
-| Letter Fonts - Stylish Text | `com.neupanedinesh.fonts.stylishletters` | FAIL:too-old |
-| Fonts Keyboard | `com.fontskeyboard.fonts` | FAIL:too-old |
-| ArtFonts: Stylish Text | `app.artfonts` | FAIL:too-old |
-| Font Keyboard: Cute font style | `com.fontskeyboard.fonts.stylishkeyboard` | FAIL:too-old |
-| X Icon Changer - Change Icons | `io.hexman.xiconchanger` | FAIL:too-old |
-| Vido : Video Status Maker | `com.vido.particle.ly.lyrical.status.maker` | FAIL:too-old |
-| mAst: Status Video Maker | `com.mast.status.video.edit` | FAIL:too-old |
-| Status Download - Video Saver | `com.downlood.sav.whmedia` | FAIL:too-old |
-| PureStatus: ByeBye Blur Status | `com.damtechdesigns.purepixel` | FAIL:too-old |
-| MBit Music Video Status Maker | `com.fogg.photovideomaker` | FAIL:too-old |
-| Video Editor & Maker - InShot | `com.camerasideas.instashot` | FAIL:too-old |
-| Video Maker | `videoeditor.videomaker.videoeditorforyoutube` | FAIL:too-old |
-| Video Maker With Music & Photo | `photo.music.video.maker.slideshow` | FAIL:too-old |
-| Fancy Text Generator | `com.xp.fancy.text.generator` | FAIL:too-old,dl/day<5k |
-| StoryFont for Instagram Story | `com.storyfont.android` | FAIL:too-old,dl/day<5k |
-| Video Splitter - Status Maker | `com.psma.videosplitter` | FAIL:too-old,dl/day<5k |
-| Video Status Maker - MVCut | `com.mvcut.photo.video.status.maker` | FAIL:too-old,dl/day<5k |
-| Venlow | HD Video Status Maker | `com.venlow.vertical.fullscreen.whatsapp.video.status` | FAIL:too-old,dl/day<5k |
-| Video Status Maker | `app.ns.statusmaker` | FAIL:too-old,dl/day<5k |
-| Photo Video Maker with Song | `photo.video.maker.music.slideshow` | FAIL:too-old,dl/day<5k |
 
 ## asolytics raw
 
-<details><summary><code>instagramstory.maker.playvo</code></summary>
+<details><summary><code>color.number.paint.pixle.art.sort.jigsaw</code></summary>
 
 ```
 Код країни: US
 Виконю аналіз...
-[32mНазва додатка: Video Status Maker: Playvo[37m
-Загальна кількість відгуків: 19600.0
+[32mНазва додатка: Jewel Coloring[37m
+Загальна кількість відгуків: 182000
 Загальна кількість завантажень: від 10000001 до 50000000
-Середня кількість завантажень на добу: від 42133 до 210665
-Середня кількість оцінок на добу: 82
+Середня кількість завантажень на добу: від 44577 до 222888
+Середня кількість оцінок на добу: 811
 ```
 </details>
 
-<details><summary><code>video.filter.stagefy</code></summary>
+<details><summary><code>com.belkagames.ds</code></summary>
 
 ```
 Код країни: US
 Виконю аналіз...
-[32mНазва додатка: Status Video Maker: Stagefy[37m
-Загальна кількість відгуків: 22
+[32mНазва додатка: Brilliant Sort™ Diamond Puzzle[37m
+Загальна кількість відгуків: 34200.0
 Загальна кількість завантажень: від 1000001 до 5000000
-Середня кількість завантажень на добу: від 4477 до 22387
-Середня кількість оцінок на добу: 0
+Середня кількість завантажень на добу: від 2043 до 10218
+Середня кількість оцінок на добу: 69
+```
+</details>
+
+<details><summary><code>com.nimblemind.gems.art.coloring.puzzle</code></summary>
+
+```
+Код країни: US
+Виконю аналіз...
+[32mНазва додатка: Diamond Color Sort - Gems Art[37m
+Загальна кількість відгуків: 6560.00
+Загальна кількість завантажень: від 500001 до 1000000
+Середня кількість завантажень на добу: від 5137 до 10274
+Середня кількість оцінок на добу: 67
+```
+</details>
+
+<details><summary><code>com.oakever.coloraura</code></summary>
+
+```
+Код країни: US
+Виконю аналіз...
+[32mНазва додатка: Color Aura: Paint by number[37m
+Загальна кількість відгуків: 5140.00
+Загальна кількість завантажень: від 1000001 до 5000000
+Середня кількість завантажень на добу: від 3121 до 15608
+Середня кількість оцінок на добу: 16
+```
+</details>
+
+<details><summary><code>com.oakever.gemcoloring</code></summary>
+
+```
+Код країни: US
+Виконю аналіз...
+[32mНазва додатка: Colorever: Gem Art Puzzle[37m
+Загальна кількість відгуків: 7560.00
+Загальна кількість завантажень: від 1000001 до 5000000
+Середня кількість завантажень на добу: від 5703 до 28517
+Середня кількість оцінок на добу: 43
+```
+</details>
+
+<details><summary><code>com.oakever.paintbynumber</code></summary>
+
+```
+Код країни: US
+Виконю аналіз...
+[32mНазва додатка: Paint by Number: Coloring Game[37m
+Загальна кількість відгуків: 13100.0
+Загальна кількість завантажень: від 5000001 до 10000000
+Середня кількість завантажень на добу: від 25729 до 51459
+Середня кількість оцінок на добу: 67
 ```
 </details>
