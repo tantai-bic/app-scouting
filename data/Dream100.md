@@ -1,17 +1,17 @@
 # Dream 100 — ngách Coloring / Color by Number
 
-_Cập nhật 2026-10-14 · nguồn: AppBrain (discover) + google-play-scraper (verify) + asolytics (download/ngày)_
+_Cập nhật 2026-10-15 · nguồn: AppBrain (discover) + google-play-scraper (verify) + asolytics (download/ngày)_
 
 Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ngày trung bình ≥ 5.000 · dev không thuộc big-company blacklist.
 
 | App | Package | Dev | Phát hành | Lifetime installs | DL/ngày (TB vòng đời) | DL/ngày (asolytics) | Ads | IAP | Rating | Cùng network |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Jewel Coloring](https://play.google.com/store/apps/details?id=color.number.paint.pixle.art.sort.jigsaw) | `color.number.paint.pixle.art.sort.jigsaw` | TaTa Game Technology Limited | Feb 25, 2026 | 13,572,675 | 58,756 | 43,236 – 216,183 | ✅ | — | 4.8 (202,517) | — |
-| [Paint by Number: Coloring Game](https://play.google.com/store/apps/details?id=com.oakever.paintbynumber) | `com.oakever.paintbynumber` | Oakever Games | Mar 27, 2026 | 9,671,893 | 48,119 | 24,840 – 49,680 | ✅ | ✅ | 4.8 (16,077) | — |
-| [Brilliant Sort™ Diamond Puzzle](https://play.google.com/store/apps/details?id=com.belkagames.ds) | `com.belkagames.ds` | BELKA GAMES | Jun 5, 2025 | 4,151,971 | 8,371 | 2,014 – 10,074 | ✅ | ✅ | 4.5 (39,161) | — |
-| [Color Aura: Paint by number](https://play.google.com/store/apps/details?id=com.oakever.coloraura) | `com.oakever.coloraura` | Oakever Games | Nov 21, 2025 | 3,080,456 | 9,420 | 3,055 – 15,277 | ✅ | ✅ | 4.4 (6,739) | — |
-| [Colorever: Gem Art Puzzle](https://play.google.com/store/apps/details?id=com.oakever.gemcoloring) | `com.oakever.gemcoloring` | Oakever Games | Apr 15, 2026 | 1,533,666 | 8,427 | 5,485 – 27,429 | ✅ | ✅ | 4.8 (9,237) | — |
-| [Diamond Color Sort - Gems Art](https://play.google.com/store/apps/details?id=com.nimblemind.gems.art.coloring.puzzle) | `com.nimblemind.gems.art.coloring.puzzle` | NimbleMind Network Inc. | Jul 2, 2026 | 817,994 | 7,865 | 4,794 – 9,589 | ✅ | ✅ | 4.8 (7,493) | — |
+| [Jewel Coloring](https://play.google.com/store/apps/details?id=color.number.paint.pixle.art.sort.jigsaw) | `color.number.paint.pixle.art.sort.jigsaw` | TaTa Game Technology Limited | Feb 25, 2026 | 13,602,005 | 58,629 | 43,053 – 215,265 | ✅ | — | 4.8 (203,295) | — |
+| [Paint by Number: Coloring Game](https://play.google.com/store/apps/details?id=com.oakever.paintbynumber) | `com.oakever.paintbynumber` | Oakever Games | Mar 27, 2026 | 9,787,862 | 48,455 | 24,719 – 49,438 | ✅ | ✅ | 4.7 (16,156) | — |
+| [Brilliant Sort™ Diamond Puzzle](https://play.google.com/store/apps/details?id=com.belkagames.ds) | `com.belkagames.ds` | BELKA GAMES | Jun 5, 2025 | 4,152,032 | 8,354 | 2,010 – 10,054 | ✅ | ✅ | 4.5 (39,277) | — |
+| [Color Aura: Paint by number](https://play.google.com/store/apps/details?id=com.oakever.coloraura) | `com.oakever.coloraura` | Oakever Games | Nov 21, 2025 | 3,082,033 | 9,396 | 3,046 – 15,231 | ✅ | ✅ | 4.4 (6,745) | — |
+| [Colorever: Gem Art Puzzle](https://play.google.com/store/apps/details?id=com.oakever.gemcoloring) | `com.oakever.gemcoloring` | Oakever Games | Apr 15, 2026 | 1,534,067 | 8,383 | 5,456 – 27,281 | ✅ | ✅ | 4.8 (9,340) | — |
+| [Diamond Color Sort - Gems Art](https://play.google.com/store/apps/details?id=com.nimblemind.gems.art.coloring.puzzle) | `com.nimblemind.gems.art.coloring.puzzle` | NimbleMind Network Inc. | Jul 2, 2026 | 820,714 | 7,816 | 4,749 – 9,499 | ✅ | ✅ | 4.9 (7,565) | — |
 
 ## Bị loại
 
@@ -26,10 +26,10 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 Код країни: US
 Виконю аналіз...
 [32mНазва додатка: Jewel Coloring[37m
-Загальна кількість відгуків: 187000
+Загальна кількість відгуків: 188000
 Загальна кількість завантажень: від 10000001 до 50000000
-Середня кількість завантажень на добу: від 43236 до 216183
-Середня кількість оцінок на добу: 808
+Середня кількість завантажень на добу: від 43053 до 215265
+Середня кількість оцінок на добу: 809
 ```
 </details>
 
@@ -39,9 +39,9 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 Код країни: US
 Виконю аналіз...
 [32mНазва додатка: Brilliant Sort™ Diamond Puzzle[37m
-Загальна кількість відгуків: 35000
+Загальна кількість відгуків: 35100.0
 Загальна кількість завантажень: від 1000001 до 5000000
-Середня кількість завантажень на добу: від 2014 до 10074
+Середня кількість завантажень на добу: від 2010 до 10054
 Середня кількість оцінок на добу: 70
 ```
 </details>
@@ -52,9 +52,9 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 Код країни: US
 Виконю аналіз...
 [32mНазва додатка: Diamond Color Sort - Gems Art[37m
-Загальна кількість відгуків: 6860.00
+Загальна кількість відгуків: 6930.00
 Загальна кількість завантажень: від 500001 до 1000000
-Середня кількість завантажень на добу: від 4794 до 9589
+Середня кількість завантажень на добу: від 4749 до 9499
 Середня кількість оцінок на добу: 65
 ```
 </details>
@@ -65,9 +65,9 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 Код країни: US
 Виконю аналіз...
 [32mНазва додатка: Color Aura: Paint by number[37m
-Загальна кількість відгуків: 5170.00
+Загальна кількість відгуків: 5180.00
 Загальна кількість завантажень: від 1000001 до 5000000
-Середня кількість завантажень на добу: від 3055 до 15277
+Середня кількість завантажень на добу: від 3046 до 15231
 Середня кількість оцінок на добу: 15
 ```
 </details>
@@ -78,10 +78,10 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 Код країни: US
 Виконю аналіз...
 [32mНазва додатка: Colorever: Gem Art Puzzle[37m
-Загальна кількість відгуків: 8180.00
+Загальна кількість відгуків: 8280.00
 Загальна кількість завантажень: від 1000001 до 5000000
-Середня кількість завантажень на добу: від 5485 до 27429
-Середня кількість оцінок на добу: 44
+Середня кількість завантажень на добу: від 5456 до 27281
+Середня кількість оцінок на добу: 45
 ```
 </details>
 
@@ -91,9 +91,9 @@ Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ng�
 Код країни: US
 Виконю аналіз...
 [32mНазва додатка: Paint by Number: Coloring Game[37m
-Загальна кількість відгуків: 13600.0
+Загальна кількість відгуків: 13700.0
 Загальна кількість завантажень: від 5000001 до 10000000
-Середня кількість завантажень на добу: від 24840 до 49680
+Середня кількість завантажень на добу: від 24719 до 49438
 Середня кількість оцінок на добу: 67
 ```
 </details>
