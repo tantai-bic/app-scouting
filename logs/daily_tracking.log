@@ -6966,3 +6966,297 @@ OK — tab 'Dashboard Category': 17 nhóm (9 có lịch sử), 24 kỳ — https
 2026-10-21 06:45:12 tổng thời gian: 55.8 phút
 2026-10-21 06:45:12 === xong ===
 
+2026-10-22 05:51:56 === bắt đầu daily_tracking ===
+2026-10-22 05:51:56 [env] host=runnervm8k3b6 os=Linux-6.17.0-1022-azure-x86_64-with-glibc2.39 python=3.14.8
+2026-10-22 05:51:56 [env] utc_now=2026-10-22 05:51:56 TODAY(local)=2026-10-22
+2026-10-22 05:51:56 [env] github event=schedule run_id=39730427734 attempt=1 sha=2debb97
+2026-10-22 05:51:58 [env] firefox=Mozilla Firefox 157.0
+2026-10-22 05:51:58 [env] geckodriver=geckodriver 0.37.1 (300705c65d1b 2026-07-17 09:25 +0000)
+2026-10-22 05:51:58 [env] asolytics=có
+2026-10-22 05:51:58 [env] token.json: account=? expiry=2026-09-18T04:54:04Z có refresh_token=True
+2026-10-22 05:51:58 --- Widget / Control Panel ---
+2026-10-22 05:51:58 Widget / Control Panel: 60 pkg cần theo dõi
+2026-10-22 05:51:58   [installs] com.dongbasiki.easycontrol.controlpanel.os (0.3s): 2230419 -> 2230419 verdict PASS -> PASS
+2026-10-22 05:51:59   [installs] easycontrol.controlcenter.controlpanel.simple (0.2s): 14333182 -> 14348537 verdict PASS -> PASS
+2026-10-22 05:51:59   [installs] com.control.widget.custom.panel.wallpaper.pack (0.2s): 11619906 -> 11628279 verdict PASS -> PASS
+2026-10-22 05:51:59   [installs] com.ivilamobie.controlcenter.handy (0.2s): 128630 -> 128630 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:51:59   [installs] com.stormvortex.theme.control.panel (0.2s): 20414 -> 20450 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:00   [installs] leva.controlcenterios.notificationcenter (0.2s): 1673638 -> 1673638 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:00   [installs] easypanel.controlpanel.controlwidget.theme.easycontrol (0.3s): 617122 -> 625203 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:00   [installs] com.ioscontrol.themed.control.center.smart (0.2s): 28890584 -> 28949658 verdict PASS -> PASS
+2026-10-22 05:52:00   [installs] os.control.center.status.navigation (0.3s): 285050 -> 285526 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:01   [installs] control.center.ioscontrol.micontrol.controlcenter (0.2s): 98355 -> 98355 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:01   [installs] com.widgets.themed.control.center (0.2s): 162870 -> 162870 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:01   [installs] widget.themes.icon.controller.app (0.2s): 44361 -> 44361 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:01   [installs] com.tools.controlcenter.max.tool.easy (0.3s): 442466 -> 442750 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:02   [installs] com.icontrol.easy.widgets.themes (0.2s): 42747721 -> 42909140 verdict PASS -> PASS
+2026-10-22 05:52:02   [installs] com.zenpanel.control.widget.theme (0.2s): 208842 -> 209755 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:02   [installs] com.control.widget.theme.panel (0.2s): 81415 -> 83304 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:02   [installs] com.wico.control.panel.theme.custom.center.setting (0.2s): 389458 -> 389496 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:02   [installs] com.quickios.controlcenter (0.3s): 236853 -> 239585 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:03   [installs] com.control.center.ios.tool (0.2s): 34746 -> 35099 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:03   [installs] com.mahmoudzadah.glassifywidgets (0.2s): 1022063 -> 1055254 verdict PASS -> PASS
+2026-10-22 05:52:03   [installs] ac.themes.wallpapers.widgets (0.2s): 1626024 -> 1646334 verdict PASS -> PASS
+2026-10-22 05:52:03   [installs] com.icons.widgets.control.center.pink.black.themely (0.2s): 13782778 -> 13801670 verdict PASS -> PASS
+2026-10-22 05:52:04   [installs] com.flyer.theme (0.2s): 2606482 -> 2621189 verdict PASS -> PASS
+2026-10-22 05:52:04   [installs] com.themix.theme.widget.control (0.2s): 1501201 -> 1501201 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:04   [installs] com.widget.icon.theme (0.2s): 19939498 -> 19939498 verdict PASS -> PASS
+2026-10-22 05:52:04   [installs] com.themeflow.widgets.themes.appicon.wallpaper (0.2s): 462033 -> 483913 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:04   [installs] com.dt.control.widgets.themes.panel (0.2s): 27410 -> 27690 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:05   [installs] com.themed.widget.control.custom.panel.wallpaper (0.2s): 3868 -> 3875 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:05   [installs] com.lumi.control.center.widget.themes (0.2s): 65 -> 70 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:05   [installs] com.lutech.control.widget (0.3s): 202910 -> 202935 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:05   [installs] com.center.control.quick.settings.panel (0.2s): 539136 -> 540678 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:06   [installs] com.controlo.easy.controlcenter.widget.theme (0.2s): 245596 -> 266722 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:06   [installs] com.widget.cute.theme.diy.icon.kawaii.wallpaper.aesthetic.custom.homescreen (0.2s): 22453 -> 22458 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:06   [installs] com.nsapps.controlpanel (0.2s): 109196 -> 109978 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:06   [installs] com.widgetvibes.iwidgy (0.2s): 5521 -> 6012 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:07   [installs] com.glassywidgets.app (0.5s): 137716 -> 141259 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:07   [installs] com.jndapp.minimal.widgets (0.2s): 612398 -> 636908 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:07   [installs] com.asianmobile.launcheros (0.2s): 11157428 -> 11179087 verdict PASS -> PASS
+2026-10-22 05:52:07   [installs] com.widget.aestheticwidgets (0.2s): 77503 -> 77688 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:07   [installs] studio.widgets.android (0.2s): 101598 -> 102288 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:08   [installs] com.ios.lockscreen.liquid (0.2s): 2839483 -> 2889605 verdict PASS -> PASS
+2026-10-22 05:52:08   [installs] com.themebox.icons.widgets (0.2s): 12950881 -> 12958732 verdict PASS -> PASS
+2026-10-22 05:52:08   [installs] com.iconchanger.themes.widget.controlcenter (0.2s): 319110 -> 320900 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:08   [installs] themepack.widgets.icons.wallpaper.theme.customize.aesthetic (0.2s): 209752 -> 212857 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:09   [installs] com.themes.lab.diy.widget.icon.changer (0.2s): 705974 -> 715509 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:09   [installs] com.themeshub.widgets.iconchanger (0.2s): 774043 -> 774043 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:09   [installs] com.cdt.themebox.themeiconwidget (0.2s): 5679265 -> 5693887 verdict PASS -> PASS
+2026-10-22 05:52:09   [installs] com.controlapp.custompanel.app (0.2s): 555712 -> 556650 verdict PASS -> PASS
+2026-10-22 05:52:09   [installs] com.temporal.android16.control.center (0.2s): 45918 -> 46231 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:10   [installs] com.control.center.ioscontrol (0.2s): 7747244 -> 7747327 verdict PASS -> PASS
+2026-10-22 05:52:10   [installs] lỗi scrape com.bigsoft.controlpanel.controlcenter (0.2s): App not found(404). — giữ số cũ
+2026-10-22 05:52:10   [installs] com.controlpanel.icons.widgets.panels (0.2s): 4715 -> 4715 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:10   [installs] com.nexify.controlcenter.quicksettings (0.2s): 220182 -> 220200 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:11   [installs] com.panelcontrol.contolcenter (0.2s): 577 -> 577 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:11   [installs] com.dynamic.island.dynamicisland.app (0.2s): 53410 -> 53852 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:11   [installs] tr.com.eywin.dynamic.island.notch (0.2s): 1174373 -> 1248810 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:11   [installs] com.dynamic.island.dynamicisland.notch (0.2s): 136152 -> 139405 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:11   [installs] com.cute.emoji.battery.icon.widget.customize.emojisticker.statusbar (0.2s): 15140673 -> 15140673 verdict PASS -> PASS
+2026-10-22 05:52:12   [installs] com.photo.widget (0.2s): 34120 -> 34120 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:12   [installs] com.hexatech.pixwidget (0.2s): 1998 -> 1998 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 05:52:12   [installs] tổng: 60 pkg, 1 lỗi, 45 đổi số, 14s
+2026-10-22 05:52:49   [asolytics] com.dongbasiki.easycontrol.controlpanel.os OK (37.1s)
+2026-10-22 05:53:13   [asolytics] easycontrol.controlcenter.controlpanel.simple OK (24.0s)
+2026-10-22 05:53:37   [asolytics] com.control.widget.custom.panel.wallpaper.pack OK (24.2s)
+2026-10-22 05:54:01   [asolytics] com.ivilamobie.controlcenter.handy OK (24.1s)
+2026-10-22 05:54:25   [asolytics] com.stormvortex.theme.control.panel OK (23.9s)
+2026-10-22 05:54:49   [asolytics] leva.controlcenterios.notificationcenter OK (24.0s)
+2026-10-22 05:55:13   [asolytics] easypanel.controlpanel.controlwidget.theme.easycontrol OK (24.0s)
+2026-10-22 05:55:37   [asolytics] com.ioscontrol.themed.control.center.smart OK (23.9s)
+2026-10-22 05:56:01   [asolytics] os.control.center.status.navigation OK (23.9s)
+2026-10-22 05:56:35   [asolytics] control.center.ioscontrol.micontrol.controlcenter OK (34.0s)
+2026-10-22 05:56:59   [asolytics] com.widgets.themed.control.center OK (23.8s)
+2026-10-22 05:57:32   [asolytics] widget.themes.icon.controller.app OK (33.7s)
+2026-10-22 05:57:57   [asolytics] com.tools.controlcenter.max.tool.easy OK (24.7s)
+2026-10-22 05:58:22   [asolytics] com.icontrol.easy.widgets.themes OK (24.4s)
+2026-10-22 05:58:40   [asolytics] com.zenpanel.control.widget.theme HỎNG rc=0 (18.7s): Код країни: US | Виконю аналіз... | [32mНазва додатка: ZenPanel: Control Widget Theme[37m | Загальна кількість відгуків: 336 | Загальна кількість завантажень: від 100001 до 500000
+2026-10-22 05:59:14   [asolytics] com.control.widget.theme.panel OK (33.8s)
+2026-10-22 05:59:38   [asolytics] com.wico.control.panel.theme.custom.center.setting OK (23.8s)
+2026-10-22 06:00:02   [asolytics] com.quickios.controlcenter OK (24.0s)
+2026-10-22 06:00:39   [asolytics] com.control.center.ios.tool OK (36.9s)
+2026-10-22 06:01:03   [asolytics] com.mahmoudzadah.glassifywidgets OK (24.0s)
+2026-10-22 06:01:27   [asolytics] ac.themes.wallpapers.widgets OK (23.9s)
+2026-10-22 06:01:51   [asolytics] com.icons.widgets.control.center.pink.black.themely OK (24.0s)
+2026-10-22 06:02:15   [asolytics] com.flyer.theme OK (23.9s)
+2026-10-22 06:02:39   [asolytics] com.themix.theme.widget.control OK (24.2s)
+2026-10-22 06:03:03   [asolytics] com.widget.icon.theme OK (24.0s)
+2026-10-22 06:03:27   [asolytics] com.themeflow.widgets.themes.appicon.wallpaper OK (24.2s)
+2026-10-22 06:04:01   [asolytics] com.dt.control.widgets.themes.panel OK (33.8s)
+2026-10-22 06:04:35   [asolytics] com.themed.widget.control.custom.panel.wallpaper OK (33.9s)
+2026-10-22 06:05:09   [asolytics] com.lumi.control.center.widget.themes OK (33.9s)
+2026-10-22 06:05:27   [asolytics] com.lutech.control.widget HỎNG rc=0 (18.6s): Код країни: US | Виконю аналіз... | [32mНазва додатка: Control Panels & Wallpapers[37m | Загальна кількість відгуків: 4560.00 | Загальна кількість завантажень: від 100001 до 500000
+2026-10-22 06:05:51   [asolytics] com.center.control.quick.settings.panel OK (24.1s)
+2026-10-22 06:06:15   [asolytics] com.controlo.easy.controlcenter.widget.theme OK (24.0s)
+2026-10-22 06:06:49   [asolytics] com.widget.cute.theme.diy.icon.kawaii.wallpaper.aesthetic.custom.homescreen OK (33.8s)
+2026-10-22 06:07:13   [asolytics] com.nsapps.controlpanel OK (24.0s)
+2026-10-22 06:07:47   [asolytics] com.widgetvibes.iwidgy OK (33.7s)
+2026-10-22 06:08:11   [asolytics] com.glassywidgets.app OK (24.0s)
+2026-10-22 06:08:35   [asolytics] com.jndapp.minimal.widgets OK (24.5s)
+2026-10-22 06:09:00   [asolytics] com.asianmobile.launcheros OK (24.6s)
+2026-10-22 06:09:25   [asolytics] com.widget.aestheticwidgets OK (24.6s)
+2026-10-22 06:09:44   [asolytics] studio.widgets.android HỎNG rc=0 (19.2s): Код країни: US | Виконю аналіз... | [32mНазва додатка: Widget Studio: Custom Widgets[37m | Загальна кількість відгуків: 554 | Загальна кількість завантажень: від 100001 до 500000
+2026-10-22 06:10:09   [asolytics] com.ios.lockscreen.liquid OK (24.8s)
+2026-10-22 06:10:33   [asolytics] com.themebox.icons.widgets OK (24.4s)
+2026-10-22 06:10:57   [asolytics] com.iconchanger.themes.widget.controlcenter OK (24.2s)
+2026-10-22 06:11:16   [asolytics] themepack.widgets.icons.wallpaper.theme.customize.aesthetic HỎNG rc=0 (19.0s): Код країни: US | Виконю аналіз... | [32mНазва додатка: ThemePack: Widgets & Icons[37m | Загальна кількість відгуків: 1420.00 | Загальна кількість завантажень: від 100001 до 500000
+2026-10-22 06:11:41   [asolytics] com.themes.lab.diy.widget.icon.changer OK (24.6s)
+2026-10-22 06:12:05   [asolytics] com.themeshub.widgets.iconchanger OK (24.5s)
+2026-10-22 06:12:30   [asolytics] com.cdt.themebox.themeiconwidget OK (24.3s)
+2026-10-22 06:13:04   [asolytics] com.controlapp.custompanel.app OK (34.2s)
+2026-10-22 06:13:28   [asolytics] com.temporal.android16.control.center OK (24.5s)
+2026-10-22 06:13:52   [asolytics] com.control.center.ioscontrol OK (24.2s)
+2026-10-22 06:14:06   [asolytics] com.bigsoft.controlpanel.controlcenter HỎNG rc=1 (13.2s): Stacktrace: | RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8 | WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:169:5 | NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:538:5 | dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:137:16
+2026-10-22 06:14:40   [asolytics] com.controlpanel.icons.widgets.panels OK (34.3s)
+2026-10-22 06:15:04   [asolytics] com.nexify.controlcenter.quicksettings OK (24.3s)
+2026-10-22 06:15:38   [asolytics] com.panelcontrol.contolcenter OK (34.1s)
+2026-10-22 06:16:03   [asolytics] com.dynamic.island.dynamicisland.app OK (24.6s)
+2026-10-22 06:16:28   [asolytics] tr.com.eywin.dynamic.island.notch OK (24.6s)
+2026-10-22 06:16:52   [asolytics] com.dynamic.island.dynamicisland.notch OK (24.6s)
+2026-10-22 06:17:17   [asolytics] com.cute.emoji.battery.icon.widget.customize.emojisticker.statusbar OK (24.7s)
+2026-10-22 06:17:41   [asolytics] com.photo.widget OK (24.5s)
+2026-10-22 06:18:16   [asolytics] com.hexatech.pixwidget OK (34.2s)
+2026-10-22 06:18:16   [asolytics] tổng: 55/60 OK, 1564s
+2026-10-22 06:18:16 Widget / Control Panel: asolytics 55/60 pkg OK
+2026-10-22 06:18:16 Widget / Control Panel: dream100.py rc=0 (0.0s) -> Dream100.md: 17 PASS, 191 loại, 60 asolytics block
+Dream100.csv: +17 dòng (ngày 2026-10-22)
+2026-10-22 06:18:16 --- Keyboard Theme ---
+2026-10-22 06:18:16 Keyboard Theme: 41 pkg cần theo dõi
+2026-10-22 06:18:16   [installs] app.emoji.keyboard (0.2s): 17613 -> 18919 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:16   [installs] com.akmobile.ledkeyboard.flash (0.2s): 1124510 -> 1130691 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:16   [installs] com.appqubit.ledkeyboard (0.2s): 1608 -> 1608 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:17   [installs] com.artkeyboard.aikeyboard.fonts.keyboard (0.2s): 3324355 -> 3324664 verdict PASS -> PASS
+2026-10-22 06:18:17   [installs] com.asianmobile.emojikeyboard (0.3s): 240625 -> 243996 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:17   [installs] com.asianmobile.fontskeyboard (0.2s): 24074803 -> 24098888 verdict PASS -> PASS
+2026-10-22 06:18:17   [installs] com.aurax.neonledkeyboard.xboard.theme (0.2s): 102484 -> 102484 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:18   [installs] com.cem.cute.cat.keyboard (0.3s): 2001612 -> 2001651 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:18   [installs] com.cem.keyboard.designer.custom.theme (0.2s): 447103 -> 447103 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:18   [installs] com.cute.bear.super.theme.input.app (0.2s): 73666 -> 73876 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:18   [installs] com.cute.bow.cat.super.theme.input.app (0.2s): 89552 -> 89552 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:19   [installs] com.diy.rgb.led.mechanical.keyboard.custom.keyboard.game.keyboard (0.2s): 3353220 -> 3371339 verdict PASS -> PASS
+2026-10-22 06:18:19   [installs] com.dtp.themes.wallpaper.widget.keyboard (0.2s): 324639 -> 325028 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:19   [installs] com.emoji.cutekeyboard.themes.fontkeyboard (0.3s): 4168432 -> 4178217 verdict PASS -> PASS
+2026-10-22 06:18:19   [installs] com.emoji.keyboard.fonts.theme (0.2s): 412792 -> 413753 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:20   [installs] com.emoji.keyboard.soundtheme (0.3s): 3337577 -> 3346814 verdict PASS -> PASS
+2026-10-22 06:18:20   [installs] com.emoji.keyboard.stylish.fonts (0.2s): 901889 -> 909110 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:20   [installs] com.fontskeyboard.maker.theme (0.3s): 5750446 -> 5767031 verdict PASS -> PASS
+2026-10-22 06:18:20   [installs] com.grownapp.myfontskeyboard (0.3s): 7124624 -> 7145727 verdict PASS -> PASS
+2026-10-22 06:18:20   [installs] com.gsmobile.ledkeyboard (0.2s): 1784682 -> 1785467 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:21   [installs] com.highsecure.ledkeyboard (0.2s): 5745892 -> 5750496 verdict PASS -> PASS
+2026-10-22 06:18:21   [installs] com.ikeyboard.theme.pink.aura.love.theme (0.3s): 2023105 -> 2036701 verdict PASS -> PASS
+2026-10-22 06:18:21   [installs] com.ikeyboard.theme.sticker.emoji.memes.maker (0.3s): 8857964 -> 8906406 verdict PASS -> PASS
+2026-10-22 06:18:21   [installs] com.jkleo.mechanical.keyboard.themes.switchkey (0.2s): 3978 -> 3993 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:22   [installs] com.keyboard.theme.fontboard.mask.stylish (0.2s): 5444179 -> 5456885 verdict PASS -> PASS
+2026-10-22 06:18:22   [installs] com.keyza.keyboard.themes (0.2s): 11624 -> 11629 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:22   [installs] com.led.keyboard.emoji.fonts.aesthetic (0.2s): 50816 -> 50843 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:22   [installs] com.mechanical.keyboard.rgb.led (0.2s): 517 -> 520 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:22   [installs] com.mediatech.ledkeyboardtheme (0.2s): 8902 -> 8975 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:23   [installs] com.mtk.themekeyboardanime (0.2s): 5168 -> 5424 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:23   [installs] com.nexa.neon.emoji.keyboard.soundtheme (0.2s): 524237 -> 559002 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:23   [installs] com.photokeyboard.aifontkeyboard (0.2s): 23361 -> 24063 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:23   [installs] com.purple.cherry.super.theme.input.app (0.2s): 906005 -> 906005 verdict PASS -> FAIL:dl/day<5k
+2026-10-22 06:18:24   [installs] com.sd.custom.keyboard.stylish.emoji.font (0.2s): 234088 -> 234088 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:24   [installs] com.smartkeyboard.emojikeyboard.fontskeyboard.multilingual.keyboard (0.2s): 12238 -> 12977 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:24   [installs] com.studioapp.soundboardkeyboard (0.2s): 1555 -> 1566 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:24   [installs] com.tairsoft.animekeyboardtheme (0.2s): 7448 -> 7520 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:25   [installs] com.tapbrainx.yokey.emojifontkeyboard (0.2s): 341999 -> 342486 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:25   [installs] com.theme.keyboard.fonts (0.2s): 74747 -> 75817 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:25   [installs] com.wallpaperscraft.keby (0.2s): 1245719 -> 1245719 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:25   [installs] dark.theme.keyboard.neon.black (0.2s): 296241 -> 297423 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:18:25   [installs] tổng: 41 pkg, 0 lỗi, 35 đổi số, 9s
+2026-10-22 06:18:49   [asolytics] app.emoji.keyboard OK (24.2s)
+2026-10-22 06:19:13   [asolytics] com.akmobile.ledkeyboard.flash OK (23.7s)
+2026-10-22 06:19:47   [asolytics] com.appqubit.ledkeyboard OK (33.8s)
+2026-10-22 06:20:11   [asolytics] com.artkeyboard.aikeyboard.fonts.keyboard OK (23.8s)
+2026-10-22 06:20:29   [asolytics] com.asianmobile.emojikeyboard HỎNG rc=0 (18.2s): Код країни: US | Виконю аналіз... | [32mНазва додатка: Font Keyboard Emoji & Themes[37m | Загальна кількість відгуків: 1640.00 | Загальна кількість завантажень: від 100001 до 500000
+2026-10-22 06:20:53   [asolytics] com.asianmobile.fontskeyboard OK (23.9s)
+2026-10-22 06:21:16   [asolytics] com.aurax.neonledkeyboard.xboard.theme OK (23.6s)
+2026-10-22 06:21:40   [asolytics] com.cem.cute.cat.keyboard OK (23.8s)
+2026-10-22 06:22:04   [asolytics] com.cem.keyboard.designer.custom.theme OK (24.1s)
+2026-10-22 06:22:29   [asolytics] com.cute.bear.super.theme.input.app OK (24.3s)
+2026-10-22 06:22:53   [asolytics] com.cute.bow.cat.super.theme.input.app OK (24.4s)
+2026-10-22 06:23:18   [asolytics] com.diy.rgb.led.mechanical.keyboard.custom.keyboard.game.keyboard OK (24.5s)
+2026-10-22 06:23:42   [asolytics] com.dtp.themes.wallpaper.widget.keyboard OK (24.6s)
+2026-10-22 06:24:06   [asolytics] com.emoji.cutekeyboard.themes.fontkeyboard OK (23.8s)
+2026-10-22 06:24:30   [asolytics] com.emoji.keyboard.fonts.theme OK (23.9s)
+2026-10-22 06:24:54   [asolytics] com.emoji.keyboard.soundtheme OK (23.7s)
+2026-10-22 06:25:17   [asolytics] com.emoji.keyboard.stylish.fonts OK (23.9s)
+2026-10-22 06:25:41   [asolytics] com.fontskeyboard.maker.theme OK (23.8s)
+2026-10-22 06:26:05   [asolytics] com.grownapp.myfontskeyboard OK (23.7s)
+2026-10-22 06:26:29   [asolytics] com.gsmobile.ledkeyboard OK (24.2s)
+2026-10-22 06:26:53   [asolytics] com.highsecure.ledkeyboard OK (24.0s)
+2026-10-22 06:27:17   [asolytics] com.ikeyboard.theme.pink.aura.love.theme OK (24.2s)
+2026-10-22 06:27:41   [asolytics] com.ikeyboard.theme.sticker.emoji.memes.maker OK (23.9s)
+2026-10-22 06:28:15   [asolytics] com.jkleo.mechanical.keyboard.themes.switchkey OK (33.9s)
+2026-10-22 06:28:39   [asolytics] com.keyboard.theme.fontboard.mask.stylish OK (23.9s)
+2026-10-22 06:29:13   [asolytics] com.keyza.keyboard.themes OK (33.7s)
+2026-10-22 06:29:36   [asolytics] com.led.keyboard.emoji.fonts.aesthetic OK (23.6s)
+2026-10-22 06:30:10   [asolytics] com.mechanical.keyboard.rgb.led OK (33.8s)
+2026-10-22 06:30:44   [asolytics] com.mediatech.ledkeyboardtheme OK (33.9s)
+2026-10-22 06:31:18   [asolytics] com.mtk.themekeyboardanime OK (34.0s)
+2026-10-22 06:31:42   [asolytics] com.nexa.neon.emoji.keyboard.soundtheme OK (23.9s)
+2026-10-22 06:32:06   [asolytics] com.photokeyboard.aifontkeyboard OK (23.8s)
+2026-10-22 06:32:29   [asolytics] com.purple.cherry.super.theme.input.app OK (23.7s)
+2026-10-22 06:32:53   [asolytics] com.sd.custom.keyboard.stylish.emoji.font OK (24.0s)
+2026-10-22 06:33:27   [asolytics] com.smartkeyboard.emojikeyboard.fontskeyboard.multilingual.keyboard OK (33.6s)
+2026-10-22 06:33:55   [asolytics] com.studioapp.soundboardkeyboard HỎNG rc=0 (28.2s): Код країни: US | Виконю аналіз... | [32mНазва додатка: Keyboard: RGB & Emoji Custom[37m | Загальна кількість відгуків: 0 | Загальна кількість завантажень: від 1001 до 5000
+2026-10-22 06:34:19   [asolytics] com.tairsoft.animekeyboardtheme OK (23.9s)
+2026-10-22 06:34:43   [asolytics] com.tapbrainx.yokey.emojifontkeyboard OK (23.8s)
+2026-10-22 06:35:07   [asolytics] com.theme.keyboard.fonts OK (23.8s)
+2026-10-22 06:35:31   [asolytics] com.wallpaperscraft.keby OK (23.8s)
+2026-10-22 06:35:55   [asolytics] dark.theme.keyboard.neon.black OK (24.0s)
+2026-10-22 06:35:55   [asolytics] tổng: 39/41 OK, 1049s
+2026-10-22 06:35:55 Keyboard Theme: asolytics 39/41 pkg OK
+2026-10-22 06:35:55 Keyboard Theme: dream100.py rc=0 (0.0s) -> Dream100.md: 11 PASS, 172 loại, 41 asolytics block
+Dream100.csv: +13 dòng (ngày 2026-10-22)
+2026-10-22 06:35:55 --- Sticker/Quote/Ringtone Maker ---
+2026-10-22 06:35:55 Sticker/Quote/Ringtone Maker: 3 pkg cần theo dõi
+2026-10-22 06:35:55   [installs] com.stickers.stickermaker.aistickerapp (0.2s): 2955172 -> 2961959 verdict PASS -> PASS
+2026-10-22 06:35:55   [installs] com.stickerlive.app (0.2s): 3701 -> 3741 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:35:55   [installs] com.echoailab.videotomp3.converter (0.3s): 90248 -> 90563 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:35:55   [installs] tổng: 3 pkg, 0 lỗi, 3 đổi số, 1s
+2026-10-22 06:36:19   [asolytics] com.stickers.stickermaker.aistickerapp OK (23.7s)
+2026-10-22 06:36:53   [asolytics] com.stickerlive.app OK (33.6s)
+2026-10-22 06:37:17   [asolytics] com.echoailab.videotomp3.converter OK (23.9s)
+2026-10-22 06:37:17   [asolytics] tổng: 3/3 OK, 81s
+2026-10-22 06:37:17 Sticker/Quote/Ringtone Maker: asolytics 3/3 pkg OK
+2026-10-22 06:37:17 Sticker/Quote/Ringtone Maker: dream100.py rc=0 (0.0s) -> Dream100.md: 1 PASS, 44 loại, 3 asolytics block
+Dream100.csv: +1 dòng (ngày 2026-10-22)
+2026-10-22 06:37:17 --- Wallpaper/Coloring/Collage/GIF Maker ---
+2026-10-22 06:37:17 Wallpaper/Coloring/Collage/GIF Maker: 4 pkg cần theo dõi
+2026-10-22 06:37:17   [installs] com.wallpapers.wallpaper4k.livewallpaper (0.2s): 11782656 -> 11782656 verdict PASS -> PASS
+2026-10-22 06:37:17   [installs] com.abovegames.coloringcozyhome (0.2s): 674821 -> 675948 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:37:17   [installs] com.oakever.zencolor (0.2s): 5751403 -> 5797859 verdict PASS -> PASS
+2026-10-22 06:37:17   [installs] com.paint.by.numbers.coloring.games.doll (0.2s): 209983 -> 210838 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-10-22 06:37:17   [installs] tổng: 4 pkg, 0 lỗi, 3 đổi số, 1s
+2026-10-22 06:37:41   [asolytics] com.wallpapers.wallpaper4k.livewallpaper OK (23.9s)
+2026-10-22 06:38:05   [asolytics] com.abovegames.coloringcozyhome OK (24.0s)
+2026-10-22 06:38:29   [asolytics] com.oakever.zencolor OK (24.1s)
+2026-10-22 06:38:53   [asolytics] com.paint.by.numbers.coloring.games.doll OK (23.7s)
+2026-10-22 06:38:53   [asolytics] tổng: 4/4 OK, 96s
+2026-10-22 06:38:53 Wallpaper/Coloring/Collage/GIF Maker: asolytics 4/4 pkg OK
+2026-10-22 06:38:53 Wallpaper/Coloring/Collage/GIF Maker: dream100.py rc=0 (0.0s) -> Dream100.md: 2 PASS, 41 loại, 4 asolytics block
+Dream100.csv: +2 dòng (ngày 2026-10-22)
+2026-10-22 06:38:53 --- Font/Icon Pack/Video Status Maker ---
+2026-10-22 06:38:53 Font/Icon Pack/Video Status Maker: 2 pkg cần theo dõi
+2026-10-22 06:38:53   [installs] instagramstory.maker.playvo (0.2s): 17117722 -> 17184400 verdict PASS -> PASS
+2026-10-22 06:38:54   [installs] video.filter.stagefy (0.2s): 3541909 -> 3610188 verdict PASS -> PASS
+2026-10-22 06:38:54   [installs] tổng: 2 pkg, 0 lỗi, 2 đổi số, 0s
+2026-10-22 06:39:18   [asolytics] instagramstory.maker.playvo OK (24.2s)
+2026-10-22 06:39:42   [asolytics] video.filter.stagefy OK (24.1s)
+2026-10-22 06:39:42   [asolytics] tổng: 2/2 OK, 48s
+2026-10-22 06:39:42 Font/Icon Pack/Video Status Maker: asolytics 2/2 pkg OK
+2026-10-22 06:39:42 Font/Icon Pack/Video Status Maker: dream100.py rc=0 (0.0s) -> Dream100.md: 2 PASS, 43 loại, 2 asolytics block
+Dream100.csv: +2 dòng (ngày 2026-10-22)
+2026-10-22 06:39:42 --- Coloring / Color by Number ---
+2026-10-22 06:39:42 Coloring / Color by Number: 6 pkg cần theo dõi
+2026-10-22 06:39:42   [installs] color.number.paint.pixle.art.sort.jigsaw (0.2s): 13769380 -> 13800924 verdict PASS -> PASS
+2026-10-22 06:39:42   [installs] com.belkagames.ds (0.2s): 4193415 -> 4194525 verdict PASS -> PASS
+2026-10-22 06:39:43   [installs] com.nimblemind.gems.art.coloring.puzzle (0.2s): 847496 -> 851706 verdict PASS -> PASS
+2026-10-22 06:39:43   [installs] com.oakever.coloraura (0.2s): 3092678 -> 3094348 verdict PASS -> PASS
+2026-10-22 06:39:43   [installs] com.oakever.gemcoloring (0.2s): 1664587 -> 1711840 verdict PASS -> PASS
+2026-10-22 06:39:43   [installs] com.oakever.paintbynumber (0.2s): 10332691 -> 10539400 verdict PASS -> PASS
+2026-10-22 06:39:43   [installs] tổng: 6 pkg, 0 lỗi, 6 đổi số, 1s
+2026-10-22 06:40:08   [asolytics] color.number.paint.pixle.art.sort.jigsaw OK (24.2s)
+2026-10-22 06:40:32   [asolytics] com.belkagames.ds OK (23.9s)
+2026-10-22 06:40:56   [asolytics] com.nimblemind.gems.art.coloring.puzzle OK (24.2s)
+2026-10-22 06:41:20   [asolytics] com.oakever.coloraura OK (24.3s)
+2026-10-22 06:41:44   [asolytics] com.oakever.gemcoloring OK (24.1s)
+2026-10-22 06:42:08   [asolytics] com.oakever.paintbynumber OK (23.8s)
+2026-10-22 06:42:08   [asolytics] tổng: 6/6 OK, 145s
+2026-10-22 06:42:08 Coloring / Color by Number: asolytics 6/6 pkg OK
+2026-10-22 06:42:08 Coloring / Color by Number: dream100.py rc=0 (0.0s) -> Dream100.md: 6 PASS, 0 loại, 6 asolytics block
+Dream100.csv: +6 dòng (ngày 2026-10-22)
+2026-10-22 06:42:13 push_tracking.py rc=0 (5.0s) -> OK — tab 'Tracking': 41 dòng
+OK — tab 'Tracking Genre': 5 dòng
+OK — tab 'Tracking Category': 9 dòng
+https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit
+2026-10-22 06:42:14 push_merged.py rc=0 (1.4s) -> OK — 39 app
+https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit
+2026-10-22 06:42:18 push_dashboard.py rc=0 (3.8s) -> OK — tab 'Dashboard': 6 nhóm (6 có lịch sử), 25 kỳ — https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit#gid=1303812213
+OK — tab 'Dashboard Genre': 19 nhóm (5 có lịch sử), 25 kỳ — https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit#gid=877823215
+OK — tab 'Dashboard Category': 17 nhóm (9 có lịch sử), 25 kỳ — https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit#gid=1385672711
+2026-10-22 06:42:18 tổng thời gian: 50.4 phút
+2026-10-22 06:42:18 === xong ===
+
