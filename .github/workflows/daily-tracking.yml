@@ -37,6 +37,8 @@ jobs:
       - name: Chạy daily_tracking
         env:
           FORCE_RUN: "1"
+          # Postgres (Supabase) cho Grafana — secret chưa đặt thì push_dashboard.py bỏ qua bước ghi DB
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: python scripts/daily_tracking.py
 
       # always(): kể cả khi bước trên lỗi vẫn lưu số đã lấy được + log để debug

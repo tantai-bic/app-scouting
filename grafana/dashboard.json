@@ -1,0 +1,787 @@
+{
+ "__inputs": [
+  {
+   "name": "DS_SCOUTING",
+   "label": "Supabase scouting",
+   "type": "datasource",
+   "pluginId": "grafana-postgresql-datasource",
+   "pluginName": "PostgreSQL"
+  }
+ ],
+ "uid": "app-scouting",
+ "title": "App Scouting — Dream 100",
+ "tags": [
+  "scouting"
+ ],
+ "timezone": "browser",
+ "schemaVersion": 39,
+ "editable": true,
+ "time": {
+  "from": "now-60d",
+  "to": "now"
+ },
+ "templating": {
+  "list": [
+   {
+    "name": "cap",
+    "label": "Heatmap theo",
+    "type": "custom",
+    "query": "Ngách,Category,Genre",
+    "current": {
+     "text": "Ngách",
+     "value": "Ngách"
+    },
+    "options": [
+     {
+      "text": "Ngách",
+      "value": "Ngách",
+      "selected": true
+     },
+     {
+      "text": "Category",
+      "value": "Category",
+      "selected": false
+     },
+     {
+      "text": "Genre",
+      "value": "Genre",
+      "selected": false
+     }
+    ]
+   },
+   {
+    "name": "niche",
+    "label": "Ngách",
+    "type": "query",
+    "datasource": {
+     "type": "grafana-postgresql-datasource",
+     "uid": "${DS_SCOUTING}"
+    },
+    "query": "select distinct niche from scouting.app_daily order by 1",
+    "definition": "select distinct niche from scouting.app_daily order by 1",
+    "refresh": 1,
+    "multi": true,
+    "includeAll": true,
+    "current": {
+     "text": "All",
+     "value": "$__all"
+    },
+    "sort": 1
+   },
+   {
+    "name": "category",
+    "label": "Category",
+    "type": "query",
+    "datasource": {
+     "type": "grafana-postgresql-datasource",
+     "uid": "${DS_SCOUTING}"
+    },
+    "query": "select distinct category from scouting.app_daily order by 1",
+    "definition": "select distinct category from scouting.app_daily order by 1",
+    "refresh": 1,
+    "multi": true,
+    "includeAll": true,
+    "current": {
+     "text": "All",
+     "value": "$__all"
+    },
+    "sort": 1
+   }
+  ]
+ },
+ "panels": [
+  {
+   "id": 1,
+   "type": "row",
+   "title": "Heatmap theo $cap — 7 ngày / 30 ngày / Lifetime",
+   "collapsed": false,
+   "gridPos": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 1
+   },
+   "panels": []
+  },
+  {
+   "id": 2,
+   "type": "table",
+   "title": "Tăng installs/ngày theo $cap",
+   "description": "Tổng tốc độ tăng installs/ngày của các app trong nhóm. Lifetime = installs ÷ tuổi app.",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 0,
+    "y": 1,
+    "w": 12,
+    "h": 10
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select grp as \"Nhóm\", max(growth) filter (where moc_order = 1) as \"7 ngày\", max(growth) filter (where moc_order = 2) as \"30 ngày\", max(growth) filter (where moc_order = 3) as \"Lifetime\", max(apps) filter (where moc_order = 3) as \"Số app\"\nfrom scouting.app_window where level = '$cap' group by grp order by 2 desc nulls last",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "decimals": 0,
+     "color": {
+      "mode": "continuous-RdYlGr"
+     },
+     "fieldMinMax": true,
+     "custom": {
+      "cellOptions": {
+       "type": "color-background",
+       "mode": "gradient"
+      },
+      "align": "auto"
+     }
+    },
+    "overrides": [
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|App|Ngách|Category|Số app|Tổng installs)$"
+      },
+      "properties": [
+       {
+        "id": "custom.cellOptions",
+        "value": {
+         "type": "auto"
+        }
+       },
+       {
+        "id": "unit",
+        "value": "short"
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|App)$"
+      },
+      "properties": [
+       {
+        "id": "custom.minWidth",
+        "value": 240
+       }
+      ]
+     }
+    ]
+   },
+   "options": {
+    "showHeader": true,
+    "cellHeight": "sm"
+   }
+  },
+  {
+   "id": 3,
+   "type": "table",
+   "title": "Tăng/ngày mỗi app theo $cap",
+   "description": "Tăng/ngày ÷ số app — so ngách đông app với ngách ít app.",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 12,
+    "y": 1,
+    "w": 12,
+    "h": 10
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select grp as \"Nhóm\", max(growth_per_app) filter (where moc_order = 1) as \"7 ngày\", max(growth_per_app) filter (where moc_order = 2) as \"30 ngày\", max(growth_per_app) filter (where moc_order = 3) as \"Lifetime\"\nfrom scouting.app_window where level = '$cap' group by grp order by 2 desc nulls last",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "decimals": 0,
+     "color": {
+      "mode": "continuous-RdYlGr"
+     },
+     "fieldMinMax": true,
+     "custom": {
+      "cellOptions": {
+       "type": "color-background",
+       "mode": "gradient"
+      },
+      "align": "auto"
+     }
+    },
+    "overrides": [
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|App|Ngách|Category|Số app|Tổng installs)$"
+      },
+      "properties": [
+       {
+        "id": "custom.cellOptions",
+        "value": {
+         "type": "auto"
+        }
+       },
+       {
+        "id": "unit",
+        "value": "short"
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|App)$"
+      },
+      "properties": [
+       {
+        "id": "custom.minWidth",
+        "value": 240
+       }
+      ]
+     }
+    ]
+   },
+   "options": {
+    "showHeader": true,
+    "cellHeight": "sm"
+   }
+  },
+  {
+   "id": 4,
+   "type": "table",
+   "title": "% tăng trong kỳ theo $cap",
+   "description": "Δ installs ÷ installs đầu kỳ, quy về đúng 7 / 30 ngày — tăng nhanh so với quy mô.",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 0,
+    "y": 11,
+    "w": 12,
+    "h": 10
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select grp as \"Nhóm\", max(pct) filter (where moc_order = 1) as \"7 ngày\", max(pct) filter (where moc_order = 2) as \"30 ngày\"\nfrom scouting.app_window where level = '$cap' group by grp order by 2 desc nulls last",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "percentunit",
+     "decimals": 1,
+     "color": {
+      "mode": "continuous-RdYlGr"
+     },
+     "fieldMinMax": true,
+     "custom": {
+      "cellOptions": {
+       "type": "color-background",
+       "mode": "gradient"
+      },
+      "align": "auto"
+     }
+    },
+    "overrides": [
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|App|Ngách|Category|Số app|Tổng installs)$"
+      },
+      "properties": [
+       {
+        "id": "custom.cellOptions",
+        "value": {
+         "type": "auto"
+        }
+       },
+       {
+        "id": "unit",
+        "value": "short"
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|App)$"
+      },
+      "properties": [
+       {
+        "id": "custom.minWidth",
+        "value": 240
+       }
+      ]
+     }
+    ]
+   },
+   "options": {
+    "showHeader": true,
+    "cellHeight": "sm"
+   }
+  },
+  {
+   "id": 5,
+   "type": "barchart",
+   "title": "Tăng tốc? 7 ngày vs Lifetime theo $cap",
+   "description": "Cột 7 ngày cao hơn Lifetime = nhóm đang tăng nhanh hơn trung bình vòng đời.",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 12,
+    "y": 11,
+    "w": 12,
+    "h": 10
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select grp as \"Nhóm\", max(growth) filter (where moc_order = 1) as \"7 ngày\", max(growth) filter (where moc_order = 3) as \"Lifetime\" from scouting.app_window where level = '$cap' group by grp order by 2 desc nulls last",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "color": {
+      "mode": "palette-classic"
+     }
+    },
+    "overrides": []
+   },
+   "options": {
+    "orientation": "horizontal",
+    "xField": "Nhóm",
+    "showValue": "never",
+    "groupWidth": 0.7,
+    "legend": {
+     "showLegend": true,
+     "placement": "bottom",
+     "displayMode": "list"
+    }
+   }
+  },
+  {
+   "id": 6,
+   "type": "row",
+   "title": "App — lọc theo Ngách / Category",
+   "collapsed": false,
+   "gridPos": {
+    "x": 0,
+    "y": 21,
+    "w": 24,
+    "h": 1
+   },
+   "panels": []
+  },
+  {
+   "id": 7,
+   "type": "table",
+   "title": "Heatmap app: tăng installs/ngày",
+   "description": "",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 0,
+    "y": 22,
+    "w": 16,
+    "h": 14
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select grp as \"App\", max(niche) as \"Ngách\", max(category) as \"Category\", max(growth) filter (where moc_order = 1) as \"7 ngày\", max(growth) filter (where moc_order = 2) as \"30 ngày\", max(growth) filter (where moc_order = 3) as \"Lifetime\",\n  max(pct) filter (where moc_order = 1) as \"% 7 ngày\", max(installs) as \"Tổng installs\"\nfrom scouting.app_window where level = 'App' and niche in (${niche:sqlstring}) and category in (${category:sqlstring}) group by grp order by 4 desc nulls last",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "decimals": 0,
+     "color": {
+      "mode": "continuous-RdYlGr"
+     },
+     "fieldMinMax": true,
+     "custom": {
+      "cellOptions": {
+       "type": "color-background",
+       "mode": "gradient"
+      },
+      "align": "auto"
+     }
+    },
+    "overrides": [
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|App|Ngách|Category|Số app|Tổng installs)$"
+      },
+      "properties": [
+       {
+        "id": "custom.cellOptions",
+        "value": {
+         "type": "auto"
+        }
+       },
+       {
+        "id": "unit",
+        "value": "short"
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|App)$"
+      },
+      "properties": [
+       {
+        "id": "custom.minWidth",
+        "value": 240
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byName",
+       "options": "% 7 ngày"
+      },
+      "properties": [
+       {
+        "id": "unit",
+        "value": "percentunit"
+       },
+       {
+        "id": "decimals",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   "options": {
+    "showHeader": true,
+    "cellHeight": "sm"
+   }
+  },
+  {
+   "id": 8,
+   "type": "barchart",
+   "title": "Top 15 app tăng nhanh nhất (7 ngày)",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 16,
+    "y": 22,
+    "w": 8,
+    "h": 14
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select split_part(grp, ' (', 1) as app, growth as \"Tăng/ngày\" from scouting.app_window\nwhere moc_order = 1 and level = 'App' and niche in (${niche:sqlstring}) and category in (${category:sqlstring}) order by growth desc limit 15",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "color": {
+      "mode": "continuous-GrYlRd"
+     },
+     "unit": "short"
+    },
+    "overrides": []
+   },
+   "options": {
+    "orientation": "horizontal",
+    "xField": "app",
+    "showValue": "auto",
+    "legend": {
+     "showLegend": false
+    }
+   }
+  },
+  {
+   "id": 9,
+   "type": "row",
+   "title": "Xu hướng theo ngày",
+   "collapsed": false,
+   "gridPos": {
+    "x": 0,
+    "y": 36,
+    "w": 24,
+    "h": 1
+   },
+   "panels": []
+  },
+  {
+   "id": 10,
+   "type": "timeseries",
+   "title": "Tăng installs/ngày theo ngách",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 0,
+    "y": 37,
+    "w": 12,
+    "h": 10
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select date::timestamp as time, niche as metric, sum(growth) as value from scouting.app_daily\nwhere $__timeFilter(date) and niche in (${niche:sqlstring}) and growth is not null group by 1, 2 order by 1",
+     "format": "time_series",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "custom": {
+      "lineWidth": 2,
+      "pointSize": 5,
+      "showPoints": "always",
+      "spanNulls": true
+     }
+    },
+    "overrides": []
+   },
+   "options": {
+    "legend": {
+     "displayMode": "table",
+     "placement": "right",
+     "calcs": [
+      "mean",
+      "lastNotNull"
+     ]
+    },
+    "tooltip": {
+     "mode": "multi",
+     "sort": "desc"
+    }
+   }
+  },
+  {
+   "id": 11,
+   "type": "timeseries",
+   "title": "Tăng installs/ngày theo category",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 12,
+    "y": 37,
+    "w": 12,
+    "h": 10
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select date::timestamp as time, category as metric, sum(growth) as value from scouting.app_daily\nwhere $__timeFilter(date) and category in (${category:sqlstring}) and growth is not null group by 1, 2 order by 1",
+     "format": "time_series",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "custom": {
+      "lineWidth": 2,
+      "pointSize": 5,
+      "showPoints": "always",
+      "spanNulls": true
+     }
+    },
+    "overrides": []
+   },
+   "options": {
+    "legend": {
+     "displayMode": "table",
+     "placement": "right",
+     "calcs": [
+      "mean",
+      "lastNotNull"
+     ]
+    },
+    "tooltip": {
+     "mode": "multi",
+     "sort": "desc"
+    }
+   }
+  },
+  {
+   "id": 12,
+   "type": "timeseries",
+   "title": "Số app theo dõi theo ngách",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 0,
+    "y": 47,
+    "w": 12,
+    "h": 8
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select date::timestamp as time, niche as metric, count(*) as value from scouting.app_daily\nwhere $__timeFilter(date) and niche in (${niche:sqlstring}) group by 1, 2 order by 1",
+     "format": "time_series",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "custom": {
+      "lineWidth": 2,
+      "pointSize": 5,
+      "showPoints": "always",
+      "spanNulls": true
+     }
+    },
+    "overrides": []
+   },
+   "options": {
+    "legend": {
+     "displayMode": "table",
+     "placement": "right",
+     "calcs": [
+      "mean",
+      "lastNotNull"
+     ]
+    },
+    "tooltip": {
+     "mode": "multi",
+     "sort": "desc"
+    }
+   }
+  },
+  {
+   "id": 13,
+   "type": "timeseries",
+   "title": "Tổng lifetime installs theo ngách",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 12,
+    "y": 47,
+    "w": 12,
+    "h": 8
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select date::timestamp as time, niche as metric, sum(installs) as value from scouting.app_daily\nwhere $__timeFilter(date) and niche in (${niche:sqlstring}) group by 1, 2 order by 1",
+     "format": "time_series",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "custom": {
+      "lineWidth": 2,
+      "pointSize": 5,
+      "showPoints": "always",
+      "spanNulls": true
+     }
+    },
+    "overrides": []
+   },
+   "options": {
+    "legend": {
+     "displayMode": "table",
+     "placement": "right",
+     "calcs": [
+      "mean",
+      "lastNotNull"
+     ]
+    },
+    "tooltip": {
+     "mode": "multi",
+     "sort": "desc"
+    }
+   }
+  }
+ ]
+}

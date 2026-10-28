@@ -218,6 +218,44 @@ python scripts/push_tracking.py; python scripts/push_merged.py; python scripts/p
 
 ---
 
+## 5b. Dashboard Grafana + Supabase
+
+`push_dashboard.py` ghi 2 bảng vào Postgres (schema `scouting`), sau đó Grafana đọc từ đó:
+- `scouting.app_daily`: giống tab `Data`, 1 dòng = 1 app × 1 ngày.
+- `scouting.app_window`: giống tab `Window`, dùng cho heatmap 7 ngày / 30 ngày / Lifetime.
+
+Mỗi lần chạy, 2 bảng này bị drop rồi tạo lại trong 1 transaction, vì chúng là dữ liệu dẫn xuất từ `Dream100.csv`. Dashboard được lưu dưới dạng code trong `grafana/dashboard.json`.
+
+### Setup lần đầu
+
+1. **Supabase** (https://supabase.com, gói free): tạo project. Vào **SQL Editor** và chạy đoạn dưới (đổi mật khẩu) để tạo role chỉ-đọc cho Grafana:
+   ```sql
+   create schema if not exists scouting;
+   create role grafana_ro login password 'ĐỔI_MẬT_KHẨU';
+   grant usage on schema scouting to grafana_ro;
+   alter default privileges in schema scouting grant select on tables to grafana_ro;
+   ```
+2. Lấy connection string: **Connect → Session pooler** (dạng IPv4; GitHub Actions và Grafana Cloud không gọi được host IPv6 trực tiếp). Kết quả có dạng
+   `postgresql://postgres.<project-ref>:<mật-khẩu>@aws-0-<region>.pooler.supabase.com:5432/postgres`. Đặt nó làm secret:
+   ```powershell
+   gh secret set DATABASE_URL --repo tantai-bic/app-scouting   # dán connection string khi được hỏi
+   ```
+3. **Grafana Cloud** (https://grafana.com, gói free): vào Connections → Add new connection → **PostgreSQL**, điền:
+   - Host: `aws-0-<region>.pooler.supabase.com:5432`, Database: `postgres`
+   - User: `grafana_ro.<project-ref>` (khi đi qua pooler, user phải có hậu tố `.<project-ref>`), Password: mật khẩu ở bước 1
+   - TLS/SSL Mode: `require`
+4. Vào Dashboards → New → **Import** → upload `grafana/dashboard.json` → chọn data source vừa tạo.
+
+Sửa dashboard: sửa trên Grafana, rồi chọn **Export → Export as JSON (Export for sharing externally)** và ghi đè `grafana/dashboard.json` để lưu lại vào repo.
+
+Chạy thử trên máy (cần Docker), không cần Supabase:
+```powershell
+docker run -d --name scout-pg -e POSTGRES_PASSWORD=pw -p 55432:5432 postgres:17
+$env:DATABASE_URL="postgresql://postgres:pw@localhost:55432/postgres"; python scripts/push_dashboard.py; Remove-Item Env:DATABASE_URL
+```
+
+---
+
 ## 6. Flow (A) — Thêm ngách mới
 
 Ví dụ thêm ngách "ringtone2":
