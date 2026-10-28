@@ -31,6 +31,7 @@ def check(pkg):
         "released": rel,
         "age_days": age_days,
         "realInstalls": installs,
+        "minInstalls": r.get("minInstalls"),
         "dl_per_day_rough": round(installs / age_days) if age_days else None,
         "ads": r.get("containsAds"),
         "iap": r.get("offersIAP"),

@@ -16,7 +16,7 @@ concurrency:
 jobs:
   track:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -25,7 +25,7 @@ jobs:
           python-version: "3.14"
           cache: pip
 
-      - run: pip install -r requirements.txt && pip install --no-deps -r requirements-asolytics.txt
+      - run: pip install -r requirements.txt
 
       - name: Ghi token.json từ secret
         env:
@@ -37,9 +37,6 @@ jobs:
       - name: Chạy daily_tracking
         env:
           FORCE_RUN: "1"
-          # webdriver_manager gọi GitHub API để tải geckodriver cho mỗi pkg -> dùng token
-          # để khỏi dính rate limit 60 request/giờ của request không xác thực
-          GH_TOKEN: ${{ github.token }}
         run: python scripts/daily_tracking.py
 
       # always(): kể cả khi bước trên lỗi vẫn lưu số đã lấy được + log để debug

@@ -1,12 +1,11 @@
-"""Build data/Dream100.md + append data/Dream100.csv từ 1 cặp verify_*.json + asolytics_*.txt.
-Usage: python scripts/dream100.py asolytics_<ngách>.txt --verify verify_<ngách>.json --title "<ngách>" [--all]
+"""Build data/Dream100.md + append data/Dream100.csv từ 1 verify_*.json.
+Usage: python scripts/dream100.py --verify verify_<ngách>.json --title "<ngách>" [--all]
 Tên file tương đối so với data/.
 """
 import argparse, csv, datetime, json
-from common import DATA, DREAM_CSV, logged_pkgs, read_asolytics, dlday_range as _range
+from common import DATA, DREAM_CSV, logged_pkgs, dlday_range
 
 p = argparse.ArgumentParser()
-p.add_argument("aso")
 p.add_argument("--verify", required=True)
 p.add_argument("--all", action="store_true",
                help="đưa hết app vào bảng chính kể cả FAIL (theo dõi dài hạn), không chỉ PASS")
@@ -16,14 +15,9 @@ verify_path = DATA / args.verify
 TITLE = args.title or verify_path.stem.removeprefix("verify_").replace("_", " ")
 
 apps = {a["pkg"]: a for a in json.load(open(verify_path, encoding="utf-8"))}
-# ponytail: asolytics output format is unstable -> keep the raw block per app, only regex the range
-blocks = read_asolytics(DATA / args.aso)
 
-def dlday_range(pkg):
-    return _range(blocks.get(pkg))
-
-def dlday(pkg):
-    lo, hi = dlday_range(pkg)
+def dlday(a):
+    lo, hi = dlday_range(a)
     return f"{lo:,} – {hi:,}" if lo is not None else "—"
 
 # nhóm app dùng chung tài khoản AdMob (ghi bởi check_ads_txt.py) -> cột "Cùng network"
@@ -46,15 +40,15 @@ rows.sort(key=lambda a: -(a["realInstalls"] or 0))
 verdict_col = " Verdict |" if args.all else ""
 verdict_sep = "---|" if args.all else ""
 out = [f"# Dream 100 — ngách {TITLE}",
-       f"\n_Cập nhật {datetime.date.today()} · nguồn: AppBrain (discover) + google-play-scraper (verify) + asolytics (download/ngày)_\n",
+       f"\n_Cập nhật {datetime.date.today()} · nguồn: AppBrain (discover) + google-play-scraper (verify) + bucket installs ÷ tuổi (download/ngày)_\n",
        "Tiêu chí PASS: `containsAds=true` · phát hành ≤ 730 ngày · download/ngày trung bình ≥ 5.000 · dev không thuộc big-company blacklist."
        + (" `--all`: bảng dưới có cả app FAIL, theo dõi dài hạn chờ đủ điều kiện." if args.all else "") + "\n",
-       f"| App | Package | Dev | Phát hành | Lifetime installs | DL/ngày (TB vòng đời) | DL/ngày (asolytics) | Ads | IAP | Rating | Cùng network |{verdict_col}",
+       f"| App | Package | Dev | Phát hành | Lifetime installs | DL/ngày (TB vòng đời) | DL/ngày (bucket) | Ads | IAP | Rating | Cùng network |{verdict_col}",
        f"|---|---|---|---|---|---|---|---|---|---|---|{verdict_sep}"]
 for a in rows:
     line = "| [{t}](https://play.google.com/store/apps/details?id={p}) | `{p}` | {d} | {r} | {i:,} | {x:,} | {y} | {ads} | {q} | {s} ({n:,}) | {net} |".format(
         t=a["title"], p=a["pkg"], d=a["dev"], r=a["released"], i=a["realInstalls"],
-        x=a["dl_per_day_rough"], y=dlday(a["pkg"]), ads="✅" if a["ads"] else "—", q="✅" if a["iap"] else "—",
+        x=a["dl_per_day_rough"], y=dlday(a), ads="✅" if a["ads"] else "—", q="✅" if a["iap"] else "—",
         s=round(a["score"] or 0, 1), n=a["ratings"] or 0, net=network_label(a["pkg"]))
     if args.all:
         line += f" {a.get('verdict','')} |"
@@ -68,18 +62,13 @@ if not args.all:
         if a.get("verdict") != "PASS":
             out.append(f'| {a.get("title","?")} | `{a["pkg"]}` | {a.get("verdict")} |')
 
-if blocks:
-    out.append("\n## asolytics raw\n")
-    for p, b in blocks.items():
-        out.append(f"<details><summary><code>{p}</code></summary>\n\n```\n{b}\n```\n</details>\n")
-
 (DATA / "Dream100.md").write_text("\n".join(out), encoding="utf-8")
 label = "app (--all)" if args.all else "PASS"
-print(f"Dream100.md: {len(rows)} {label}, {len(apps)-len(rows)} loại, {len(blocks)} asolytics block")
+print(f"Dream100.md: {len(rows)} {label}, {len(apps)-len(rows)} loại")
 
 CSV_HEADER = ["Ngày", "App", "Package", "Developer", "Phát hành", "Tuổi (ngày)",
-              "Lifetime installs", "DL/ngày (TB vòng đời)", "DL/ngày min (asolytics)",
-              "DL/ngày max (asolytics)", "Ads", "IAP", "Rating", "Số đánh giá", "Cùng network"]
+              "Lifetime installs", "DL/ngày (TB vòng đời)", "DL/ngày min (bucket)",
+              "DL/ngày max (bucket)", "Ads", "IAP", "Rating", "Số đánh giá", "Cùng network"]
 today = datetime.date.today().isoformat()
 # CSV = lịch sử tracking: app đã từng vào Dream100 vẫn ghi tiếp dù giờ FAIL (bảng .md vẫn chỉ PASS)
 seen = logged_pkgs()
@@ -89,7 +78,7 @@ with DREAM_CSV.open("a", newline="", encoding="utf-8") as f:
     if f.tell() == 0:
         w.writerow(CSV_HEADER)
     for a in csv_rows:
-        lo, hi = dlday_range(a["pkg"])
+        lo, hi = dlday_range(a)
         w.writerow([today, a["title"], a["pkg"], a["dev"], a["released"], a["age_days"],
                     a["realInstalls"], a["dl_per_day_rough"], lo, hi,
                     "Có" if a["ads"] else "Không", "Có" if a["iap"] else "Không",

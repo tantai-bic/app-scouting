@@ -2,20 +2,19 @@
 """Gộp nhiều ngách vào 1 tab Dream100 của spreadsheet đã tồn tại.
 
 Usage: python scripts/push_merged.py [--dry-run]
-Nguồn mỗi ngách: common.NICHES (verify_<x>.json, asolytics_<x>.txt, nhãn ngách).
+Nguồn mỗi ngách: common.NICHES (verify_<x>.json, nhãn ngách).
 """
 import datetime, json, sys
-from common import DATA, NICHES, SHEET_URL, SID, dlday_range, read_asolytics, sheets
+from common import DATA, NICHES, SHEET_URL, SID, dlday_range, sheets
 
 rows = []
-for vf, af, label in NICHES:
+for vf, label in NICHES:
     if not (DATA / vf).exists():
         print(f"[bỏ qua] chưa có {vf}"); continue
-    day = {pkg: dlday_range(b) for pkg, b in read_asolytics(DATA / af).items()}
     for a in json.load(open(DATA / vf, encoding="utf-8")):
         if a.get("verdict") != "PASS":
             continue
-        lo, hi = day.get(a["pkg"], (None, None))
+        lo, hi = dlday_range(a)
         rows.append((lo or 0, [label, a["title"], a["pkg"], a["dev"],
             f'https://play.google.com/store/apps/details?id={a["pkg"]}',
             a["released"], a["age_days"], a["realInstalls"], a["dl_per_day_rough"],
@@ -27,14 +26,14 @@ for vf, af, label in NICHES:
 rows.sort(key=lambda r: -r[0])
 
 HEADER = ["#", "Ngách", "App", "Package", "Developer", "Play Store", "Phát hành", "Tuổi (ngày)",
-          "Lifetime installs", "DL/ngày (TB vòng đời)", "DL/ngày min (asolytics)",
-          "DL/ngày max (asolytics)", "Đạt ≥5k/ngày", "Ads", "IAP", "Monetize",
+          "Lifetime installs", "DL/ngày (TB vòng đời)", "DL/ngày min (bucket)",
+          "DL/ngày max (bucket)", "Đạt ≥5k/ngày", "Ads", "IAP", "Monetize",
           "Rating", "Số đánh giá", "Category", "Theo dõi"]
 values = [
     ["Dream 100 — App Content (IAA / hybrid)"], [],
-    ["Nguồn: AppBrain + google-play-scraper search (discover) · google-play-scraper app() (verify) · asolytics --average (download/ngày)"],
+    ["Nguồn: AppBrain + google-play-scraper search (discover) · google-play-scraper app() (verify) · bucket installs ÷ tuổi (download/ngày)"],
     ["Tiêu chí PASS: containsAds=true · phát hành ≤730 ngày · DL/ngày ≥5.000 · developer không thuộc big-company blacklist"],
-    [f"Ngách: {' · '.join(n[2] for n in NICHES)}"],
+    [f"Ngách: {' · '.join(n[1] for n in NICHES)}"],
     [f"Cập nhật {datetime.datetime.now():%Y-%m-%d %H:%M}"], [],
     HEADER,
 ] + [[i] + r[1] for i, r in enumerate(rows, 1)]

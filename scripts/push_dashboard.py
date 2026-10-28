@@ -16,7 +16,7 @@ import csv, datetime, json, sys
 from common import DATA, DREAM_CSV, FOCUS_GENRES, NICHES, SHEET_URL, SID, sheets, subcategory
 
 apps = {}  # pkg -> {"niche", "genre", "category", "pass"}; pkg nằm ở nhiều ngách -> ngách đầu tiên thắng
-for vf, _, label in NICHES:
+for vf, label in NICHES:
     if (DATA / vf).exists():
         for a in json.load(open(DATA / vf, encoding="utf-8")):
             if "error" not in a:
@@ -52,7 +52,7 @@ def build_values(key, name):
             continue
         scanned[a[key]] = scanned.get(a[key], 0) + 1
         passed[a[key]] = passed.get(a[key], 0) + a["pass"]
-    labels = [l for _, _, l in NICHES if l in scanned] if key == "niche" else \
+    labels = [l for _, l in NICHES if l in scanned] if key == "niche" else \
         sorted(scanned, key=lambda l: (-passed[l], -scanned[l]))
     tracked = [l for l in labels if any(apps[p][key] == l for _, p in inst)]  # nhóm có lịch sử -> vào chart xu hướng
     g = {(l, p): growth(*p, l) for l in labels for p in periods}

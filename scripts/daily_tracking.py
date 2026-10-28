@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 """Chạy hằng ngày (Task Scheduler local hoặc GitHub Actions): với mỗi niche đang
-theo dõi, lấy lại DL/ngày thật từ asolytics, append 1 dòng/app/ngày vào
+theo dõi, scrape lại installs từ Google Play, append 1 dòng/app/ngày vào
 Dream100.csv, rồi sync lên Google Sheet (tab Tracking + tab Dream100 chính).
-
-Khác run_asolytics_batch.py (backfill 1 lần, skip pkg đã có): script này LUÔN
-ghi đè asolytics_<niche>.txt mỗi lần chạy vì cần số MỚI của ngày hôm nay.
 
 Usage: python scripts/daily_tracking.py  (không cần argument, tự lặp qua common.NICHES)
        FORCE_RUN=1 python scripts/daily_tracking.py  -> bỏ qua chặn "đã chạy hôm nay"
 Log: logs/daily_tracking.log (append, để xem lịch sử chạy khi không ngồi máy).
 Exit code != 0 khi có bước hỏng (push lỗi, niche 0 pkg OK...) -> Actions báo đỏ.
 """
-import datetime, json, os, platform, shutil, subprocess, sys, time, traceback
-from common import ASO_MARKER, DATA, LOGS, NICHES, ROOT, TOKEN, logged_pkgs, run_asolytics
+import datetime, json, os, platform, subprocess, sys, time, traceback
+from common import DATA, LOGS, NICHES, ROOT, TOKEN, logged_pkgs
 from verify import check, verdict as compute_verdict
 
 SCRIPTS = ROOT / "scripts"
@@ -40,15 +37,6 @@ if (not os.environ.get("FORCE_RUN") and LAST_RUN.exists()
     log(f"[bỏ qua] đã chạy hôm nay ({TODAY}), đặt FORCE_RUN=1 để chạy lại")
     sys.exit(0)
 
-def tool_version(cmd):
-    if not shutil.which(cmd[0]):
-        return "KHÔNG TÌM THẤY"
-    try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        return (r.stdout or r.stderr).strip().splitlines()[0]
-    except Exception as e:
-        return f"lỗi: {e}"
-
 def log_env():
     """Thông tin môi trường — để so sánh lần chạy local vs Actions khi có lỗi."""
     log(f"[env] host={platform.node()} os={platform.platform()} python={sys.version.split()[0]}")
@@ -57,9 +45,6 @@ def log_env():
         # so utc_now với giờ cron trong workflow để đo độ trễ lịch của GitHub
         log(f"[env] github event={os.environ.get('GITHUB_EVENT_NAME')} run_id={os.environ.get('GITHUB_RUN_ID')}"
             f" attempt={os.environ.get('GITHUB_RUN_ATTEMPT')} sha={os.environ.get('GITHUB_SHA', '')[:7]}")
-    log(f"[env] firefox={tool_version(['firefox', '--version'])}")
-    log(f"[env] geckodriver={tool_version(['geckodriver', '--version'])}")
-    log(f"[env] asolytics={'có' if shutil.which('asolytics') else 'KHÔNG TÌM THẤY trong PATH'}")
     if not TOKEN.exists():
         fail("thiếu token.json — push lên Sheet sẽ hỏng (trên Actions: kiểm tra secret GOOGLE_TOKEN_JSON)")
     else:
@@ -71,9 +56,8 @@ def log_env():
         except Exception as e:
             fail(f"token.json không đọc được JSON: {e}")
 
-# ponytail: verdict trong verify_*.json là tĩnh (dream100.py không tính lại từ
-# asolytics) — too-old/no-ads/big-dev/date? không bao giờ tự hết FAIL theo ngày,
-# chỉ dl/day<5k mới có cơ hội đổi. Bỏ 3 nhóm kia khỏi asolytics -> giảm ~80% call.
+# ponytail: too-old/no-ads/big-dev/date? không bao giờ tự hết FAIL theo ngày,
+# chỉ dl/day<5k mới có cơ hội đổi -> chỉ theo dõi PASS + dl/day<5k.
 # App đã từng vào Dream100.csv thì luôn theo dõi tiếp, bất kể verdict hiện tại.
 def _worth_tracking(a, logged=frozenset()):
     return a.get("verdict") in ("PASS", "FAIL:dl/day<5k") or a["pkg"] in logged
@@ -108,33 +92,6 @@ def refresh_installs(verify_path, pkgs):
     elif pkgs and errs / len(pkgs) > 0.3:
         log(f"  [CẢNH BÁO] {errs}/{len(pkgs)} pkg scrape lỗi — có thể đang bị rate limit")
 
-def refresh_asolytics(aso_path, pkgs):
-    aso_path.write_text("", encoding="utf-8")  # ghi đè fresh mỗi ngày
-    ok, t0 = 0, time.monotonic()
-    for pkg in pkgs:
-        t = time.monotonic()
-        try:
-            r = run_asolytics(pkg)
-            body = r.stdout or r.stderr
-            dt = time.monotonic() - t
-            if ASO_MARKER in r.stdout:
-                ok += 1
-                log(f"  [asolytics] {pkg} OK ({dt:.1f}s)")
-            else:
-                # in đuôi stdout/stderr — traceback selenium/geckodriver nằm ở đây
-                tail = " | ".join((r.stderr or r.stdout).strip().splitlines()[-5:])
-                log(f"  [asolytics] {pkg} HỎNG rc={r.returncode} ({dt:.1f}s): {tail[:600]}")
-        except subprocess.TimeoutExpired:
-            body = "lỗi: timeout 90s"
-            log(f"  [asolytics] {pkg} TIMEOUT 90s")
-        except Exception as e:
-            body = f"lỗi: {e}"
-            log(f"  [asolytics] {pkg} EXCEPTION: {e!r}")
-        with aso_path.open("a", encoding="utf-8") as f:
-            f.write(f"===== {pkg}\n{body.strip()}\n")
-    log(f"  [asolytics] tổng: {ok}/{len(pkgs)} OK, {time.monotonic() - t0:.0f}s")
-    return len(pkgs), ok
-
 def run_script(cmd, label):
     t = time.monotonic()
     r = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace")
@@ -151,7 +108,7 @@ def main():
     t0 = time.monotonic()
     log("=== bắt đầu daily_tracking ===")
     log_env()
-    for verify_file, aso_file, title in NICHES:
+    for verify_file, title in NICHES:
         if not (DATA / verify_file).exists():
             log(f"[bỏ qua] thiếu {verify_file}")
             continue
@@ -161,11 +118,7 @@ def main():
                 if "error" not in a and _worth_tracking(a, logged)]
         log(f"{title}: {len(pkgs)} pkg cần theo dõi")
         refresh_installs(DATA / verify_file, pkgs)
-        total, ok = refresh_asolytics(DATA / aso_file, pkgs)
-        log(f"{title}: asolytics {ok}/{total} pkg OK")
-        if total and ok == 0:
-            fail(f"{title}: asolytics 0/{total} OK — kiểm tra firefox/geckodriver ở [env]")
-        run_script([sys.executable, SCRIPTS / "dream100.py", aso_file, "--verify", verify_file, "--title", title],
+        run_script([sys.executable, SCRIPTS / "dream100.py", "--verify", verify_file, "--title", title],
                    f"{title}: dream100.py")
 
     for script in ["push_tracking.py", "push_merged.py", "push_dashboard.py"]:

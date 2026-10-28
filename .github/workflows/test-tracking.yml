@@ -23,7 +23,7 @@ jobs:
           python-version: "3.14"
           cache: pip
 
-      - run: pip install -r requirements.txt && pip install --no-deps -r requirements-asolytics.txt
+      - run: pip install -r requirements.txt
 
       - name: Ghi token.json từ secret
         env:
@@ -42,8 +42,6 @@ jobs:
       - name: Kiểm tra kết quả
         run: |
           set -e
-          grep -q "Середня кількість завантажень на добу" "$DATA_DIR/asolytics_widget.txt" \
-            || { echo "::error::asolytics không ra số download/ngày"; cat "$DATA_DIR/asolytics_widget.txt"; exit 1; }
           test "$(wc -l < "$DATA_DIR/Dream100.csv")" -ge 2 || { echo "::error::Dream100.csv không có dòng dữ liệu"; exit 1; }
           echo "OK — xem Sheet test: https://docs.google.com/spreadsheets/d/$SHEET_ID/edit"
 

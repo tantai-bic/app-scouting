@@ -11,10 +11,9 @@ Kết quả đẩy lên Google Sheet: https://docs.google.com/spreadsheets/d/1Tm
 app-scouting/
 ├── .github/workflows/daily-tracking.yml   # GitHub Actions chạy daily tracking mỗi ngày
 ├── scripts/
-│   ├── common.py              # CẤU HÌNH CHUNG: NICHES, Sheet ID, đường dẫn, helper asolytics/Sheets
+│   ├── common.py              # CẤU HÌNH CHUNG: NICHES, Sheet ID, đường dẫn, helper DL/ngày/Sheets
 │   ├── daily_tracking.py      # flow (B) — orchestrator chạy hằng ngày
 │   ├── verify.py              # Play Store data + verdict PASS/FAIL
-│   ├── run_asolytics_batch.py # download/ngày thật (asolytics), backfill 1 lần
 │   ├── dream100.py            # build data/Dream100.md + append data/Dream100.csv
 │   ├── push_merged.py         # -> tab Dream100
 │   ├── push_tracking.py       # -> tab Tracking
@@ -24,7 +23,6 @@ app-scouting/
 │   ├── Dream100.csv           # LỊCH SỬ 1 dòng/app/ngày — không xoá
 │   ├── Dream100.md
 │   ├── verify_<ngách>.json
-│   ├── asolytics_<ngách>.txt
 │   └── ads_txt/, ads_txt_groups.json, ads_txt_report.md
 ├── logs/daily_tracking.log    # log từng lần chạy, dùng để debug
 ├── tests/fixture/             # data 1 app cho workflow test-tracking
@@ -45,11 +43,11 @@ app-scouting/
 
 ```
  (A) Scouting 1 ngách mới  ── chạy tay, khi muốn thêm ngách
-      verify.py ──> run_asolytics_batch.py ──> dream100.py ──> push_merged.py
-      (Play Store)   (download/ngày thật)       (Dream100.md/csv)  (Sheet)
+      verify.py ──> dream100.py ──> push_merged.py
+      (Play Store)   (Dream100.md/csv)  (Sheet)
 
  (B) Daily tracking        ── tự động mỗi ngày (GitHub Actions hoặc Task Scheduler)
-      daily_tracking.py = verify lại installs + asolytics + dream100.py
+      daily_tracking.py = verify lại installs + dream100.py
                           + push_tracking.py + push_merged.py + push_dashboard.py
 
  (C) Soi network quảng cáo ── chạy tay, thỉnh thoảng
@@ -79,20 +77,12 @@ Cả ba script đều **ghi đè toàn bộ tab** mỗi lần chạy. Sửa tay 
 ### 3.1 Cài phần mềm
 
 1. **Python 3.12+** (máy dev đang dùng 3.14): https://www.python.org/downloads/ — tick "Add to PATH".
-2. **Firefox**: https://www.mozilla.org/firefox/ — asolytics điều khiển Firefox chạy ẩn. Không cần tự tải geckodriver, `webdriver_manager` sẽ tự tải.
-3. Clone repo và cài thư viện:
+2. Clone repo và cài thư viện:
    ```powershell
    gh repo clone tantai-bic/app-scouting D:\app-scouting
    cd D:\app-scouting
    pip install -r requirements.txt
-   pip install --no-deps -r requirements-asolytics.txt   # asolytics ghim numpy cũ, không cài deps của nó
    ```
-4. Kiểm tra:
-   ```powershell
-   asolytics --average com.whatsapp --gl US --hl en
-   ```
-   Chạy đúng thì output có dòng `Середня кількість завантажень на добу: від X до Y`. asolytics in ra tiếng Ukraina, dòng này nghĩa là "download trung bình/ngày: từ X đến Y".
-
 ### 3.2 Tạo `token.json` (quyền ghi Google Sheet)
 
 Chỉ làm 1 lần, hoặc làm lại khi token hết hạn.
@@ -118,7 +108,7 @@ python scripts/daily_tracking.py                     # mỗi ngày chỉ chạy 
 $env:FORCE_RUN=1; python scripts/daily_tracking.py   # ép chạy lại trong cùng ngày
 ```
 
-- Chạy mất khoảng **60–70 phút**. asolytics chậm, mất khoảng 20–40 giây mỗi app.
+- Chạy mất khoảng **1–2 phút** (~0,3 giây/app). DL/ngày min/max tính từ bucket installs của Play Store ("10M+") ÷ tuổi app — đúng con số asolytics từng lấy, nhưng không cần mở Firefox (trước đây 55 phút).
 - Chỉ theo dõi app có verdict `PASS` hoặc `FAIL:dl/day<5k`. Các lý do FAIL khác (quá cũ, không có ads, big dev) là cố định, không bao giờ tự hết.
 - Chạy thành công thì trả exit code 0 và ghi ngày vào `logs/.daily_tracking_last_run`. Có lỗi thì trả exit code 1, cuối log có dòng `=== xong với N lỗi: ... ===`.
 
@@ -143,7 +133,7 @@ Register-ScheduledTask AppScoutingDailyTracking -Action $a -Trigger (New-Schedul
 File workflow: `.github/workflows/daily-tracking.yml`. Workflow chạy lúc **08:00 giờ VN** (01:00 UTC), mỗi lần làm các bước:
 
 1. Checkout repo. Dữ liệu của lần chạy trước trong `data/` nằm sẵn trong repo.
-2. Cài Python và thư viện. Runner Ubuntu đã có sẵn Firefox và geckodriver.
+2. Cài Python và thư viện.
 3. Ghi `token.json` từ secret `GOOGLE_TOKEN_JSON`.
 4. Chạy `scripts/daily_tracking.py`.
 5. **Luôn chạy, kể cả khi bước 4 lỗi**: commit `data/` và `logs/` rồi push lại repo cho lần chạy sau.
@@ -173,7 +163,7 @@ File `.github/workflows/test-tracking.yml` **chỉ chạy tay**. Workflow chạy
 https://docs.google.com/spreadsheets/d/1rJ7ZwJIwb-yCor6UWbzJXbo2GHAV51hLPoSeQ6Vuuko/edit
 
 - Mất khoảng 3–5 phút. Không đụng `data/` thật, không commit, không ghi Sheet thật.
-- Pass khi asolytics ra số download/ngày và `Dream100.csv` có dữ liệu. Log và data test được upload thành artifact.
+- Pass khi `Dream100.csv` có dữ liệu. Log và data test được upload thành artifact.
 - Nên chạy mỗi khi sửa `scripts/` hoặc `requirements.txt`, hoặc khi vừa đổi token.
 
 ```powershell
@@ -193,9 +183,9 @@ Biến môi trường dùng để override (định nghĩa trong `scripts/common
 
 #### Giới hạn
 
-- Repo private có **2.000 phút Actions miễn phí/tháng**. Job này tốn khoảng 65 phút × 30 ngày ≈ 1.950 phút, rất sát giới hạn. Xem mức dùng ở GitHub → Settings → Billing. Nếu thiếu, đổi cron thành 2 ngày một lần (`0 1 */2 * *`).
+- Repo private có **2.000 phút Actions miễn phí/tháng**. Job này tốn khoảng 2–3 phút × 30 ngày ≈ 90 phút/tháng.
 - Lịch cron của GitHub có thể **trễ 15–60 phút** và đôi khi bị bỏ qua vào giờ cao điểm.
-- Job tối đa 180 phút (`timeout-minutes`).
+- Job tối đa 30 phút (`timeout-minutes`).
 
 ---
 
@@ -210,20 +200,16 @@ Select-String -Path logs\daily_tracking.log -Pattern "LỖI|CẢNH BÁO|HỎNG|T
 
 | Dòng log | Nghĩa | Cách xử lý |
 |---|---|---|
-| `[env] firefox=KHÔNG TÌM THẤY` | Máy không có Firefox trong PATH. Trên Windows dòng này thường vẫn hiện dù đã cài Firefox, không sao | Chỉ quan tâm nếu đi kèm lỗi asolytics 0/N |
 | `[LỖI] thiếu token.json` | Chưa tạo token (local) hoặc chưa đặt secret (Actions) | Mục 3.2 / 4.3 bước 2 |
 | `[env] token.json: ... expiry=...` | Thời điểm hết hạn của access token. Access token hết hạn là bình thường, refresh token sẽ tự cấp lại | — |
 | `[LỖI] ... invalid_grant` | **Refresh token hết hạn** (thường gặp sau 7 ngày khi app ở chế độ Testing) | Publish OAuth app, tạo lại `token.json` (3.2), cập nhật secret (4.3 bước 2) |
-| `[asolytics] <pkg> HỎNG rc=... : <traceback>` | asolytics chạy xong nhưng không ra số | Đọc traceback. `WebDriverException` là lỗi Firefox/geckodriver; `rate limit` là lỗi GitHub API khi tải geckodriver |
-| `[asolytics] <pkg> TIMEOUT 90s` | Firefox bị treo hoặc mạng chậm | Thỉnh thoảng gặp thì bỏ qua; gặp hàng loạt thì kiểm tra mạng |
-| `[LỖI] <ngách>: asolytics 0/N OK` | asolytics hỏng toàn bộ | Chạy tay `asolytics --average com.whatsapp --gl US --hl en` để xem lỗi |
 | `[installs] lỗi scrape <pkg>` | Không lấy được dữ liệu Play Store cho app đó. App đó giữ số cũ | App bị gỡ khỏi store thì lỗi này là bình thường |
 | `[CẢNH BÁO] x/N pkg scrape lỗi` / `[LỖI] 100% pkg scrape lỗi` | Có thể **Google Play đang chặn IP** (hay gặp với IP datacenter của GitHub) | Chạy lại sau vài giờ; nếu lỗi kéo dài trên Actions thì quay về chạy bằng Task Scheduler |
 | `[env] utc_now=...` | Giờ bắt đầu thực tế | So với 01:00 UTC để biết GitHub cron bị trễ bao lâu |
 | `push_*.py rc=1 ... [stderr] ...` | Ghi Sheet lỗi | Đọc stderr: `invalid_grant` là lỗi token; `403` là tài khoản không có quyền sửa Sheet; `429` là vượt quota, chạy lại sau |
 | `tổng thời gian: X phút` | Tổng thời lượng chạy | Tăng dần theo số app, cần để ý quota phút Actions |
 
-Chạy lại chỉ phần push (sau khi đã sửa token), không cần chạy lại asolytics:
+Chạy lại chỉ phần push (sau khi đã sửa token), không cần scrape lại:
 ```powershell
 python scripts/push_tracking.py; python scripts/push_merged.py; python scripts/push_dashboard.py
 ```
@@ -239,20 +225,16 @@ Ví dụ thêm ngách "ringtone2":
    ```powershell
    Get-Content pool_ringtone2.txt | python scripts/verify.py -o verify_ringtone2.json
    ```
-3. **Lấy download/ngày thật** (chạy lâu; ngắt giữa chừng thì chạy lại lệnh cũ, script tự bỏ qua app đã có):
+3. **Build Dream 100** (thêm dòng vào `data/Dream100.csv` và `data/Dream100.md`):
    ```powershell
-   python scripts/run_asolytics_batch.py verify_ringtone2.json asolytics_ringtone2.txt
-   ```
-4. **Build Dream 100** (thêm dòng vào `data/Dream100.csv` và `data/Dream100.md`):
-   ```powershell
-   python scripts/dream100.py asolytics_ringtone2.txt --verify verify_ringtone2.json --title "Ringtone 2"
+   python scripts/dream100.py --verify verify_ringtone2.json --title "Ringtone 2"
    ```
    Thêm `--all` nếu muốn đưa cả app FAIL vào bảng.
-5. **Đưa ngách vào theo dõi hằng ngày**: thêm một dòng vào `NICHES` trong `scripts/common.py`:
+4. **Đưa ngách vào theo dõi hằng ngày**: thêm một dòng vào `NICHES` trong `scripts/common.py`:
    ```python
-   ("verify_ringtone2.json", "asolytics_ringtone2.txt", "Ringtone 2"),
+   ("verify_ringtone2.json", "Ringtone 2"),
    ```
-6. Đẩy lên Sheet: `python scripts/push_merged.py`. Sau đó commit và push (`git add data scripts; git commit; git push`).
+5. Đẩy lên Sheet: `python scripts/push_merged.py`. Sau đó commit và push (`git add data scripts; git commit; git push`).
 
 ---
 
@@ -275,5 +257,6 @@ File cũ, không script nào đọc nữa. Giữ lại để tham khảo:
 |---|---|
 | `push_dream100.py` | Script tạo **spreadsheet mới**, chỉ dùng lần đầu. Hiện đã có Sheet cố định |
 | `Dream100_snapshot_*.csv` | Bản sao lưu trước các lần đổi cấu trúc CSV |
+| `asolytics_*.txt` | Output asolytics cũ, không dùng nữa từ 2026-10-28 (DL/ngày tính từ bucket installs) |
 | `verify_tracker.json`, `asolytics_tracker.txt` | Ngách tracker đã bỏ theo dõi từ 2026-09-23 (0/71 app PASS) |
 | `pool_*.txt`, `*_pass.txt`, `verify_*.txt`, `verify_out.json`, … | Output trung gian của các lần scouting cũ |

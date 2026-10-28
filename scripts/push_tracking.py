@@ -49,7 +49,7 @@ for p in pkgs:
 
 # ---- Tracking Genre / Tracking Category
 info = {}  # pkg -> (genre, category), pkg ở nhiều ngách -> ngách đầu tiên thắng
-for vf, _, niche in NICHES:
+for vf, niche in NICHES:
     if (DATA / vf).exists():
         for a in json.load(open(DATA / vf, encoding="utf-8")):
             info.setdefault(a["pkg"], (a.get("genre") or "?", subcategory(a.get("title"), niche)))
