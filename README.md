@@ -63,6 +63,7 @@ app-scouting/
 | `Tracking Genre` | `push_tracking.py`: mỗi genre một dòng, mỗi ngày một cột = installs **tăng/ngày** so với lần chạy trước |
 | `Tracking Category` | `push_tracking.py`: như trên, nhưng tách theo category con của Personalization / Photography / Casual |
 | `Dashboard`, `Dashboard Genre`, `Dashboard Category` | `push_dashboard.py`: tăng trưởng + chart theo ngách / genre / category con |
+| `Data` | `push_dashboard.py`: dữ liệu thô cho **Looker Studio**, 1 dòng = 1 app × 1 ngày (có Ngách/Genre/Category, Tăng/ngày). Tab này chỉ ghi đè giá trị, không xoá/tạo lại, để giữ gid mà Looker đang kết nối |
 
 **Category con:** Play Store không có cấp dưới genre, nên category con được phân loại theo **từ khoá trong tên app** (`SUBCATEGORIES` trong `scripts/common.py`). Tên app không khớp từ khoá nào thì dò theo tên ngách; vẫn không khớp thì xếp vào "Khác". Khi thấy app bị xếp sai, thêm từ khoá hoặc đổi thứ tự ở đó (khớp đầu tiên thắng). Muốn đi sâu thêm genre khác thì thêm vào `FOCUS_GENRES`.
 

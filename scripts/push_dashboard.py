@@ -22,12 +22,15 @@ for vf, label in NICHES:
             if "error" not in a:
                 genre = a.get("genre") or "?"
                 apps.setdefault(a["pkg"], {"niche": label, "genre": genre, "pass": a.get("verdict") == "PASS",
+                    "sub": subcategory(a.get("title"), label),
                     # None = genre ngoài FOCUS_GENRES -> không vào tab Category
                     "category": f"{genre} › {subcategory(a.get('title'), label)}" if genre in FOCUS_GENRES else None})
 
 inst = {}  # (date, pkg) -> installs, lần chạy cuối trong ngày thắng
+raw = {}   # (date, pkg) -> dòng CSV, cho tab Data
 with open(DREAM_CSV, encoding="utf-8", newline="") as f:
     for r in csv.DictReader(f):
+        raw[(r["Ngày"], r["Package"])] = r
         if r["Package"] in apps and r["Lifetime installs"]:
             inst[(r["Ngày"], r["Package"])] = int(r["Lifetime installs"])
 dates = sorted({d for d, _ in inst})
@@ -81,13 +84,62 @@ TABS = [("Dashboard", "niche", "Ngách"), ("Dashboard Genre", "genre", "Genre"),
         ("Dashboard Category", "category", "Category")]
 built = [(t, *build_values(k, n)) for t, k, n in TABS]
 
+
+def num(v):
+    try:
+        return float(v) if "." in v else int(v)
+    except ValueError:
+        return ""
+
+
+def build_data():
+    """Tab 'Data' cho Looker Studio: long format, 1 dòng = 1 app × 1 ngày, giữ số dạng number.
+    Tăng/ngày = Δ installs so với lần chạy trước của CHÍNH app đó ÷ số ngày (dòng đầu của app để trống)."""
+    cols = ["Phát hành", "Tuổi (ngày)", "Lifetime installs", "DL/ngày (TB vòng đời)",
+            "DL/ngày min (bucket)", "DL/ngày max (bucket)", "Rating", "Số đánh giá"]
+    out = [["Ngày", "App", "Package", "Developer", "Ngách", "Genre", "Category", "PASS hiện tại",
+            "Tăng/ngày", "Ads", "IAP", *cols]]
+    prev = {}  # pkg -> (date, installs)
+    for (d, p), r in sorted(raw.items()):
+        a = apps.get(p, {})
+        cur = num(r["Lifetime installs"])
+        g = ""
+        if p in prev and cur != "":
+            days = (datetime.date.fromisoformat(d) - datetime.date.fromisoformat(prev[p][0])).days
+            g = round((cur - prev[p][1]) / days) if days else ""
+        if cur != "":
+            prev[p] = (d, cur)
+        out.append([d, r["App"], p, r["Developer"], a.get("niche", "?"), a.get("genre", "?"), a.get("sub", "Khác"),
+                    "Có" if a.get("pass") else "Không", g, r["Ads"], r["IAP"],
+                    r["Phát hành"], *(num(r[c]) for c in cols[1:])])
+    return out
+
+
+data_values = build_data()
+
 if "--dry-run" in sys.argv:
     for t, values, m in built:
         print(f"--- {t} {m}")
         for v in values: print(v)
+    print(f"--- Data: {len(data_values) - 1} dòng")
+    for v in data_values[:3] + data_values[-2:]: print(v)
     sys.exit(0)
 
 svc = sheets()
+
+# tab Data: KHÔNG xoá/tạo lại (Looker Studio bám theo gid) -> chỉ clear + ghi đè giá trị
+meta = svc.get(spreadsheetId=SID, fields="sheets.properties").execute()["sheets"]
+gid = next((s["properties"]["sheetId"] for s in meta if s["properties"]["title"] == "Data"), None)
+if gid is None:
+    gid = svc.batchUpdate(spreadsheetId=SID, body={"requests": [{"addSheet": {"properties": {"title": "Data"}}}]}
+                          ).execute()["replies"][0]["addSheet"]["properties"]["sheetId"]
+svc.values().clear(spreadsheetId=SID, range="Data").execute()
+svc.values().update(spreadsheetId=SID, range="Data!A1", valueInputOption="RAW", body={"values": data_values}).execute()
+# cột Ngày ghi lại USER_ENTERED -> Sheets parse thành date thật, Looker nhận đúng kiểu Date
+# (các cột khác giữ RAW: tên app bắt đầu bằng "=" / "+" không bị hiểu thành công thức)
+svc.values().update(spreadsheetId=SID, range="Data!A2", valueInputOption="USER_ENTERED",
+                    body={"values": [[r[0]] for r in data_values[1:]]}).execute()
+print(f"OK — tab 'Data' (Looker Studio): {len(data_values) - 1} dòng — {SHEET_URL}#gid={gid}")
 BLUE = {"red": .85, "green": .89, "blue": .96}
 NUM = {"numberFormat": {"type": "NUMBER", "pattern": "#,##0"}}
 
