@@ -1,0 +1,28 @@
+{
+  "name": "app-scouting",
+  "version": "1.0.0",
+  "description": "Hệ thống lọc và theo dõi app Google Play tiềm năng. Tiêu chí: ≥5.000 download/ngày, phát hành ≤2 năm, không thuộc big company, có quảng cáo (IAA/hybrid).\r Kết quả đẩy lên Google Sheet: https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tantai-bic/app-scouting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tantai-bic/app-scouting/issues"
+  },
+  "homepage": "https://github.com/tantai-bic/app-scouting#readme",
+  "dependencies": {
+    "google-play-scraper": "^10.1.4"
+  }
+}

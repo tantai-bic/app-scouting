@@ -23,8 +23,30 @@
  "templating": {
   "list": [
    {
+    "name": "mcap",
+    "label": "Thị trường theo",
+    "type": "custom",
+    "query": "Ngách,Category",
+    "current": {
+     "text": "Ngách",
+     "value": "Ngách"
+    },
+    "options": [
+     {
+      "text": "Ngách",
+      "value": "Ngách",
+      "selected": true
+     },
+     {
+      "text": "Category",
+      "value": "Category",
+      "selected": false
+     }
+    ]
+   },
+   {
     "name": "cap",
-    "label": "Heatmap theo",
+    "label": "Dream100 heatmap theo",
     "type": "custom",
     "query": "Ngách,Category,Genre",
     "current": {
@@ -91,13 +113,309 @@
  },
  "panels": [
   {
-   "id": 1,
+   "id": 14,
    "type": "row",
-   "title": "Heatmap theo $cap — 7 ngày / 30 ngày / Lifetime",
+   "title": "Thị trường ngách — top 10 app mỗi $mcap × Top Free 200 của 8 nước",
    "collapsed": false,
    "gridPos": {
     "x": 0,
     "y": 0,
+    "w": 24,
+    "h": 1
+   },
+   "panels": []
+  },
+  {
+   "id": 15,
+   "type": "table",
+   "title": "Xếp hạng nên làm theo $mcap",
+   "description": "Điểm 0-100 = hạng phần trăm có trọng số: Cầu ×1, Toàn cầu (số nước) ×1, App thắng ×2, Thói quen ×2, IAA ×1 (docs/tieu-chi-chon-ngach.md). Cầu: lịch sử < 7 ngày dùng TB vòng đời, từ 7 ngày là tăng installs/ngày thật. App thắng = app < 2 năm, có ads, không big dev, >= 5k/ngày. Ngách có cột Loại không được chấm điểm.",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 0,
+    "y": 1,
+    "w": 24,
+    "h": 14
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select grp as \"Nhóm\", score as \"Điểm\", demand as \"Cầu: DL/ngày/app\", global as \"Số nước TB\",\n  winners as \"App thắng\", habit as \"% review thói quen\", iaa as \"% có ads\", new_share as \"% app < 2 năm\",\n  rating as \"Rating\", apps as \"Số app\", days as \"Lịch sử (ngày)\", nullif(policy, '') as \"Loại (chính sách)\", top as \"Top 3 app\"\nfrom scouting.market_group where level = '$mcap' order by score desc nulls last, demand desc",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "decimals": 0,
+     "color": {
+      "mode": "continuous-RdYlGr"
+     },
+     "fieldMinMax": true,
+     "custom": {
+      "cellOptions": {
+       "type": "color-background",
+       "mode": "gradient"
+      },
+      "align": "auto"
+     }
+    },
+    "overrides": [
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Nhóm|Loại \\(chính sách\\)|Top 3 app|Lịch sử \\(ngày\\)|Số app)$"
+      },
+      "properties": [
+       {
+        "id": "custom.cellOptions",
+        "value": {
+         "type": "auto"
+        }
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byName",
+       "options": "Nhóm"
+      },
+      "properties": [
+       {
+        "id": "custom.minWidth",
+        "value": 200
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byName",
+       "options": "Top 3 app"
+      },
+      "properties": [
+       {
+        "id": "custom.minWidth",
+        "value": 420
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(% review thói quen|% có ads|% app < 2 năm)$"
+      },
+      "properties": [
+       {
+        "id": "unit",
+        "value": "percentunit"
+       },
+       {
+        "id": "decimals",
+        "value": 0
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byRegexp",
+       "options": "^(Số nước TB|Rating)$"
+      },
+      "properties": [
+       {
+        "id": "decimals",
+        "value": 1
+       }
+      ]
+     },
+     {
+      "matcher": {
+       "id": "byName",
+       "options": "% review thói quen"
+      },
+      "properties": [
+       {
+        "id": "decimals",
+        "value": 1
+       }
+      ]
+     }
+    ]
+   },
+   "options": {
+    "showHeader": true,
+    "cellHeight": "sm"
+   }
+  },
+  {
+   "id": 16,
+   "type": "barchart",
+   "title": "Điểm nên làm theo $mcap",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 0,
+    "y": 15,
+    "w": 12,
+    "h": 11
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select grp as \"Nhóm\", score as \"Điểm\" from scouting.market_group where level = '$mcap' and score is not null order by score desc",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "color": {
+      "mode": "continuous-RdYlGr"
+     },
+     "min": 0,
+     "max": 100
+    },
+    "overrides": []
+   },
+   "options": {
+    "orientation": "horizontal",
+    "xField": "Nhóm",
+    "colorByField": "Điểm",
+    "showValue": "always",
+    "legend": {
+     "showLegend": false
+    }
+   }
+  },
+  {
+   "id": 17,
+   "type": "xychart",
+   "title": "Toàn cầu (X: số nước TB) vs Cầu (Y: DL/ngày/app)",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "description": "Góc trên-phải = nhiều nước dùng + cầu lớn: thói quen chung toàn cầu.",
+   "gridPos": {
+    "x": 12,
+    "y": 15,
+    "w": 12,
+    "h": 11
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select global as \"Số nước TB\", demand as \"Cầu\", grp as \"Nhóm\" from scouting.market_group\nwhere level = '$mcap' and score is not null",
+     "format": "table",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "custom": {
+      "show": "points",
+      "pointSize": {
+       "fixed": 10
+      }
+     }
+    },
+    "overrides": []
+   },
+   "options": {
+    "mapping": "auto",
+    "series": [
+     {}
+    ],
+    "legend": {
+     "showLegend": false
+    },
+    "tooltip": {
+     "mode": "single"
+    }
+   }
+  },
+  {
+   "id": 18,
+   "type": "timeseries",
+   "title": "Cầu theo ngày: median tăng installs/ngày mỗi app (top 10 mỗi ngách)",
+   "datasource": {
+    "type": "grafana-postgresql-datasource",
+    "uid": "${DS_SCOUTING}"
+   },
+   "gridPos": {
+    "x": 0,
+    "y": 26,
+    "w": 24,
+    "h": 8
+   },
+   "targets": [
+    {
+     "refId": "A",
+     "datasource": {
+      "type": "grafana-postgresql-datasource",
+      "uid": "${DS_SCOUTING}"
+     },
+     "rawSql": "select date::timestamp as time, niche as metric, percentile_cont(0.5) within group (order by growth) as value\nfrom scouting.market_app where $__timeFilter(date) and growth is not null and niche <> 'Khác' group by 1, 2 order by 1",
+     "format": "time_series",
+     "rawQuery": true,
+     "editorMode": "code"
+    }
+   ],
+   "fieldConfig": {
+    "defaults": {
+     "unit": "short",
+     "custom": {
+      "lineWidth": 2,
+      "pointSize": 5,
+      "showPoints": "always",
+      "spanNulls": true
+     }
+    },
+    "overrides": []
+   },
+   "options": {
+    "legend": {
+     "displayMode": "table",
+     "placement": "right",
+     "calcs": [
+      "mean",
+      "lastNotNull"
+     ]
+    },
+    "tooltip": {
+     "mode": "multi",
+     "sort": "desc"
+    }
+   }
+  },
+  {
+   "id": 1,
+   "type": "row",
+   "title": "Dream100 — heatmap theo $cap: 7 ngày / 30 ngày / Lifetime",
+   "collapsed": false,
+   "gridPos": {
+    "x": 0,
+    "y": 34,
     "w": 24,
     "h": 1
    },
@@ -114,7 +432,7 @@
    },
    "gridPos": {
     "x": 0,
-    "y": 1,
+    "y": 35,
     "w": 12,
     "h": 10
    },
@@ -196,7 +514,7 @@
    },
    "gridPos": {
     "x": 12,
-    "y": 1,
+    "y": 35,
     "w": 12,
     "h": 10
    },
@@ -278,7 +596,7 @@
    },
    "gridPos": {
     "x": 0,
-    "y": 11,
+    "y": 45,
     "w": 12,
     "h": 10
    },
@@ -360,7 +678,7 @@
    },
    "gridPos": {
     "x": 12,
-    "y": 11,
+    "y": 45,
     "w": 12,
     "h": 10
    },
@@ -405,7 +723,7 @@
    "collapsed": false,
    "gridPos": {
     "x": 0,
-    "y": 21,
+    "y": 55,
     "w": 24,
     "h": 1
    },
@@ -422,7 +740,7 @@
    },
    "gridPos": {
     "x": 0,
-    "y": 22,
+    "y": 56,
     "w": 16,
     "h": 14
    },
@@ -519,7 +837,7 @@
    },
    "gridPos": {
     "x": 16,
-    "y": 22,
+    "y": 56,
     "w": 8,
     "h": 14
    },
@@ -561,7 +879,7 @@
    "collapsed": false,
    "gridPos": {
     "x": 0,
-    "y": 36,
+    "y": 70,
     "w": 24,
     "h": 1
    },
@@ -577,7 +895,7 @@
    },
    "gridPos": {
     "x": 0,
-    "y": 37,
+    "y": 71,
     "w": 12,
     "h": 10
    },
@@ -631,7 +949,7 @@
    },
    "gridPos": {
     "x": 12,
-    "y": 37,
+    "y": 71,
     "w": 12,
     "h": 10
    },
@@ -685,7 +1003,7 @@
    },
    "gridPos": {
     "x": 0,
-    "y": 47,
+    "y": 81,
     "w": 12,
     "h": 8
    },
@@ -739,7 +1057,7 @@
    },
    "gridPos": {
     "x": 12,
-    "y": 47,
+    "y": 81,
     "w": 12,
     "h": 8
    },

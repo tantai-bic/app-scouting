@@ -218,6 +218,30 @@ python scripts/push_tracking.py; python scripts/push_merged.py; python scripts/p
 
 ---
 
+## 5a. Thị trường ngách (`market.py`) — so sánh ngách công bằng
+
+Dream100 chỉ theo dõi app **PASS**, tức là app đã lọt qua bộ lọc (mới, có ads, ≥5k/ngày). Vì vậy số app mỗi ngách lệch nhau rất nhiều (từ 1 đến 17), và nó chỉ đo "app mới nào đang thắng" chứ không đo được nhu cầu của ngách. `market.py` lấy một **mẫu thị trường có cỡ bằng nhau** cho mọi ngách:
+
+1. `node scripts/hotmap_list.mjs`: lấy Top Free 200 của 8 nước (US, BR, IN, ID, MX, DE, JP, VN) × 10 category, khoảng 80 request, mất chừng 1 phút.
+2. Mỗi **ngách** (`CLUSTERS` trong `common.py`, phân loại theo từ khoá thói quen trong tên app) và mỗi **category** lấy đúng `TOP_N = 10` app có **độ phủ chart** cao nhất (lọt top ở nhiều nước, hạng cao).
+3. Scrape installs hằng ngày, ghi vào `data/market.csv`. Lấy review mỗi 7 ngày, cache ở `data/market_reviews.json`.
+4. Chấm điểm 0–100. Mỗi chỉ số được quy về hạng phần trăm giữa các nhóm cùng cấp, trọng số lấy từ `docs/tieu-chi-chon-ngach.md`:
+
+| Chỉ số | Trọng số | Đo bằng | Trả lời câu hỏi |
+|---|---|---|---|
+| Cầu | ×1 | median tăng installs/ngày mỗi app. Lịch sử < 7 ngày thì dùng TB vòng đời | Có nhiều người tải không |
+| Toàn cầu | ×1 | số nước trung bình mỗi app lọt Top 200 (trên 8 nước) | User toàn cầu hay chỉ một nước |
+| App thắng | ×2 | số app < 2 năm, có ads, không big dev, ≥5k/ngày | App mới có cửa thắng không |
+| Thói quen | ×2 | median % review nhắc "every day / daily / for months..." | Có thành thói quen hằng ngày không |
+| IAA | ×1 | % app có ads | Có kiếm tiền bằng ads được không |
+
+Ngách rớt nhóm B (`POLICY_OUT` trong `common.py`: AI gen, short drama, VPN, cleaner...) vẫn được theo dõi nhưng **không chấm điểm**. Kết quả nằm ở `data/market.md` và phần "Thị trường ngách" trên Grafana.
+
+**Giới hạn cần biết:**
+- Chỉ có dữ liệu Android/Google Play. `realInstalls` là số toàn cầu, nhưng Play không chia theo nước. Độ phủ theo nước lấy từ top chart.
+- Review chỉ lấy tiếng Anh, store US. Tín hiệu thói quen là proxy (WhatsApp/Duolingo ~9%, keyboard theme 0–2%), không thay được retention thật.
+- Ngách nhận diện bằng từ khoá trong tên app. App bị xếp sai thì sửa `CLUSTERS`. Ngách có ít hơn 10 app trong chart (Font, Find phone) sẽ hiện số app thật ở cột `Số app`.
+
 ## 5b. Dashboard Grafana + Supabase
 
 `push_dashboard.py` ghi 2 bảng vào Postgres (schema `scouting`), sau đó Grafana đọc từ đó:

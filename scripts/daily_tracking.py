@@ -121,6 +121,10 @@ def main():
         run_script([sys.executable, SCRIPTS / "dream100.py", "--verify", verify_file, "--title", title],
                    f"{title}: dream100.py")
 
+    # thị trường ngách: top chart 8 nước -> top N app mỗi ngách/category (market.py)
+    run_script(["node", SCRIPTS / "hotmap_list.mjs"], "hotmap_list.mjs")
+    run_script([sys.executable, SCRIPTS / "market.py"], "market.py")
+
     for script in ["push_tracking.py", "push_merged.py", "push_dashboard.py"]:
         run_script([sys.executable, SCRIPTS / script], script)
     log(f"tổng thời gian: {(time.monotonic() - t0) / 60:.1f} phút")

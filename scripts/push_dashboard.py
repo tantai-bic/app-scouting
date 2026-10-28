@@ -12,8 +12,8 @@ Xoá + tạo lại tab mỗi lần chạy (để xoá chart cũ).
 
 Usage: python scripts/push_dashboard.py [--dry-run]
 """
-import csv, datetime, json, os, sys
-from common import DATA, DREAM_CSV, FOCUS_GENRES, NICHES, SHEET_URL, SID, sheets, subcategory
+import csv, datetime, json, sys
+from common import DATA, DREAM_CSV, FOCUS_GENRES, NICHES, SHEET_URL, SID, pg_replace, sheets, subcategory
 
 apps = {}  # pkg -> {"niche", "genre", "category", "pass"}; pkg nằm ở nhiều ngách -> ngách đầu tiên thắng
 for vf, label in NICHES:
@@ -188,27 +188,15 @@ create table scouting.app_window (moc text, moc_order int, level text, grp text,
 """
 
 
-def push_db(url):
-    """Ghi tab Data/Window vào Postgres (Supabase) cho Grafana. Bảng là dữ liệu dẫn xuất -> drop + tạo lại
-    trong 1 transaction mỗi lần chạy (Grafana không bao giờ thấy bảng dở dang, đổi schema tự áp dụng).
-    Schema riêng 'scouting': Supabase không mở schema này qua REST API công khai như 'public'."""
-    import psycopg
+def clean(r):
+    return [None if v == "" else {"Có": True, "Không": False}.get(v, v) for v in r]
 
-    def clean(r):
-        return [None if v == "" else {"Có": True, "Không": False}.get(v, v) for v in r]
 
-    order = {"7 ngày": 1, "30 ngày": 2, "Lifetime": 3}
-    with psycopg.connect(url) as con, con.cursor() as cur:
-        cur.execute(DB_SCHEMA)
-        cur.executemany("insert into scouting.app_daily values (" + ",".join(["%s"] * 19) + ")",
-                        [clean(r) for r in data_values[1:]])
-        cur.executemany("insert into scouting.app_window values (" + ",".join(["%s"] * 14) + ")",
-                        [clean(r[:1]) + [order[r[0]]] + clean(r[1:]) for r in window_values[1:]])
+# Schema riêng 'scouting': Supabase không mở schema này qua REST API công khai như 'public'
+order = {"7 ngày": 1, "30 ngày": 2, "Lifetime": 3}
+if pg_replace(DB_SCHEMA, {"scouting.app_daily": [clean(r) for r in data_values[1:]],
+                          "scouting.app_window": [clean(r[:1]) + [order[r[0]]] + clean(r[1:]) for r in window_values[1:]]}):
     print(f"OK — Postgres scouting.app_daily: {len(data_values) - 1} dòng, app_window: {len(window_values) - 1} dòng")
-
-
-if os.environ.get("DATABASE_URL"):
-    push_db(os.environ["DATABASE_URL"])
 
 svc = sheets()
 
