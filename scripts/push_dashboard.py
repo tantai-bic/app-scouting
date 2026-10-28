@@ -115,31 +115,91 @@ def build_data():
     return out
 
 
+def build_window():
+    """Tab 'Window' cho heatmap Looker: 1 dòng = Mốc (7 ngày / 30 ngày / Lifetime) × Cấp (App / Ngách /
+    Genre / Category) × Nhóm. Mốc N ngày: mỗi app so lần chạy mới nhất với lần chạy GẦN NHẤT của chính
+    app đó cách >= N ngày (app theo dõi chưa đủ N ngày thì lấy lần chạy đầu của nó) -> ngách mới thêm vẫn
+    có số. Tăng/ngày nhóm = Σ tốc độ từng app; "Số ngày" = độ dài ngắn nhất trong nhóm (< N = chưa đủ lịch sử);
+    "% tăng trong kỳ" quy về đúng N ngày. Lifetime: installs ÷ tuổi app (DL/ngày TB vòng đời)."""
+    if not dates:
+        return [[]]
+    d1 = dates[-1]
+    last = {p: v for (d, p), v in inst.items() if d == d1}
+    levels = [("App", None), ("Ngách", "niche"), ("Genre", "genre"), ("Category", "sub")]
+
+    def group(p, key):
+        return f'{raw[(d1, p)]["App"]} ({p})' if key is None else apps[p][key]
+
+    out = [["Mốc", "Cấp", "Nhóm", "Ngách", "Category", "Từ ngày", "Đến ngày", "Số ngày", "Số app",
+            "Tăng/ngày", "Tăng/ngày / app", "% tăng trong kỳ", "Tổng installs"]]
+    runs = {}  # pkg -> các ngày có số installs
+    for d, p in sorted(inst):
+        runs.setdefault(p, []).append(d)
+
+    windows = []  # (label, N, {pkg: (tốc độ/ngày, installs gốc, ngày gốc, số ngày)})
+    for n in (7, 30):
+        cutoff = (datetime.date.fromisoformat(d1) - datetime.timedelta(days=n)).isoformat()
+        w = {}
+        for p in last:
+            d0 = max((d for d in runs[p] if d <= cutoff), default=runs[p][0])
+            days = (datetime.date.fromisoformat(d1) - datetime.date.fromisoformat(d0)).days
+            if days:
+                w[p] = ((last[p] - inst[(d0, p)]) / days, inst[(d0, p)], d0, days)
+        windows.append((f"{n} ngày", n, w))
+    windows.append(("Lifetime", None, {p: (last[p] / num(raw[(d1, p)]["Tuổi (ngày)"]), 0, "", "")
+                                       for p in last if num(raw[(d1, p)]["Tuổi (ngày)"])}))
+
+    for label, n, w in windows:
+        for lvl, key in levels:
+            g = {}
+            for p in w:
+                g.setdefault(group(p, key), []).append(p)
+            for name, ps in sorted(g.items()):
+                r, b = sum(w[p][0] for p in ps), sum(w[p][1] for p in ps)
+                one = ps[0] if key is None else None
+                out.append([label, lvl, name, apps[one]["niche"] if one else (name if key == "niche" else ""),
+                            apps[one]["sub"] if one else (name if key == "sub" else ""),
+                            min(w[p][2] for p in ps) if n else "", d1, min(w[p][3] for p in ps) if n else "",
+                            len(ps), round(r), round(r / len(ps)),
+                            round(r * n / b, 4) if n and b else "", sum(last[p] for p in ps)])
+    return out
+
+
 data_values = build_data()
+window_values = build_window()
 
 if "--dry-run" in sys.argv:
     for t, values, m in built:
         print(f"--- {t} {m}")
         for v in values: print(v)
-    print(f"--- Data: {len(data_values) - 1} dòng")
-    for v in data_values[:3] + data_values[-2:]: print(v)
+    for t, vals in (("Data", data_values), ("Window", window_values)):
+        print(f"--- {t}: {len(vals) - 1} dòng")
+        for v in vals[:3] + vals[-2:]: print(v)
     sys.exit(0)
 
 svc = sheets()
 
-# tab Data: KHÔNG xoá/tạo lại (Looker Studio bám theo gid) -> chỉ clear + ghi đè giá trị
-meta = svc.get(spreadsheetId=SID, fields="sheets.properties").execute()["sheets"]
-gid = next((s["properties"]["sheetId"] for s in meta if s["properties"]["title"] == "Data"), None)
-if gid is None:
-    gid = svc.batchUpdate(spreadsheetId=SID, body={"requests": [{"addSheet": {"properties": {"title": "Data"}}}]}
-                          ).execute()["replies"][0]["addSheet"]["properties"]["sheetId"]
-svc.values().clear(spreadsheetId=SID, range="Data").execute()
-svc.values().update(spreadsheetId=SID, range="Data!A1", valueInputOption="RAW", body={"values": data_values}).execute()
-# cột Ngày ghi lại USER_ENTERED -> Sheets parse thành date thật, Looker nhận đúng kiểu Date
-# (các cột khác giữ RAW: tên app bắt đầu bằng "=" / "+" không bị hiểu thành công thức)
-svc.values().update(spreadsheetId=SID, range="Data!A2", valueInputOption="USER_ENTERED",
-                    body={"values": [[r[0]] for r in data_values[1:]]}).execute()
-print(f"OK — tab 'Data' (Looker Studio): {len(data_values) - 1} dòng — {SHEET_URL}#gid={gid}")
+
+def write_looker_tab(title, values, date_cols):
+    """Tab cho Looker Studio: KHÔNG xoá/tạo lại (Looker bám theo gid) -> chỉ clear + ghi đè giá trị.
+    Ghi RAW (tên app bắt đầu bằng "=" / "+" không bị hiểu thành công thức), rồi ghi lại các cột ngày
+    bằng USER_ENTERED -> Sheets parse thành date thật, Looker nhận đúng kiểu Date."""
+    meta = svc.get(spreadsheetId=SID, fields="sheets.properties").execute()["sheets"]
+    gid = next((s["properties"]["sheetId"] for s in meta if s["properties"]["title"] == title), None)
+    if gid is None:
+        gid = svc.batchUpdate(spreadsheetId=SID, body={"requests": [{"addSheet": {"properties": {"title": title}}}]}
+                              ).execute()["replies"][0]["addSheet"]["properties"]["sheetId"]
+    svc.values().clear(spreadsheetId=SID, range=title).execute()
+    svc.values().update(spreadsheetId=SID, range=f"{title}!A1", valueInputOption="RAW", body={"values": values}).execute()
+    for c in date_cols:
+        col = chr(ord("A") + c)
+        svc.values().update(spreadsheetId=SID, range=f"{title}!{col}2", valueInputOption="USER_ENTERED",
+                            body={"values": [[r[c]] for r in values[1:]]}).execute()
+    print(f"OK — tab '{title}' (Looker Studio): {len(values) - 1} dòng — {SHEET_URL}#gid={gid}")
+
+
+write_looker_tab("Data", data_values, [0])
+write_looker_tab("Window", window_values, [5, 6])
 BLUE = {"red": .85, "green": .89, "blue": .96}
 NUM = {"numberFormat": {"type": "NUMBER", "pattern": "#,##0"}}
 
