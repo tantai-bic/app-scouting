@@ -1743,5 +1743,310 @@
 "date": "2026-10-28",
 "n": 200,
 "habit": 0.005
+},
+"ai.x.grok": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.06
+},
+"all.documentreader.filereader.office.viewer": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.015
+},
+"cn.wps.moffice_eng": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.005
+},
+"co.appnation.geniechat": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.03
+},
+"com.adobe.premiere": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"com.adobe.reader": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.025
+},
+"com.alightcreative.motion": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.05
+},
+"com.anthropic.claude": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.1
+},
+"com.boost.cast.universal": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.005
+},
+"com.bytemind.studio.app.coinreel": {
+"date": "2026-10-28",
+"n": 72,
+"habit": 0.0
+},
+"com.camerasideas.trimmer": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.045
+},
+"com.ezt.pdfreader.pdfviewer": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.015
+},
+"com.facebook.stella": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.045
+},
+"com.focus.clarity.os.theme.launchernew": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.005
+},
+"com.frontrow.vlog": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.015
+},
+"com.gallery.photogallery.privategallery": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"com.giphy.messenger": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.03
+},
+"com.google.android.apps.bard": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.065
+},
+"com.google.android.apps.labs.language.tailwind": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.03
+},
+"com.google.android.apps.youtube.creator": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.035
+},
+"com.google.android.apps.youtube.producer": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.015
+},
+"com.google.android.youtube": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.095
+},
+"com.hecorat.screenrecorder.free": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.035
+},
+"com.hide.applock.protect.vaultg.fingerlock.free": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"com.idol.video.call.chat.prank": {
+"date": "2026-10-28",
+"n": 7,
+"habit": 0.0
+},
+"com.instagram.basel": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.02
+},
+"com.instantbits.cast.webvideo": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.055
+},
+"com.intsig.camscanner": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.105
+},
+"com.launcher.ios27.liquid.glass": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"com.lemon.lvoverseas": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.03
+},
+"com.logicworklab.fontstyle.lettering.design.logo.maker": {
+"date": "2026-10-28",
+"n": 28,
+"habit": 0.0
+},
+"com.meitu.wink": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.01
+},
+"com.microsoft.office.excel": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.065
+},
+"com.microsoft.office.word": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.095
+},
+"com.mirroring.app.casttv": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"com.nexora.labs.findmyphone.v1": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.005
+},
+"com.openai.chatgpt": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.115
+},
+"com.paidsurveys.polls": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.04
+},
+"com.rec.screen": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"com.rocks.music.videoplayer": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.09
+},
+"com.scaleup.chatai": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.045
+},
+"com.selink.box": {
+"date": "2026-10-28",
+"n": 19,
+"habit": 0.0
+},
+"com.shimeji.petonscreen.battery.emoji": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"com.teacapps.barcodescanner": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.03
+},
+"com.threespartners.bignumbercalendar": {
+"date": "2026-10-28",
+"n": 0,
+"habit": null
+},
+"com.trusted.pdfeditor.pdfreader": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.025
+},
+"com.wallpaper3d.parallax.hd": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"com.widget.icon.theme": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.02
+},
+"imagetopdf.pdfconverter.jpgtopdf.pdfeditor": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.025
+},
+"maxplayer.mediaplayer.videoplayer": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.025
+},
+"mp3videoconverter.videotomp3.videotomp3converter": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.025
+},
+"open.chat.gpt.aichat.bot.free.app": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.015
+},
+"org.videolan.vlc": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.075
+},
+"pdf.pdfreader.viewer.editor.free": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.01
+},
+"screenrecorder.videoeditor.videorecorder": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"video.downloader.videodownloader": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.055
+},
+"video.editor.videomaker.effects.fx": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.0
+},
+"video.player.videoplayer": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.04
+},
+"videoeditor.videorecorder.screenrecorder": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.02
+},
+"videopalyer.hd.video.music.player": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.005
+},
+"whistlephonefinder.findphonebywhistle": {
+"date": "2026-10-28",
+"n": 200,
+"habit": 0.02
 }
 }
