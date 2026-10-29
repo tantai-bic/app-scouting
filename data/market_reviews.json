@@ -2048,5 +2048,105 @@
 "date": "2026-10-28",
 "n": 200,
 "habit": 0.02
+},
+"cast.video.screenmirroring.casttotv": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.01
+},
+"clapphonefinder.findmyphone.clap.whistle.phone.finder.offline": {
+"date": "2026-10-29",
+"n": 17,
+"habit": 0.0
+},
+"cloud.coefont.cir_android": {
+"date": "2026-10-29",
+"n": 7,
+"habit": 0.0
+},
+"com.JindoBlu.OfflineGames": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.065
+},
+"com.anipic.anime.live.wallpaper.hd": {
+"date": "2026-10-29",
+"n": 1,
+"habit": 0.0
+},
+"com.colorrings.rotate.earn": {
+"date": "2026-10-29",
+"n": 43,
+"habit": 0.0
+},
+"com.draw.drawing.paint.painting.classic.pixel.art": {
+"date": "2026-10-29",
+"n": 162,
+"habit": 0.0062
+},
+"com.fatr.global": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.015
+},
+"com.freevpnplanet": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.08
+},
+"com.google.android.apps.docs.editors.docs": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.08
+},
+"com.mwm.procolor": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.025
+},
+"com.phellax.drum": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.0
+},
+"com.phonecleaner.junk.storage.cleaner": {
+"date": "2026-10-29",
+"n": 10,
+"habit": 0.0
+},
+"com.pianokeyboard.learnpiano.playmusic.instrument": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.03
+},
+"com.primeopinion.appname": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.025
+},
+"com.quvideo.xiaoying": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.045
+},
+"com.sm.mico": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.015
+},
+"com.splendapps.decibel": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.01
+},
+"com.supervpn.vpn.free.proxy": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.0
+},
+"io.voodoo.holeio": {
+"date": "2026-10-29",
+"n": 200,
+"habit": 0.035
 }
 }
