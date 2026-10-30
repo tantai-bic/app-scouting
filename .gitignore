@@ -9,3 +9,4 @@ node_modules/
 # top chart thô, tải lại mỗi lần chạy (node scripts/hotmap_list.mjs) -> không commit 2MB/ngày
 data/hotmap/top_free.json
 .playwright-mcp/
+logs/hotmap.log

@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      SHEET_ID: 1rJ7ZwJIwb-yCor6UWbzJXbo2GHAV51hLPoSeQ6Vuuko  # "Dream 100 — TEST (app-scouting CI)"
+      SHEET_ID: ${{ vars.TEST_SHEET_ID }}  # "Dream 100 — TEST (app-scouting CI)"
       DATA_DIR: /tmp/test/data
       LOGS_DIR: /tmp/test/logs
       FORCE_RUN: "1"

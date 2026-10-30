@@ -1,7 +1,7 @@
 # App Scouting — Dream 100
 
 Hệ thống lọc và theo dõi app Google Play tiềm năng. Tiêu chí: ≥5.000 download/ngày, phát hành ≤2 năm, không thuộc big company, có quảng cáo (IAA/hybrid).
-Kết quả đẩy lên Google Sheet: https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit
+Kết quả đẩy lên Google Sheet (cấu hình qua biến môi trường `SHEET_ID`).
 
 ---
 
@@ -162,7 +162,7 @@ File workflow: `.github/workflows/daily-tracking.yml`. Workflow chạy lúc **08
 #### Test trước khi chạy thật (`test-tracking`)
 
 File `.github/workflows/test-tracking.yml` **chỉ chạy tay**. Workflow chạy toàn bộ `daily_tracking.py` với **1 app** (`tests/fixture/verify_widget.json`) và ghi vào **Sheet test riêng**:
-https://docs.google.com/spreadsheets/d/1rJ7ZwJIwb-yCor6UWbzJXbo2GHAV51hLPoSeQ6Vuuko/edit
+(ID lấy từ repo variable `TEST_SHEET_ID`)
 
 - Mất khoảng 3–5 phút. Không đụng `data/` thật, không commit, không ghi Sheet thật.
 - Pass khi `Dream100.csv` có dữ liệu. Log và data test được upload thành artifact.
@@ -175,7 +175,7 @@ gh run watch --repo tantai-bic/app-scouting
 
 Chạy test ngay trên máy (cùng cơ chế; `logs/.daily_tracking_last_run` thật không bị ảnh hưởng):
 ```powershell
-$env:SHEET_ID="1rJ7ZwJIwb-yCor6UWbzJXbo2GHAV51hLPoSeQ6Vuuko"; $env:DATA_DIR="$env:TEMP\scout-test\data"; $env:LOGS_DIR="$env:TEMP\scout-test\logs"; $env:FORCE_RUN=1
+$env:SHEET_ID="<id-sheet-test>"; $env:DATA_DIR="$env:TEMP\scout-test\data"; $env:LOGS_DIR="$env:TEMP\scout-test\logs"; $env:FORCE_RUN=1
 New-Item -ItemType Directory -Force $env:DATA_DIR | Out-Null; Copy-Item tests\fixture\* $env:DATA_DIR
 python scripts/daily_tracking.py
 Remove-Item Env:SHEET_ID, Env:DATA_DIR, Env:LOGS_DIR, Env:FORCE_RUN   # QUAN TRỌNG: xoá biến để lần sau không ghi nhầm

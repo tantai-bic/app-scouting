@@ -22,7 +22,7 @@ def logged_pkgs():
         return {r["Package"] for r in csv.DictReader(f)}
 
 
-SID = os.environ.get("SHEET_ID") or "1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw"
+SID = os.environ["SHEET_ID"]  # đặt biến môi trường SHEET_ID (Actions: repo variable SHEET_ID)
 SHEET_URL = f"https://docs.google.com/spreadsheets/d/{SID}/edit"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets",
           "https://www.googleapis.com/auth/drive.file"]
