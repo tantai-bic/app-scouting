@@ -2243,5 +2243,70 @@
 "date": "2026-10-30",
 "n": 200,
 "habit": 0.03
+},
+"albums.gallery.photo.folder.picasa.app.web.gallery": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.015
+},
+"claptofindmyphone.phonefinder.clapgo": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.015
+},
+"com.commsource.beautyplus": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.13
+},
+"com.eztools.handfont.fontmaker": {
+"date": "2026-10-31",
+"n": 4,
+"habit": 0.0
+},
+"com.justdesserts.global": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.035
+},
+"com.lovefortunetellingbyname.appvn": {
+"date": "2026-10-31",
+"n": 18,
+"habit": 0.0
+},
+"com.origami.paper.folding.learn.craft": {
+"date": "2026-10-31",
+"n": 8,
+"habit": 0.0
+},
+"com.sh.tricky.relax.ticktock.mini.challenges.puzzle.games": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.005
+},
+"com.smiley.fun.live.wallpaper": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.005
+},
+"com.video.editor.greattalent": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.0
+},
+"dj.music.mixer.sound.effects": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.0
+},
+"pdf.reader.pdfviewer.pdfeditor": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.025
+},
+"smart.cleaner.smart": {
+"date": "2026-10-31",
+"n": 200,
+"habit": 0.005
 }
 }
