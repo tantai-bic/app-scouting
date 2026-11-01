@@ -2308,5 +2308,40 @@
 "date": "2026-10-31",
 "n": 200,
 "habit": 0.005
+},
+"com.charginganimation.batteryanimation.batterycharger": {
+"date": "2026-11-01",
+"n": 91,
+"habit": 0.0
+},
+"com.dramavibe.stream": {
+"date": "2026-11-01",
+"n": 80,
+"habit": 0.0
+},
+"com.editingappsforphotos.hdphotoeditor": {
+"date": "2026-11-01",
+"n": 200,
+"habit": 0.01
+},
+"com.luvasadistro.phoneclean.storage": {
+"date": "2026-11-01",
+"n": 8,
+"habit": 0.0
+},
+"com.tuya.smartlife": {
+"date": "2026-11-01",
+"n": 200,
+"habit": 0.06
+},
+"com.webelinx.tarot": {
+"date": "2026-11-01",
+"n": 200,
+"habit": 0.065
+},
+"live.shorttv.apps": {
+"date": "2026-11-01",
+"n": 200,
+"habit": 0.04
 }
 }
