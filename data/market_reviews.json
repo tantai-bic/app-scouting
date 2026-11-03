@@ -2373,5 +2373,50 @@
 "date": "2026-11-02",
 "n": 58,
 "habit": 0.0
+},
+"com.ai.aiphoto.aivideo.creator.generator": {
+"date": "2026-11-03",
+"n": 6,
+"habit": 0.0
+},
+"com.fc.live.idol.prank.video.call.chat.phone.fun": {
+"date": "2026-11-03",
+"n": 25,
+"habit": 0.0
+},
+"com.lavo.run.and": {
+"date": "2026-11-03",
+"n": 143,
+"habit": 0.014
+},
+"com.mt.mtxx.mtxx": {
+"date": "2026-11-03",
+"n": 200,
+"habit": 0.045
+},
+"com.mwm.sampler": {
+"date": "2026-11-03",
+"n": 200,
+"habit": 0.005
+},
+"com.sensemobile.action": {
+"date": "2026-11-03",
+"n": 200,
+"habit": 0.005
+},
+"com.vksoft.iosemojis.keyboard": {
+"date": "2026-11-03",
+"n": 200,
+"habit": 0.0
+},
+"com.zyhwplatform.shortplay": {
+"date": "2026-11-03",
+"n": 200,
+"habit": 0.015
+},
+"free.ai.photo.generator.collart.ai": {
+"date": "2026-11-03",
+"n": 200,
+"habit": 0.05
 }
 }
