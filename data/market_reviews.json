@@ -295,7 +295,7 @@
 "habit": 0.025
 },
 "com.blackmagicdesign.android.blackmagiccam": {
-"date": "2026-10-28",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.005
 },
@@ -525,7 +525,7 @@
 "habit": 0.0
 },
 "com.figma.mirror": {
-"date": "2026-10-28",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.02
 },
@@ -895,13 +895,13 @@
 "habit": 0.07
 },
 "com.oceangalaxy.camera.new": {
-"date": "2026-10-28",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.03
 },
 "com.origami.craft.fold.create": {
-"date": "2026-10-28",
-"n": 18,
+"date": "2026-11-05",
+"n": 19,
 "habit": 0.0
 },
 "com.origami.paper.folding.craft": {
@@ -1035,7 +1035,7 @@
 "habit": 0.055
 },
 "com.realdrum.drumset.drumapp.beatmaker.music.instruments.drumkit": {
-"date": "2026-10-28",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.005
 },
@@ -1160,7 +1160,7 @@
 "habit": 0.01
 },
 "com.stickerstudio.text": {
-"date": "2026-10-28",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.0
 },
@@ -2075,27 +2075,27 @@
 "habit": 0.0
 },
 "com.colorrings.rotate.earn": {
-"date": "2026-10-29",
-"n": 43,
-"habit": 0.0
+"date": "2026-11-05",
+"n": 200,
+"habit": 0.005
 },
 "com.draw.drawing.paint.painting.classic.pixel.art": {
-"date": "2026-10-29",
-"n": 162,
-"habit": 0.0062
+"date": "2026-11-05",
+"n": 181,
+"habit": 0.0055
 },
 "com.fatr.global": {
-"date": "2026-10-29",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.015
 },
 "com.freevpnplanet": {
-"date": "2026-10-29",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.08
 },
 "com.google.android.apps.docs.editors.docs": {
-"date": "2026-10-29",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.08
 },
@@ -2115,7 +2115,7 @@
 "habit": 0.0
 },
 "com.pianokeyboard.learnpiano.playmusic.instrument": {
-"date": "2026-10-29",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.03
 },
@@ -2125,7 +2125,7 @@
 "habit": 0.025
 },
 "com.quvideo.xiaoying": {
-"date": "2026-10-29",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.045
 },
@@ -2140,7 +2140,7 @@
 "habit": 0.01
 },
 "com.supervpn.vpn.free.proxy": {
-"date": "2026-10-29",
+"date": "2026-11-05",
 "n": 200,
 "habit": 0.0
 },
@@ -2453,5 +2453,45 @@
 "date": "2026-11-04",
 "n": 200,
 "habit": 0.04
+},
+"com.Gamnest.CrazyFarmer": {
+"date": "2026-11-05",
+"n": 93,
+"habit": 0.0
+},
+"com.anti.cleaner.phoener": {
+"date": "2026-11-05",
+"n": 200,
+"habit": 0.005
+},
+"com.gpscamera.map.location.geotagphoto": {
+"date": "2026-11-05",
+"n": 200,
+"habit": 0.01
+},
+"com.iptv.smarter.pro.tv.livetv": {
+"date": "2026-11-05",
+"n": 200,
+"habit": 0.0
+},
+"com.ivilamobie.draw.paint.coloring": {
+"date": "2026-11-05",
+"n": 200,
+"habit": 0.005
+},
+"com.pixeltaprush": {
+"date": "2026-11-05",
+"n": 200,
+"habit": 0.0
+},
+"com.touchtype.swiftkey": {
+"date": "2026-11-05",
+"n": 200,
+"habit": 0.165
+},
+"pampam.ibf2": {
+"date": "2026-11-05",
+"n": 200,
+"habit": 0.01
 }
 }
