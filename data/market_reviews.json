@@ -50,7 +50,7 @@
 "habit": 0.01
 },
 "app.quiet.cleanmanager": {
-"date": "2026-10-28",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.0
 },
@@ -455,7 +455,7 @@
 "habit": 0.055
 },
 "com.edjing.edjingdjturntable": {
-"date": "2026-10-28",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.04
 },
@@ -1360,7 +1360,7 @@
 "habit": 0.0
 },
 "cool.fonts.symbol.keyboard.custom.fancy.text.editor": {
-"date": "2026-10-28",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.02
 },
@@ -1455,8 +1455,8 @@
 "habit": 0.0
 },
 "io.battery.widget.statusbar.customemojibattery.cute.emojisticker": {
-"date": "2026-10-28",
-"n": 15,
+"date": "2026-11-07",
+"n": 49,
 "habit": 0.0
 },
 "io.playout": {
@@ -2065,7 +2065,7 @@
 "habit": 0.0
 },
 "com.JindoBlu.OfflineGames": {
-"date": "2026-10-29",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.065
 },
@@ -2255,7 +2255,7 @@
 "habit": 0.015
 },
 "com.commsource.beautyplus": {
-"date": "2026-10-31",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.13
 },
@@ -2265,22 +2265,22 @@
 "habit": 0.0
 },
 "com.justdesserts.global": {
-"date": "2026-10-31",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.035
 },
 "com.lovefortunetellingbyname.appvn": {
-"date": "2026-10-31",
+"date": "2026-11-07",
 "n": 18,
 "habit": 0.0
 },
 "com.origami.paper.folding.learn.craft": {
-"date": "2026-10-31",
-"n": 8,
+"date": "2026-11-07",
+"n": 9,
 "habit": 0.0
 },
 "com.sh.tricky.relax.ticktock.mini.challenges.puzzle.games": {
-"date": "2026-10-31",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.005
 },
@@ -2295,17 +2295,17 @@
 "habit": 0.0
 },
 "dj.music.mixer.sound.effects": {
-"date": "2026-10-31",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.0
 },
 "pdf.reader.pdfviewer.pdfeditor": {
-"date": "2026-10-31",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.025
 },
 "smart.cleaner.smart": {
-"date": "2026-10-31",
+"date": "2026-11-07",
 "n": 200,
 "habit": 0.005
 },
@@ -2548,5 +2548,30 @@
 "date": "2026-11-06",
 "n": 200,
 "habit": 0.005
+},
+"com.cheezteam.org": {
+"date": "2026-11-07",
+"n": 148,
+"habit": 0.0
+},
+"com.hp.clicker.diy.asmr.charm.master": {
+"date": "2026-11-07",
+"n": 2,
+"habit": 0.0
+},
+"com.rare.wallpapers": {
+"date": "2026-11-07",
+"n": 200,
+"habit": 0.02
+},
+"com.tarot.yesno.relationship.destiny.cards": {
+"date": "2026-11-07",
+"n": 2,
+"habit": 0.0
+},
+"fenmysaho.pdf.reader.viewer": {
+"date": "2026-11-07",
+"n": 48,
+"habit": 0.0
 }
 }
