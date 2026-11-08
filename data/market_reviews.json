@@ -715,7 +715,7 @@
 "habit": 0.055
 },
 "com.jgame.relaxgames": {
-"date": "2026-10-28",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.0
 },
@@ -885,9 +885,9 @@
 "habit": 0.08
 },
 "com.nut.stack.sort.puzzle": {
-"date": "2026-10-28",
+"date": "2026-11-08",
 "n": 200,
-"habit": 0.0
+"habit": 0.005
 },
 "com.oakever.zencolor": {
 "date": "2026-11-04",
@@ -1005,12 +1005,12 @@
 "habit": 0.135
 },
 "com.prank.sound.airhorn.haircut.razor.clipper": {
-"date": "2026-10-28",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.005
 },
 "com.prankcall.idolprank.celebritycall.fakechat.fakecall.videocallprank": {
-"date": "2026-10-28",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.0
 },
@@ -1485,7 +1485,7 @@
 "habit": 0.065
 },
 "me.zepeto.main": {
-"date": "2026-10-28",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.08
 },
@@ -2200,7 +2200,7 @@
 "habit": 0.0
 },
 "com.outfit7.mytalkingangelafree": {
-"date": "2026-10-30",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.055
 },
@@ -2240,12 +2240,12 @@
 "habit": 0.01
 },
 "volumebooster.sound.loud.speaker.booster": {
-"date": "2026-10-30",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.03
 },
 "albums.gallery.photo.folder.picasa.app.web.gallery": {
-"date": "2026-10-31",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.015
 },
@@ -2260,8 +2260,8 @@
 "habit": 0.13
 },
 "com.eztools.handfont.fontmaker": {
-"date": "2026-10-31",
-"n": 4,
+"date": "2026-11-08",
+"n": 9,
 "habit": 0.0
 },
 "com.justdesserts.global": {
@@ -2310,32 +2310,32 @@
 "habit": 0.005
 },
 "com.charginganimation.batteryanimation.batterycharger": {
-"date": "2026-11-01",
-"n": 91,
+"date": "2026-11-08",
+"n": 105,
 "habit": 0.0
 },
 "com.dramavibe.stream": {
-"date": "2026-11-01",
-"n": 80,
+"date": "2026-11-08",
+"n": 90,
 "habit": 0.0
 },
 "com.editingappsforphotos.hdphotoeditor": {
-"date": "2026-11-01",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.01
 },
 "com.luvasadistro.phoneclean.storage": {
-"date": "2026-11-01",
-"n": 8,
+"date": "2026-11-08",
+"n": 46,
 "habit": 0.0
 },
 "com.tuya.smartlife": {
-"date": "2026-11-01",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.06
 },
 "com.webelinx.tarot": {
-"date": "2026-11-01",
+"date": "2026-11-08",
 "n": 200,
 "habit": 0.065
 },
@@ -2572,6 +2572,31 @@
 "fenmysaho.pdf.reader.viewer": {
 "date": "2026-11-07",
 "n": 48,
+"habit": 0.0
+},
+"com.playrix.gardenscapes": {
+"date": "2026-11-08",
+"n": 200,
+"habit": 0.17
+},
+"com.sharekaro.app": {
+"date": "2026-11-08",
+"n": 200,
+"habit": 0.015
+},
+"com.sillysmile.live.wallpaper.funny": {
+"date": "2026-11-08",
+"n": 132,
+"habit": 0.0
+},
+"com.yadavaenterprises.yadava": {
+"date": "2026-11-08",
+"n": 0,
+"habit": null
+},
+"rollingicon.fallingicon.animation.rolling.wallpaper.theme.rollingapp": {
+"date": "2026-11-08",
+"n": 200,
 "habit": 0.0
 }
 }
