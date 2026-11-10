@@ -415,9 +415,9 @@
 "habit": 0.01
 },
 "com.drama.free": {
-"date": "2026-10-28",
+"date": "2026-11-10",
 "n": 200,
-"habit": 0.0
+"habit": 0.02
 },
 "com.dramaton.slime": {
 "date": "2026-11-04",
@@ -1935,7 +1935,7 @@
 "habit": 0.04
 },
 "com.rec.screen": {
-"date": "2026-10-28",
+"date": "2026-11-10",
 "n": 200,
 "habit": 0.0
 },
@@ -2050,7 +2050,7 @@
 "habit": 0.02
 },
 "cast.video.screenmirroring.casttotv": {
-"date": "2026-10-29",
+"date": "2026-11-10",
 "n": 200,
 "habit": 0.01
 },
@@ -2375,13 +2375,13 @@
 "habit": 0.0
 },
 "com.ai.aiphoto.aivideo.creator.generator": {
-"date": "2026-11-03",
-"n": 6,
+"date": "2026-11-10",
+"n": 46,
 "habit": 0.0
 },
 "com.fc.live.idol.prank.video.call.chat.phone.fun": {
-"date": "2026-11-03",
-"n": 25,
+"date": "2026-11-10",
+"n": 59,
 "habit": 0.0
 },
 "com.lavo.run.and": {
@@ -2390,14 +2390,14 @@
 "habit": 0.014
 },
 "com.mt.mtxx.mtxx": {
-"date": "2026-11-03",
+"date": "2026-11-10",
 "n": 200,
-"habit": 0.045
+"habit": 0.055
 },
 "com.mwm.sampler": {
-"date": "2026-11-03",
+"date": "2026-11-10",
 "n": 200,
-"habit": 0.005
+"habit": 0.01
 },
 "com.sensemobile.action": {
 "date": "2026-11-03",
@@ -2410,14 +2410,14 @@
 "habit": 0.0
 },
 "com.zyhwplatform.shortplay": {
-"date": "2026-11-03",
+"date": "2026-11-10",
 "n": 200,
-"habit": 0.015
+"habit": 0.025
 },
 "free.ai.photo.generator.collart.ai": {
-"date": "2026-11-03",
+"date": "2026-11-10",
 "n": 200,
-"habit": 0.05
+"habit": 0.035
 },
 "com.Steal.Eggs.Monster.Escape": {
 "date": "2026-11-04",
@@ -2653,5 +2653,60 @@
 "date": "2026-11-09",
 "n": 200,
 "habit": 0.035
+},
+"com.app.tech.town.pdf.viewer.reader": {
+"date": "2026-11-10",
+"n": 137,
+"habit": 0.0
+},
+"com.bigsoft.sketchsound.drawmusic": {
+"date": "2026-11-10",
+"n": 200,
+"habit": 0.005
+},
+"com.camera.ghost.detector.prank.tracker": {
+"date": "2026-11-10",
+"n": 22,
+"habit": 0.0
+},
+"com.dj.mixer.studio.musicmix.audio": {
+"date": "2026-11-10",
+"n": 10,
+"habit": 0.0
+},
+"com.gopro.smarty": {
+"date": "2026-11-10",
+"n": 200,
+"habit": 0.04
+},
+"com.one4studio.one4home": {
+"date": "2026-11-10",
+"n": 200,
+"habit": 0.045
+},
+"com.wallpapers.wallpaper4k.livewallpaper": {
+"date": "2026-11-10",
+"n": 200,
+"habit": 0.005
+},
+"com.ziplock.zipperlockscreen.theme.wallpaper": {
+"date": "2026-11-10",
+"n": 10,
+"habit": 0.0
+},
+"fc.all.text.pdf.document.voice.image.translate": {
+"date": "2026-11-10",
+"n": 200,
+"habit": 0.005
+},
+"moe.shizuku.privileged.api": {
+"date": "2026-11-10",
+"n": 200,
+"habit": 0.01
+},
+"photo.hidepicture.album.gallery": {
+"date": "2026-11-10",
+"n": 200,
+"habit": 0.005
 }
 }
