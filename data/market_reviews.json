@@ -35,7 +35,7 @@
 "habit": 0.0
 },
 "alpha.sticker.maker": {
-"date": "2026-11-04",
+"date": "2026-11-13",
 "n": 200,
 "habit": 0.0
 },
@@ -330,7 +330,7 @@
 "habit": 0.0
 },
 "com.charginganimation.charging.screen.theme.app.battery.show": {
-"date": "2026-11-04",
+"date": "2026-11-13",
 "n": 200,
 "habit": 0.0
 },
@@ -430,7 +430,7 @@
 "habit": 0.04
 },
 "com.draw.drawing.pixel.art.color.coloring.by.number": {
-"date": "2026-11-06",
+"date": "2026-11-13",
 "n": 34,
 "habit": 0.0
 },
@@ -900,8 +900,8 @@
 "habit": 0.035
 },
 "com.origami.craft.fold.create": {
-"date": "2026-11-05",
-"n": 19,
+"date": "2026-11-13",
+"n": 20,
 "habit": 0.0
 },
 "com.origami.paper.folding.craft": {
@@ -1155,9 +1155,9 @@
 "habit": 0.0
 },
 "com.stickermobi.avatarmaker": {
-"date": "2026-10-28",
+"date": "2026-11-13",
 "n": 200,
-"habit": 0.01
+"habit": 0.02
 },
 "com.stickerstudio.text": {
 "date": "2026-11-12",
@@ -1310,7 +1310,7 @@
 "habit": 0.025
 },
 "com.widgetkit.widget.theme.wallpaper.icon.sceen.scape": {
-"date": "2026-11-04",
+"date": "2026-11-13",
 "n": 200,
 "habit": 0.01
 },
@@ -1500,7 +1500,7 @@
 "habit": 0.035
 },
 "music.disc.dj.mixer.music.mixer": {
-"date": "2026-11-06",
+"date": "2026-11-13",
 "n": 200,
 "habit": 0.02
 },
@@ -1945,9 +1945,9 @@
 "habit": 0.09
 },
 "com.scaleup.chatai": {
-"date": "2026-10-28",
+"date": "2026-11-13",
 "n": 200,
-"habit": 0.045
+"habit": 0.01
 },
 "com.selink.box": {
 "date": "2026-10-28",
@@ -1975,7 +1975,7 @@
 "habit": 0.02
 },
 "com.wallpaper3d.parallax.hd": {
-"date": "2026-10-28",
+"date": "2026-11-13",
 "n": 200,
 "habit": 0.0
 },
@@ -2125,9 +2125,9 @@
 "habit": 0.025
 },
 "com.quvideo.xiaoying": {
-"date": "2026-11-05",
+"date": "2026-11-13",
 "n": 200,
-"habit": 0.045
+"habit": 0.06
 },
 "com.sm.mico": {
 "date": "2026-10-29",
@@ -2150,14 +2150,14 @@
 "habit": 0.035
 },
 "ai.app.ai": {
-"date": "2026-11-06",
+"date": "2026-11-13",
 "n": 200,
-"habit": 0.025
+"habit": 0.045
 },
 "cashgiraffe.app": {
-"date": "2026-11-06",
+"date": "2026-11-13",
 "n": 200,
-"habit": 0.11
+"habit": 0.07
 },
 "co.voicescreenlock": {
 "date": "2026-11-06",
@@ -2170,8 +2170,8 @@
 "habit": 0.005
 },
 "com.creativedesigners.fontini": {
-"date": "2026-11-06",
-"n": 40,
+"date": "2026-11-13",
+"n": 41,
 "habit": 0.0
 },
 "com.dongbasiki.painting.art.coloring": {
@@ -2210,14 +2210,14 @@
 "habit": 0.0
 },
 "com.santa.prankcall.customize.chat.funny.stimulator": {
-"date": "2026-11-06",
-"n": 4,
+"date": "2026-11-13",
+"n": 7,
 "habit": 0.0
 },
 "com.uc.gym.clicker": {
-"date": "2026-11-06",
+"date": "2026-11-13",
 "n": 200,
-"habit": 0.015
+"habit": 0.01
 },
 "com.volumecontrol.volumebassbooster.android2023": {
 "date": "2026-11-06",
@@ -2225,8 +2225,8 @@
 "habit": 0.0
 },
 "romanticwallpaper.lovewallpaper.hd": {
-"date": "2026-11-06",
-"n": 7,
+"date": "2026-11-13",
+"n": 17,
 "habit": 0.0
 },
 "style.chat.niko.android": {
@@ -2525,29 +2525,29 @@
 "habit": 0.03
 },
 "com.stickerstudio.sticktok": {
-"date": "2026-11-06",
+"date": "2026-11-13",
 "n": 49,
 "habit": 0.0
 },
 "com.yourstudio.pinkpour": {
-"date": "2026-11-06",
-"n": 25,
+"date": "2026-11-13",
+"n": 53,
 "habit": 0.0
 },
 "easycontrol.controlcenter.controlpanel.simple": {
-"date": "2026-11-06",
+"date": "2026-11-13",
 "n": 200,
-"habit": 0.01
+"habit": 0.005
 },
 "life.growly.emoji.battery.icon.statusbar.sticker.customize": {
-"date": "2026-11-06",
-"n": 16,
+"date": "2026-11-13",
+"n": 68,
 "habit": 0.0
 },
 "photo.manager.private.photogallery": {
-"date": "2026-11-06",
+"date": "2026-11-13",
 "n": 200,
-"habit": 0.005
+"habit": 0.015
 },
 "com.cheezteam.org": {
 "date": "2026-11-07",
@@ -2778,5 +2778,30 @@
 "date": "2026-11-12",
 "n": 119,
 "habit": 0.0
+},
+"com.fc.bk.zipper.lock.screen.wallpaper": {
+"date": "2026-11-13",
+"n": 100,
+"habit": 0.0
+},
+"com.gamma.pdfreader": {
+"date": "2026-11-13",
+"n": 200,
+"habit": 0.01
+},
+"com.outfit7.mytalkinghank": {
+"date": "2026-11-13",
+"n": 200,
+"habit": 0.015
+},
+"com.thebes.galleryapp": {
+"date": "2026-11-13",
+"n": 72,
+"habit": 0.0
+},
+"pl.netigen.toolstuner": {
+"date": "2026-11-13",
+"n": 200,
+"habit": 0.005
 }
 }
