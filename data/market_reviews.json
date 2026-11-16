@@ -230,7 +230,7 @@
 "habit": 0.01
 },
 "com.azmobile.broken.screen.wallpaper": {
-"date": "2026-10-28",
+"date": "2026-11-16",
 "n": 200,
 "habit": 0.005
 },
@@ -485,8 +485,8 @@
 "habit": 0.0
 },
 "com.emojikeyboard.themes.font.sticker": {
-"date": "2026-11-09",
-"n": 39,
+"date": "2026-11-16",
+"n": 51,
 "habit": 0.0
 },
 "com.emojimaker.emoji.sticker.mix": {
@@ -740,9 +740,9 @@
 "habit": 0.07
 },
 "com.kayac.ball_run": {
-"date": "2026-11-04",
+"date": "2026-11-16",
 "n": 200,
-"habit": 0.01
+"habit": 0.015
 },
 "com.king.candycrushsaga": {
 "date": "2026-11-11",
@@ -1230,9 +1230,9 @@
 "habit": 0.025
 },
 "com.timewarp.scan.bluelinefiltertiktok.free": {
-"date": "2026-10-28",
+"date": "2026-11-16",
 "n": 200,
-"habit": 0.01
+"habit": 0.005
 },
 "com.tplink.iot": {
 "date": "2026-11-11",
@@ -1940,9 +1940,9 @@
 "habit": 0.0
 },
 "com.rocks.music.videoplayer": {
-"date": "2026-10-28",
+"date": "2026-11-16",
 "n": 200,
-"habit": 0.09
+"habit": 0.1
 },
 "com.scaleup.chatai": {
 "date": "2026-11-13",
@@ -2115,9 +2115,9 @@
 "habit": 0.0
 },
 "com.pianokeyboard.learnpiano.playmusic.instrument": {
-"date": "2026-11-05",
+"date": "2026-11-16",
 "n": 200,
-"habit": 0.03
+"habit": 0.025
 },
 "com.primeopinion.appname": {
 "date": "2026-10-29",
@@ -2230,8 +2230,8 @@
 "habit": 0.0
 },
 "style.chat.niko.android": {
-"date": "2026-10-30",
-"n": 117,
+"date": "2026-11-16",
+"n": 119,
 "habit": 0.0
 },
 "timewarpscanner.facescan.timewarp.timewarpscan": {
@@ -2245,7 +2245,7 @@
 "habit": 0.03
 },
 "albums.gallery.photo.folder.picasa.app.web.gallery": {
-"date": "2026-11-08",
+"date": "2026-11-16",
 "n": 200,
 "habit": 0.015
 },
@@ -2360,8 +2360,8 @@
 "habit": 0.0
 },
 "com.higame.par.joystick.makeover.diy.gamepad": {
-"date": "2026-11-09",
-"n": 101,
+"date": "2026-11-16",
+"n": 103,
 "habit": 0.0
 },
 "com.hmbl.perfect.makeover.cleaning.asmr": {
@@ -2370,7 +2370,7 @@
 "habit": 0.0
 },
 "com.princess.coloringdodo": {
-"date": "2026-11-09",
+"date": "2026-11-16",
 "n": 58,
 "habit": 0.0
 },
@@ -2605,9 +2605,9 @@
 "habit": 0.0145
 },
 "audio.equalizer.volume.booster": {
-"date": "2026-11-09",
+"date": "2026-11-16",
 "n": 200,
-"habit": 0.01
+"habit": 0.015
 },
 "com.astrology.cosmic.destiny.daily.readings": {
 "date": "2026-11-09",
@@ -2620,7 +2620,7 @@
 "habit": 0.025
 },
 "com.google.android.apps.docs.editors.sheets": {
-"date": "2026-11-09",
+"date": "2026-11-16",
 "n": 200,
 "habit": 0.05
 },
@@ -2640,9 +2640,9 @@
 "habit": 0.0
 },
 "com.romantic.lovesticker": {
-"date": "2026-11-09",
-"n": 9,
-"habit": 0.1111
+"date": "2026-11-16",
+"n": 20,
+"habit": 0.0
 },
 "pranksounds.airhornfartsoundhaircutclipper.funnyjoke.hiprank": {
 "date": "2026-11-09",
@@ -2883,5 +2883,30 @@
 "date": "2026-11-15",
 "n": 64,
 "habit": 0.0156
+},
+"com.artmate.draw.together.lessons.battle": {
+"date": "2026-11-16",
+"n": 23,
+"habit": 0.0
+},
+"com.everydoggy.android": {
+"date": "2026-11-16",
+"n": 200,
+"habit": 0.025
+},
+"com.funfun.filter.challenge": {
+"date": "2026-11-16",
+"n": 0,
+"habit": null
+},
+"com.horoscope.astrology.birth.chart.astro": {
+"date": "2026-11-16",
+"n": 1,
+"habit": 0.0
+},
+"com.microsoft.launcher": {
+"date": "2026-11-16",
+"n": 200,
+"habit": 0.095
 }
 }
