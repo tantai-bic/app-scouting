@@ -2050,9 +2050,9 @@
 "habit": 0.02
 },
 "cast.video.screenmirroring.casttotv": {
-"date": "2026-11-10",
+"date": "2026-11-17",
 "n": 200,
-"habit": 0.01
+"habit": 0.015
 },
 "clapphonefinder.findmyphone.clap.whistle.phone.finder.offline": {
 "date": "2026-10-29",
@@ -2320,7 +2320,7 @@
 "habit": 0.0
 },
 "com.editingappsforphotos.hdphotoeditor": {
-"date": "2026-11-08",
+"date": "2026-11-17",
 "n": 200,
 "habit": 0.01
 },
@@ -2365,7 +2365,7 @@
 "habit": 0.0
 },
 "com.hmbl.perfect.makeover.cleaning.asmr": {
-"date": "2026-11-02",
+"date": "2026-11-17",
 "n": 200,
 "habit": 0.0
 },
@@ -2390,14 +2390,14 @@
 "habit": 0.014
 },
 "com.mt.mtxx.mtxx": {
-"date": "2026-11-10",
+"date": "2026-11-17",
 "n": 200,
-"habit": 0.055
+"habit": 0.045
 },
 "com.mwm.sampler": {
-"date": "2026-11-10",
+"date": "2026-11-17",
 "n": 200,
-"habit": 0.01
+"habit": 0.0
 },
 "com.sensemobile.action": {
 "date": "2026-11-03",
@@ -2410,14 +2410,14 @@
 "habit": 0.0
 },
 "com.zyhwplatform.shortplay": {
-"date": "2026-11-10",
+"date": "2026-11-17",
 "n": 200,
-"habit": 0.025
+"habit": 0.015
 },
 "free.ai.photo.generator.collart.ai": {
-"date": "2026-11-10",
+"date": "2026-11-17",
 "n": 200,
-"habit": 0.035
+"habit": 0.06
 },
 "com.Steal.Eggs.Monster.Escape": {
 "date": "2026-11-11",
@@ -2590,9 +2590,9 @@
 "habit": 0.0
 },
 "com.yadavaenterprises.yadava": {
-"date": "2026-11-08",
-"n": 0,
-"habit": null
+"date": "2026-11-17",
+"n": 13,
+"habit": 0.0
 },
 "rollingicon.fallingicon.animation.rolling.wallpaper.theme.rollingapp": {
 "date": "2026-11-08",
@@ -2670,8 +2670,8 @@
 "habit": 0.0
 },
 "com.dj.mixer.studio.musicmix.audio": {
-"date": "2026-11-10",
-"n": 10,
+"date": "2026-11-17",
+"n": 25,
 "habit": 0.0
 },
 "com.gopro.smarty": {
@@ -2690,12 +2690,12 @@
 "habit": 0.005
 },
 "com.ziplock.zipperlockscreen.theme.wallpaper": {
-"date": "2026-11-10",
-"n": 10,
+"date": "2026-11-17",
+"n": 12,
 "habit": 0.0
 },
 "fc.all.text.pdf.document.voice.image.translate": {
-"date": "2026-11-10",
+"date": "2026-11-17",
 "n": 200,
 "habit": 0.005
 },
@@ -2705,7 +2705,7 @@
 "habit": 0.01
 },
 "photo.hidepicture.album.gallery": {
-"date": "2026-11-10",
+"date": "2026-11-17",
 "n": 200,
 "habit": 0.005
 },
@@ -2908,5 +2908,20 @@
 "date": "2026-11-16",
 "n": 200,
 "habit": 0.095
+},
+"app.ninjavpn.android": {
+"date": "2026-11-17",
+"n": 200,
+"habit": 0.02
+},
+"com.cleaner.rez.cleantotal": {
+"date": "2026-11-17",
+"n": 141,
+"habit": 0.0
+},
+"com.swiftclean.pro.max": {
+"date": "2026-11-17",
+"n": 10,
+"habit": 0.0
 }
 }
