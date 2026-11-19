@@ -14196,3 +14196,251 @@ OK — tab 'Dashboard Category': 17 nhóm (9 có lịch sử), 52 kỳ — https
 2026-11-18 08:21:45 tổng thời gian: 2.1 phút
 2026-11-18 08:21:45 === xong ===
 
+2026-11-19 08:31:19 === bắt đầu daily_tracking ===
+2026-11-19 08:31:19 [env] host=runnervmccnms os=Linux-7.0.0-1019-azure-x86_64-with-glibc2.43 python=3.14.10
+2026-11-19 08:31:19 [env] utc_now=2026-11-19 08:31:19 TODAY(local)=2026-11-19
+2026-11-19 08:31:19 [env] github event=schedule run_id=44488268171 attempt=1 sha=72dc831
+2026-11-19 08:31:19 [env] token.json: account=? expiry=2026-09-18T04:54:04Z có refresh_token=True
+2026-11-19 08:31:19 --- Widget / Control Panel ---
+2026-11-19 08:31:19 Widget / Control Panel: 60 pkg cần theo dõi
+2026-11-19 08:31:19   [installs] com.dongbasiki.easycontrol.controlpanel.os (0.2s): 2277969 -> 2280356 verdict PASS -> PASS
+2026-11-19 08:31:19   [installs] easycontrol.controlcenter.controlpanel.simple (0.1s): 14892274 -> 14947187 verdict FAIL:too-old -> FAIL:too-old
+2026-11-19 08:31:19   [installs] com.control.widget.custom.panel.wallpaper.pack (0.2s): 11850225 -> 11886757 verdict PASS -> PASS
+2026-11-19 08:31:20   [installs] com.ivilamobie.controlcenter.handy (0.2s): 134102 -> 134102 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:20   [installs] com.stormvortex.theme.control.panel (0.2s): 23703 -> 23787 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:20   [installs] leva.controlcenterios.notificationcenter (0.2s): 1819143 -> 1819143 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:20   [installs] easypanel.controlpanel.controlwidget.theme.easycontrol (0.2s): 730804 -> 738323 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:20   [installs] com.ioscontrol.themed.control.center.smart (0.2s): 29338026 -> 29338026 verdict PASS -> PASS
+2026-11-19 08:31:21   [installs] os.control.center.status.navigation (0.2s): 296501 -> 299008 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:21   [installs] control.center.ioscontrol.micontrol.controlcenter (0.1s): 99562 -> 99608 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:21   [installs] com.widgets.themed.control.center (0.1s): 164166 -> 164233 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:21   [installs] lỗi scrape widget.themes.icon.controller.app (0.2s): App not found(404). — giữ số cũ
+2026-11-19 08:31:21   [installs] com.tools.controlcenter.max.tool.easy (0.1s): 444835 -> 445041 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:21   [installs] com.icontrol.easy.widgets.themes (0.2s): 44960706 -> 44960706 verdict PASS -> PASS
+2026-11-19 08:31:21   [installs] com.zenpanel.control.widget.theme (0.2s): 214160 -> 214160 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:22   [installs] com.control.widget.theme.panel (0.1s): 105956 -> 108302 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:22   [installs] com.wico.control.panel.theme.custom.center.setting (0.2s): 389666 -> 389710 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:22   [installs] com.quickios.controlcenter (0.2s): 259160 -> 259790 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:22   [installs] lỗi scrape com.control.center.ios.tool (0.2s): App not found(404). — giữ số cũ
+2026-11-19 08:31:22   [installs] com.mahmoudzadah.glassifywidgets (0.2s): 1274066 -> 1281909 verdict PASS -> PASS
+2026-11-19 08:31:23   [installs] ac.themes.wallpapers.widgets (0.2s): 2153270 -> 2154313 verdict PASS -> PASS
+2026-11-19 08:31:23   [installs] com.icons.widgets.control.center.pink.black.themely (0.1s): 14290421 -> 14352688 verdict PASS -> PASS
+2026-11-19 08:31:23   [installs] com.flyer.theme (0.2s): 2690750 -> 2704410 verdict PASS -> PASS
+2026-11-19 08:31:23   [installs] com.themix.theme.widget.control (0.2s): 1638317 -> 1638317 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:23   [installs] com.widget.icon.theme (0.2s): 20540017 -> 20630890 verdict PASS -> PASS
+2026-11-19 08:31:24   [installs] com.themeflow.widgets.themes.appicon.wallpaper (0.2s): 852838 -> 852838 verdict PASS -> PASS
+2026-11-19 08:31:24   [installs] com.dt.control.widgets.themes.panel (0.2s): 28976 -> 28976 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:24   [installs] com.themed.widget.control.custom.panel.wallpaper (0.2s): 4093 -> 4093 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:24   [installs] com.lumi.control.center.widget.themes (0.2s): 123 -> 128 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:24   [installs] com.lutech.control.widget (0.2s): 203630 -> 203669 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:24   [installs] com.center.control.quick.settings.panel (0.2s): 554184 -> 554292 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:25   [installs] com.controlo.easy.controlcenter.widget.theme (0.2s): 351195 -> 351195 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:25   [installs] com.widget.cute.theme.diy.icon.kawaii.wallpaper.aesthetic.custom.homescreen (0.1s): 22620 -> 22620 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:25   [installs] lỗi scrape com.nsapps.controlpanel (0.2s): App not found(404). — giữ số cũ
+2026-11-19 08:31:25   [installs] lỗi scrape com.widgetvibes.iwidgy (0.2s): App not found(404). — giữ số cũ
+2026-11-19 08:31:25   [installs] com.glassywidgets.app (0.2s): 171655 -> 174033 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:26   [installs] com.jndapp.minimal.widgets (0.3s): 753294 -> 768490 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:26   [installs] com.asianmobile.launcheros (0.2s): 11315659 -> 11328968 verdict PASS -> PASS
+2026-11-19 08:31:26   [installs] com.widget.aestheticwidgets (0.2s): 81489 -> 81843 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:26   [installs] studio.widgets.android (0.2s): 110415 -> 111194 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:26   [installs] com.ios.lockscreen.liquid (0.2s): 3913417 -> 3956259 verdict PASS -> PASS
+2026-11-19 08:31:26   [installs] com.themebox.icons.widgets (0.2s): 13060411 -> 13081230 verdict PASS -> PASS
+2026-11-19 08:31:27   [installs] com.iconchanger.themes.widget.controlcenter (0.1s): 381652 -> 381652 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:27   [installs] themepack.widgets.icons.wallpaper.theme.customize.aesthetic (0.2s): 238705 -> 246976 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:27   [installs] com.themes.lab.diy.widget.icon.changer (0.2s): 775156 -> 777231 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:27   [installs] com.themeshub.widgets.iconchanger (0.2s): 855402 -> 855402 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:27   [installs] com.cdt.themebox.themeiconwidget (0.2s): 5786180 -> 5793270 verdict PASS -> PASS
+2026-11-19 08:31:27   [installs] com.controlapp.custompanel.app (0.2s): 560899 -> 560899 verdict PASS -> PASS
+2026-11-19 08:31:28   [installs] com.temporal.android16.control.center (0.1s): 48268 -> 48268 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:28   [installs] com.control.center.ioscontrol (0.1s): 7749574 -> 7749574 verdict FAIL:too-old -> FAIL:too-old
+2026-11-19 08:31:28   [installs] lỗi scrape com.bigsoft.controlpanel.controlcenter (0.2s): App not found(404). — giữ số cũ
+2026-11-19 08:31:28   [installs] com.controlpanel.icons.widgets.panels (0.1s): 4914 -> 4914 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:28   [installs] lỗi scrape com.nexify.controlcenter.quicksettings (0.2s): App not found(404). — giữ số cũ
+2026-11-19 08:31:28   [installs] com.panelcontrol.contolcenter (0.2s): 628 -> 798 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:29   [installs] lỗi scrape com.dynamic.island.dynamicisland.app (0.2s): App not found(404). — giữ số cũ
+2026-11-19 08:31:29   [installs] tr.com.eywin.dynamic.island.notch (0.1s): 1579806 -> 1579806 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:29   [installs] lỗi scrape com.dynamic.island.dynamicisland.notch (0.2s): App not found(404). — giữ số cũ
+2026-11-19 08:31:29   [installs] com.cute.emoji.battery.icon.widget.customize.emojisticker.statusbar (0.2s): 15849563 -> 15850002 verdict PASS -> PASS
+2026-11-19 08:31:29   [installs] com.photo.widget (0.2s): 43251 -> 43251 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:29   [installs] com.hexatech.pixwidget (0.2s): 2078 -> 2084 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:29   [installs] tổng: 60 pkg, 8 lỗi, 33 đổi số, 11s
+2026-11-19 08:31:29 Widget / Control Panel: dream100.py rc=0 (0.0s) -> Dream100.md: 16 PASS, 192 loại
+Dream100.csv: +18 dòng (ngày 2026-11-19)
+2026-11-19 08:31:29 --- Keyboard Theme ---
+2026-11-19 08:31:29 Keyboard Theme: 41 pkg cần theo dõi
+2026-11-19 08:31:30   [installs] app.emoji.keyboard (0.2s): 33554 -> 34882 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:30   [installs] com.akmobile.ledkeyboard.flash (0.2s): 1185840 -> 1185840 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:30   [installs] com.appqubit.ledkeyboard (0.2s): 1775 -> 1791 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:30   [installs] com.artkeyboard.aikeyboard.fonts.keyboard (0.2s): 3369807 -> 3369807 verdict PASS -> PASS
+2026-11-19 08:31:30   [installs] com.asianmobile.emojikeyboard (0.2s): 394098 -> 401446 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:30   [installs] com.asianmobile.fontskeyboard (0.2s): 24669811 -> 24669811 verdict PASS -> PASS
+2026-11-19 08:31:31   [installs] com.aurax.neonledkeyboard.xboard.theme (0.2s): 134726 -> 136574 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:31   [installs] com.cem.cute.cat.keyboard (0.1s): 2002202 -> 2002243 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:31   [installs] com.cem.keyboard.designer.custom.theme (0.2s): 447641 -> 447676 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:31   [installs] com.cute.bear.super.theme.input.app (0.2s): 81163 -> 81163 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:31   [installs] com.cute.bow.cat.super.theme.input.app (0.2s): 157574 -> 157574 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:31   [installs] com.diy.rgb.led.mechanical.keyboard.custom.keyboard.game.keyboard (0.2s): 4179894 -> 4179894 verdict PASS -> PASS
+2026-11-19 08:31:32   [installs] com.dtp.themes.wallpaper.widget.keyboard (0.2s): 328882 -> 329240 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:32   [installs] com.emoji.cutekeyboard.themes.fontkeyboard (0.2s): 4743334 -> 4743334 verdict PASS -> PASS
+2026-11-19 08:31:32   [installs] com.emoji.keyboard.fonts.theme (0.2s): 450033 -> 456172 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:32   [installs] com.emoji.keyboard.soundtheme (0.2s): 3445769 -> 3445777 verdict PASS -> PASS
+2026-11-19 08:31:32   [installs] com.emoji.keyboard.stylish.fonts (0.2s): 1002011 -> 1002011 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:32   [installs] com.fontskeyboard.maker.theme (0.2s): 6297175 -> 6339220 verdict PASS -> PASS
+2026-11-19 08:31:33   [installs] com.grownapp.myfontskeyboard (0.2s): 7267938 -> 7267938 verdict PASS -> PASS
+2026-11-19 08:31:33   [installs] com.gsmobile.ledkeyboard (0.2s): 1807621 -> 1807621 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:33   [installs] com.highsecure.ledkeyboard (0.2s): 5971600 -> 5971600 verdict PASS -> PASS
+2026-11-19 08:31:33   [installs] com.ikeyboard.theme.pink.aura.love.theme (0.2s): 2409309 -> 2409309 verdict PASS -> PASS
+2026-11-19 08:31:33   [installs] com.ikeyboard.theme.sticker.emoji.memes.maker (0.2s): 9261631 -> 9292351 verdict PASS -> PASS
+2026-11-19 08:31:34   [installs] com.jkleo.mechanical.keyboard.themes.switchkey (0.2s): 4207 -> 4237 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:34   [installs] com.keyboard.theme.fontboard.mask.stylish (0.1s): 5698488 -> 5716721 verdict PASS -> PASS
+2026-11-19 08:31:34   [installs] com.keyza.keyboard.themes (0.1s): 11744 -> 11744 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:34   [installs] com.led.keyboard.emoji.fonts.aesthetic (0.2s): 51033 -> 51050 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:34   [installs] com.mechanical.keyboard.rgb.led (0.2s): 714 -> 714 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:34   [installs] com.mediatech.ledkeyboardtheme (0.1s): 10004 -> 10004 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:34   [installs] com.mtk.themekeyboardanime (0.2s): 7193 -> 7494 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:35   [installs] com.nexa.neon.emoji.keyboard.soundtheme (0.1s): 860421 -> 878679 verdict PASS -> PASS
+2026-11-19 08:31:35   [installs] com.photokeyboard.aifontkeyboard (0.1s): 27745 -> 28089 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:35   [installs] com.purple.cherry.super.theme.input.app (0.1s): 1305334 -> 1337564 verdict PASS -> PASS
+2026-11-19 08:31:35   [installs] com.sd.custom.keyboard.stylish.emoji.font (0.2s): 273021 -> 276128 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:35   [installs] com.smartkeyboard.emojikeyboard.fontskeyboard.multilingual.keyboard (0.2s): 17256 -> 17433 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:35   [installs] com.studioapp.soundboardkeyboard (0.2s): 1700 -> 1713 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:36   [installs] com.tairsoft.animekeyboardtheme (0.1s): 9094 -> 9094 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:36   [installs] com.tapbrainx.yokey.emojifontkeyboard (0.2s): 352116 -> 353261 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:36   [installs] com.theme.keyboard.fonts (0.2s): 90062 -> 90062 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:36   [installs] com.wallpaperscraft.keby (0.2s): 1330136 -> 1330136 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:36   [installs] dark.theme.keyboard.neon.black (0.1s): 315326 -> 317587 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:36   [installs] tổng: 41 pkg, 0 lỗi, 23 đổi số, 7s
+2026-11-19 08:31:36 Keyboard Theme: dream100.py rc=0 (0.0s) -> Dream100.md: 13 PASS, 170 loại
+Dream100.csv: +14 dòng (ngày 2026-11-19)
+2026-11-19 08:31:36 --- Sticker/Quote/Ringtone Maker ---
+2026-11-19 08:31:36 Sticker/Quote/Ringtone Maker: 3 pkg cần theo dõi
+2026-11-19 08:31:36   [installs] com.stickers.stickermaker.aistickerapp (0.2s): 3040912 -> 3047459 verdict PASS -> PASS
+2026-11-19 08:31:37   [installs] com.stickerlive.app (0.1s): 4943 -> 5072 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:37   [installs] com.echoailab.videotomp3.converter (0.2s): 135789 -> 135789 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:37   [installs] tổng: 3 pkg, 0 lỗi, 2 đổi số, 0s
+2026-11-19 08:31:37 Sticker/Quote/Ringtone Maker: dream100.py rc=0 (0.0s) -> Dream100.md: 1 PASS, 44 loại
+Dream100.csv: +1 dòng (ngày 2026-11-19)
+2026-11-19 08:31:37 --- Wallpaper/Coloring/Collage/GIF Maker ---
+2026-11-19 08:31:37 Wallpaper/Coloring/Collage/GIF Maker: 4 pkg cần theo dõi
+2026-11-19 08:31:37   [installs] com.wallpapers.wallpaper4k.livewallpaper (0.2s): 12252251 -> 12252251 verdict PASS -> PASS
+2026-11-19 08:31:37   [installs] com.abovegames.coloringcozyhome (0.2s): 685827 -> 687819 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:37   [installs] com.oakever.zencolor (0.2s): 6773514 -> 6805671 verdict PASS -> PASS
+2026-11-19 08:31:38   [installs] com.paint.by.numbers.coloring.games.doll (0.2s): 231518 -> 231518 verdict FAIL:dl/day<5k -> FAIL:dl/day<5k
+2026-11-19 08:31:38   [installs] tổng: 4 pkg, 0 lỗi, 2 đổi số, 1s
+2026-11-19 08:31:38 Wallpaper/Coloring/Collage/GIF Maker: dream100.py rc=0 (0.0s) -> Dream100.md: 2 PASS, 41 loại
+Dream100.csv: +2 dòng (ngày 2026-11-19)
+2026-11-19 08:31:38 --- Font/Icon Pack/Video Status Maker ---
+2026-11-19 08:31:38 Font/Icon Pack/Video Status Maker: 2 pkg cần theo dõi
+2026-11-19 08:31:38   [installs] instagramstory.maker.playvo (0.2s): 18096802 -> 18096802 verdict PASS -> PASS
+2026-11-19 08:31:38   [installs] video.filter.stagefy (0.1s): 3777943 -> 3777943 verdict PASS -> PASS
+2026-11-19 08:31:38   [installs] tổng: 2 pkg, 0 lỗi, 0 đổi số, 0s
+2026-11-19 08:31:38 Font/Icon Pack/Video Status Maker: dream100.py rc=0 (0.0s) -> Dream100.md: 2 PASS, 43 loại
+Dream100.csv: +2 dòng (ngày 2026-11-19)
+2026-11-19 08:31:38 --- Coloring / Color by Number ---
+2026-11-19 08:31:38 Coloring / Color by Number: 6 pkg cần theo dõi
+2026-11-19 08:31:38   [installs] color.number.paint.pixle.art.sort.jigsaw (0.2s): 14463662 -> 14513291 verdict PASS -> PASS
+2026-11-19 08:31:38   [installs] com.belkagames.ds (0.2s): 4242255 -> 4243920 verdict PASS -> PASS
+2026-11-19 08:31:39   [installs] com.nimblemind.gems.art.coloring.puzzle (0.2s): 945124 -> 945169 verdict PASS -> PASS
+2026-11-19 08:31:39   [installs] com.oakever.coloraura (0.2s): 3139159 -> 3139159 verdict PASS -> PASS
+2026-11-19 08:31:39   [installs] com.oakever.gemcoloring (0.1s): 2271589 -> 2315079 verdict PASS -> PASS
+2026-11-19 08:31:39   [installs] com.oakever.paintbynumber (0.2s): 12348646 -> 12426170 verdict PASS -> PASS
+2026-11-19 08:31:39   [installs] tổng: 6 pkg, 0 lỗi, 5 đổi số, 1s
+2026-11-19 08:31:39 Coloring / Color by Number: dream100.py rc=0 (0.0s) -> Dream100.md: 6 PASS, 0 loại
+Dream100.csv: +6 dòng (ngày 2026-11-19)
+2026-11-19 08:32:12 hotmap_list.mjs rc=0 (33.3s) -> us TOOLS 200
+us PERSONALIZATION 200
+us ART_AND_DESIGN 200
+us ENTERTAINMENT 200
+us LIFESTYLE 200
+us PHOTOGRAPHY 200
+us MUSIC_AND_AUDIO 200
+us GAME_CASUAL 200
+us VIDEO_PLAYERS 200
+us PRODUCTIVITY 200
+br TOOLS 200
+br PERSONALIZATION 200
+br ART_AND_DESIGN 200
+br ENTERTAINMENT 200
+br LIFESTYLE 200
+br PHOTOGRAPHY 200
+br MUSIC_AND_AUDIO 200
+br GAME_CASUAL 200
+br VIDEO_PLAYERS 200
+br PRODUCTIVITY 200
+in TOOLS 200
+in PERSONALIZATION 200
+in ART_AND_DESIGN 200
+in ENTERTAINMENT 200
+in LIFESTYLE 200
+in PHOTOGRAPHY 200
+in MUSIC_AND_AUDIO 200
+in GAME_CASUAL 199
+in VIDEO_PLAYERS 200
+in PRODUCTIVITY 199
+id TOOLS 200
+id PERSONALIZATION 200
+id ART_AND_DESIGN 200
+id ENTERTAINMENT 200
+id LIFESTYLE 200
+id PHOTOGRAPHY 200
+id MUSIC_AND_AUDIO 200
+id GAME_CASUAL 200
+id VIDEO_PLAYERS 200
+id PRODUCTIVITY 200
+mx TOOLS 200
+mx PERSONALIZATION 200
+mx ART_AND_DESIGN 200
+mx ENTERTAINMENT 200
+mx LIFESTYLE 200
+mx PHOTOGRAPHY 200
+mx MUSIC_AND_AUDIO 200
+mx GAME_CASUAL 200
+mx VIDEO_PLAYERS 200
+mx PRODUCTIVITY 200
+de TOOLS 200
+de PERSONALIZATION 200
+de ART_AND_DESIGN 200
+de ENTERTAINMENT 200
+de LIFESTYLE 200
+de PHOTOGRAPHY 200
+de MUSIC_AND_AUDIO 200
+de GAME_CASUAL 200
+de VIDEO_PLAYERS 200
+de PRODUCTIVITY 200
+jp TOOLS 200
+jp PERSONALIZATION 200
+jp ART_AND_DESIGN 177
+jp ENTERTAINMENT 200
+jp LIFESTYLE 200
+jp PHOTOGRAPHY 200
+jp MUSIC_AND_AUDIO 200
+jp GAME_CASUAL 199
+jp VIDEO_PLAYERS 199
+jp PRODUCTIVITY 200
+vn TOOLS 199
+vn PERSONALIZATION 200
+vn ART_AND_DESIGN 200
+vn ENTERTAINMENT 200
+vn LIFESTYLE 200
+vn PHOTOGRAPHY 200
+vn MUSIC_AND_AUDIO 200
+vn GAME_CASUAL 200
+vn VIDEO_PLAYERS 200
+vn PRODUCTIVITY 200
+rows 15972 unique 7299
+2026-11-19 08:32:21 market.py rc=0 (8.8s) -> 43 nhóm, 362 app, scrape OK 361
+OK — data/market.md: 43 nhóm, data/market.csv +361 dòng (2026-11-19)
+2026-11-19 08:32:30 push_tracking.py rc=0 (8.4s) -> OK — tab 'Tracking': 43 dòng
+OK — tab 'Tracking Genre': 6 dòng
+OK — tab 'Tracking Category': 9 dòng
+https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit
+2026-11-19 08:32:31 push_merged.py rc=0 (1.4s) -> OK — 40 app
+https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit
+2026-11-19 08:32:38 push_dashboard.py rc=0 (7.3s) -> OK — tab 'Data' (Looker Studio): 2131 dòng — https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit#gid=1793447599
+OK — tab 'Window' (Looker Studio): 192 dòng — https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit#gid=1703936355
+OK — tab 'Dashboard': 6 nhóm (6 có lịch sử), 53 kỳ — https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit#gid=5554676
+OK — tab 'Dashboard Genre': 19 nhóm (6 có lịch sử), 53 kỳ — https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit#gid=761268008
+OK — tab 'Dashboard Category': 17 nhóm (9 có lịch sử), 53 kỳ — https://docs.google.com/spreadsheets/d/1TmHd9IAZ56Z98S76lnJcKnKrEmFJfMVnMv53gHcZMYw/edit#gid=1716249295
+2026-11-19 08:32:38 tổng thời gian: 1.3 phút
+2026-11-19 08:32:38 === xong ===
+

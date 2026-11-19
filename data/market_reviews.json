@@ -130,8 +130,8 @@
 "habit": 0.005
 },
 "com.Steal.Escape.Egg.Speed": {
-"date": "2026-10-28",
-"n": 44,
+"date": "2026-11-19",
+"n": 145,
 "habit": 0.0
 },
 "com.adobe.lrmobile": {
@@ -380,7 +380,7 @@
 "habit": 0.0066
 },
 "com.creator.cutecat.emojicat.sticker": {
-"date": "2026-11-11",
+"date": "2026-11-19",
 "n": 200,
 "habit": 0.005
 },
@@ -415,9 +415,9 @@
 "habit": 0.01
 },
 "com.drama.free": {
-"date": "2026-11-10",
+"date": "2026-11-19",
 "n": 200,
-"habit": 0.02
+"habit": 0.025
 },
 "com.dramaton.slime": {
 "date": "2026-11-18",
@@ -705,7 +705,7 @@
 "habit": 0.02
 },
 "com.jewel.sort.coloring.loop.match.paint.jigsaw": {
-"date": "2026-11-11",
+"date": "2026-11-19",
 "n": 200,
 "habit": 0.065
 },
@@ -800,7 +800,7 @@
 "habit": 0.0
 },
 "com.mad1.stresscrusher.relaxing.games": {
-"date": "2026-11-12",
+"date": "2026-11-19",
 "n": 200,
 "habit": 0.0
 },
@@ -920,8 +920,8 @@
 "habit": 0.0
 },
 "com.ots.prank.sound": {
-"date": "2026-11-12",
-"n": 29,
+"date": "2026-11-19",
+"n": 31,
 "habit": 0.0
 },
 "com.outfit7.mytalkingangela2": {
@@ -1015,8 +1015,8 @@
 "habit": 0.0
 },
 "com.protechtools.gpstracker": {
-"date": "2026-11-04",
-"n": 113,
+"date": "2026-11-19",
+"n": 116,
 "habit": 0.0
 },
 "com.purrsy.sticker.maker": {
@@ -1035,7 +1035,7 @@
 "habit": 0.055
 },
 "com.realdrum.drumset.drumapp.beatmaker.music.instruments.drumkit": {
-"date": "2026-11-12",
+"date": "2026-11-19",
 "n": 200,
 "habit": 0.005
 },
@@ -1060,9 +1060,9 @@
 "habit": 0.03
 },
 "com.samsung.android.oneconnect": {
-"date": "2026-11-12",
+"date": "2026-11-19",
 "n": 200,
-"habit": 0.035
+"habit": 0.045
 },
 "com.scannerreader.qrcode.creatorfree": {
 "date": "2026-10-28",
@@ -1160,7 +1160,7 @@
 "habit": 0.02
 },
 "com.stickerstudio.text": {
-"date": "2026-11-12",
+"date": "2026-11-19",
 "n": 200,
 "habit": 0.0
 },
@@ -1405,7 +1405,7 @@
 "habit": 0.0
 },
 "gallery.album.vault.photo.imagelock": {
-"date": "2026-11-09",
+"date": "2026-11-19",
 "n": 200,
 "habit": 0.01
 },
@@ -1655,9 +1655,9 @@
 "habit": 0.035
 },
 "umito.android.minipiano": {
-"date": "2026-11-11",
+"date": "2026-11-19",
 "n": 200,
-"habit": 0.01
+"habit": 0.02
 },
 "video.clip.call.fake.chat.message.prank": {
 "date": "2026-11-18",
@@ -2095,9 +2095,9 @@
 "habit": 0.08
 },
 "com.google.android.apps.docs.editors.docs": {
-"date": "2026-11-12",
+"date": "2026-11-19",
 "n": 200,
-"habit": 0.075
+"habit": 0.065
 },
 "com.mwm.procolor": {
 "date": "2026-10-29",
@@ -2440,7 +2440,7 @@
 "habit": 0.0054
 },
 "com.radiant.battery.charging.animation": {
-"date": "2026-11-12",
+"date": "2026-11-19",
 "n": 200,
 "habit": 0.0
 },
@@ -2465,7 +2465,7 @@
 "habit": 0.005
 },
 "com.gpscamera.map.location.geotagphoto": {
-"date": "2026-11-12",
+"date": "2026-11-19",
 "n": 200,
 "habit": 0.01
 },
@@ -2480,9 +2480,9 @@
 "habit": 0.005
 },
 "com.pixeltaprush": {
-"date": "2026-11-12",
+"date": "2026-11-19",
 "n": 200,
-"habit": 0.005
+"habit": 0.02
 },
 "com.touchtype.swiftkey": {
 "date": "2026-11-12",
@@ -2700,9 +2700,9 @@
 "habit": 0.005
 },
 "moe.shizuku.privileged.api": {
-"date": "2026-11-10",
+"date": "2026-11-19",
 "n": 200,
-"habit": 0.01
+"habit": 0.015
 },
 "photo.hidepicture.album.gallery": {
 "date": "2026-11-17",
@@ -2750,8 +2750,8 @@
 "habit": 0.005
 },
 "com.bridgeworks.mani": {
-"date": "2026-11-12",
-"n": 12,
+"date": "2026-11-19",
+"n": 22,
 "habit": 0.0
 },
 "com.jockey.cleantool": {
@@ -2760,13 +2760,13 @@
 "habit": 0.0
 },
 "com.origami.paper.folding.crafts.creative": {
-"date": "2026-11-12",
-"n": 16,
+"date": "2026-11-19",
+"n": 27,
 "habit": 0.0
 },
 "com.os.launcher.custom.phone": {
-"date": "2026-11-12",
-"n": 194,
+"date": "2026-11-19",
+"n": 200,
 "habit": 0.0
 },
 "com.pdfreader.pocket.devspdf": {
@@ -2775,8 +2775,8 @@
 "habit": 0.0103
 },
 "com.widgetcustomize.emojibattery": {
-"date": "2026-11-12",
-"n": 119,
+"date": "2026-11-19",
+"n": 129,
 "habit": 0.0
 },
 "com.fc.bk.zipper.lock.screen.wallpaper": {
@@ -2948,5 +2948,25 @@
 "date": "2026-11-18",
 "n": 200,
 "habit": 0.015
+},
+"com.aipalmistry.futurereader.pro": {
+"date": "2026-11-19",
+"n": 26,
+"habit": 0.0
+},
+"com.screencast.tv.mirroring.app": {
+"date": "2026-11-19",
+"n": 16,
+"habit": 0.0
+},
+"com.syct.chatbot.assistant": {
+"date": "2026-11-19",
+"n": 200,
+"habit": 0.03
+},
+"io.hexman.xiconchanger": {
+"date": "2026-11-19",
+"n": 200,
+"habit": 0.01
 }
 }
