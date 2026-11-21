@@ -90,8 +90,8 @@
 "habit": 0.03
 },
 "co.transparentwallpaper.livewallpaper.wallpaperfree": {
-"date": "2026-10-28",
-"n": 139,
+"date": "2026-11-21",
+"n": 142,
 "habit": 0.0
 },
 "color.number.paint.pixle.art.sort.jigsaw": {
@@ -360,8 +360,8 @@
 "habit": 0.0
 },
 "com.couplemaker.animecouple.couplelove": {
-"date": "2026-11-04",
-"n": 182,
+"date": "2026-11-21",
+"n": 184,
 "habit": 0.0
 },
 "com.crafto.android": {
@@ -455,9 +455,9 @@
 "habit": 0.035
 },
 "com.edjing.edjingdjturntable": {
-"date": "2026-11-14",
+"date": "2026-11-21",
 "n": 200,
-"habit": 0.03
+"habit": 0.02
 },
 "com.elorgan17.ref19417": {
 "date": "2026-11-18",
@@ -1005,7 +1005,7 @@
 "habit": 0.09
 },
 "com.prank.sound.airhorn.haircut.razor.clipper": {
-"date": "2026-11-08",
+"date": "2026-11-21",
 "n": 200,
 "habit": 0.005
 },
@@ -1385,9 +1385,9 @@
 "habit": 0.005
 },
 "fonts.keyboard.fontboard.stylish": {
-"date": "2026-11-11",
+"date": "2026-11-21",
 "n": 200,
-"habit": 0.005
+"habit": 0.015
 },
 "free.vpn.unblock.proxy.turbovpn": {
 "date": "2026-11-18",
@@ -1500,7 +1500,7 @@
 "habit": 0.03
 },
 "music.disc.dj.mixer.music.mixer": {
-"date": "2026-11-13",
+"date": "2026-11-21",
 "n": 200,
 "habit": 0.02
 },
@@ -2090,9 +2090,9 @@
 "habit": 0.015
 },
 "com.freevpnplanet": {
-"date": "2026-11-05",
+"date": "2026-11-21",
 "n": 200,
-"habit": 0.08
+"habit": 0.03
 },
 "com.google.android.apps.docs.editors.docs": {
 "date": "2026-11-19",
@@ -2100,9 +2100,9 @@
 "habit": 0.065
 },
 "com.mwm.procolor": {
-"date": "2026-10-29",
+"date": "2026-11-21",
 "n": 200,
-"habit": 0.025
+"habit": 0.005
 },
 "com.phellax.drum": {
 "date": "2026-11-09",
@@ -2160,8 +2160,8 @@
 "habit": 0.065
 },
 "co.voicescreenlock": {
-"date": "2026-11-06",
-"n": 151,
+"date": "2026-11-21",
+"n": 163,
 "habit": 0.0
 },
 "com.Gamnest.GunChase": {
@@ -2255,9 +2255,9 @@
 "habit": 0.015
 },
 "com.commsource.beautyplus": {
-"date": "2026-11-14",
+"date": "2026-11-21",
 "n": 200,
-"habit": 0.12
+"habit": 0.1
 },
 "com.eztools.handfont.fontmaker": {
 "date": "2026-11-08",
@@ -2280,7 +2280,7 @@
 "habit": 0.0
 },
 "com.sh.tricky.relax.ticktock.mini.challenges.puzzle.games": {
-"date": "2026-11-14",
+"date": "2026-11-21",
 "n": 200,
 "habit": 0.005
 },
@@ -2555,8 +2555,8 @@
 "habit": 0.0
 },
 "com.hp.clicker.diy.asmr.charm.master": {
-"date": "2026-11-14",
-"n": 72,
+"date": "2026-11-21",
+"n": 158,
 "habit": 0.0
 },
 "com.rare.wallpapers": {
@@ -2805,12 +2805,12 @@
 "habit": 0.005
 },
 "afterglow.show.fin": {
-"date": "2026-11-14",
+"date": "2026-11-21",
 "n": 0,
 "habit": null
 },
 "app.boostplay": {
-"date": "2026-11-14",
+"date": "2026-11-21",
 "n": 200,
 "habit": 0.0
 },
@@ -2820,8 +2820,8 @@
 "habit": 0.0
 },
 "com.app.volume.launcher": {
-"date": "2026-11-14",
-"n": 64,
+"date": "2026-11-21",
+"n": 74,
 "habit": 0.0
 },
 "com.daily.horoscope.palmreader": {
@@ -3013,5 +3013,30 @@
 "date": "2026-11-20",
 "n": 200,
 "habit": 0.02
+},
+"brokenscreen.prank.on.touch.crackscreen": {
+"date": "2026-11-21",
+"n": 200,
+"habit": 0.0
+},
+"com.mini1derworld.shark.empire": {
+"date": "2026-11-21",
+"n": 3,
+"habit": 0.0
+},
+"com.planetarynetmeter.speedapp": {
+"date": "2026-11-21",
+"n": 200,
+"habit": 0.0
+},
+"com.space.illusion.himoji": {
+"date": "2026-11-21",
+"n": 180,
+"habit": 0.0
+},
+"com.yaohuo.xingyu": {
+"date": "2026-11-21",
+"n": 200,
+"habit": 0.025
 }
 }
