@@ -170,7 +170,7 @@
 "habit": 0.0
 },
 "com.airnet.birds.ringtones": {
-"date": "2026-11-15",
+"date": "2026-11-22",
 "n": 200,
 "habit": 0.0
 },
@@ -885,9 +885,9 @@
 "habit": 0.1
 },
 "com.nut.stack.sort.puzzle": {
-"date": "2026-11-15",
+"date": "2026-11-22",
 "n": 200,
-"habit": 0.005
+"habit": 0.01
 },
 "com.oakever.zencolor": {
 "date": "2026-11-18",
@@ -1485,9 +1485,9 @@
 "habit": 0.065
 },
 "me.zepeto.main": {
-"date": "2026-11-15",
+"date": "2026-11-22",
 "n": 200,
-"habit": 0.055
+"habit": 0.065
 },
 "meet.kamalkonnect": {
 "date": "2026-10-28",
@@ -1580,7 +1580,7 @@
 "habit": 0.01
 },
 "photo.photovault.hidepictures.gallery.lockgallery": {
-"date": "2026-11-11",
+"date": "2026-11-22",
 "n": 200,
 "habit": 0.005
 },
@@ -1730,7 +1730,7 @@
 "habit": 0.18
 },
 "equalizer.bassbooster.volumebooster.soundeffect": {
-"date": "2026-10-28",
+"date": "2026-11-22",
 "n": 200,
 "habit": 0.005
 },
@@ -2120,9 +2120,9 @@
 "habit": 0.025
 },
 "com.primeopinion.appname": {
-"date": "2026-10-29",
+"date": "2026-11-22",
 "n": 200,
-"habit": 0.025
+"habit": 0.02
 },
 "com.quvideo.xiaoying": {
 "date": "2026-11-13",
@@ -2200,9 +2200,9 @@
 "habit": 0.0
 },
 "com.outfit7.mytalkingangelafree": {
-"date": "2026-11-15",
+"date": "2026-11-22",
 "n": 200,
-"habit": 0.06
+"habit": 0.045
 },
 "com.prankcall.funny.fakecall.game": {
 "date": "2026-11-06",
@@ -2310,8 +2310,8 @@
 "habit": 0.005
 },
 "com.charginganimation.batteryanimation.batterycharger": {
-"date": "2026-11-15",
-"n": 106,
+"date": "2026-11-22",
+"n": 108,
 "habit": 0.0
 },
 "com.dramavibe.stream": {
@@ -2330,9 +2330,9 @@
 "habit": 0.0118
 },
 "com.tuya.smartlife": {
-"date": "2026-11-15",
+"date": "2026-11-22",
 "n": 200,
-"habit": 0.055
+"habit": 0.08
 },
 "com.webelinx.tarot": {
 "date": "2026-11-18",
@@ -2505,7 +2505,7 @@
 "habit": 0.005
 },
 "com.diy.wallpaper.maker.collage": {
-"date": "2026-11-15",
+"date": "2026-11-22",
 "n": 200,
 "habit": 0.01
 },
@@ -2565,8 +2565,8 @@
 "habit": 0.02
 },
 "com.tarot.yesno.relationship.destiny.cards": {
-"date": "2026-11-07",
-"n": 2,
+"date": "2026-11-22",
+"n": 10,
 "habit": 0.0
 },
 "fenmysaho.pdf.reader.viewer": {
@@ -2580,7 +2580,7 @@
 "habit": 0.17
 },
 "com.sharekaro.app": {
-"date": "2026-11-15",
+"date": "2026-11-22",
 "n": 200,
 "habit": 0.01
 },
@@ -2830,7 +2830,7 @@
 "habit": 0.0
 },
 "com.highsecure.ledkeyboard": {
-"date": "2026-11-14",
+"date": "2026-11-22",
 "n": 200,
 "habit": 0.01
 },
@@ -2855,12 +2855,12 @@
 "habit": 0.015
 },
 "com.archetype.lytic.purification": {
-"date": "2026-11-15",
-"n": 3,
+"date": "2026-11-22",
+"n": 10,
 "habit": 0.0
 },
 "com.blockpuzzle.games.classic": {
-"date": "2026-11-15",
+"date": "2026-11-22",
 "n": 200,
 "habit": 0.015
 },
@@ -2880,9 +2880,9 @@
 "habit": 0.0
 },
 "waterflow.color.sort.puzzle": {
-"date": "2026-11-15",
-"n": 64,
-"habit": 0.0156
+"date": "2026-11-22",
+"n": 84,
+"habit": 0.0119
 },
 "com.artmate.draw.together.lessons.battle": {
 "date": "2026-11-16",
@@ -3038,5 +3038,30 @@
 "date": "2026-11-21",
 "n": 200,
 "habit": 0.025
+},
+"com.hp.fidget.clicker.finger3d.toy": {
+"date": "2026-11-22",
+"n": 7,
+"habit": 0.0
+},
+"com.origami.paperfolding.guide.craft.tutorials.relax": {
+"date": "2026-11-22",
+"n": 92,
+"habit": 0.0
+},
+"com.photo.rescue.video": {
+"date": "2026-11-22",
+"n": 183,
+"habit": 0.0
+},
+"exo.vpn.app": {
+"date": "2026-11-22",
+"n": 200,
+"habit": 0.0
+},
+"luma.sora.pika.runway.video.ai": {
+"date": "2026-11-22",
+"n": 200,
+"habit": 0.02
 }
 }

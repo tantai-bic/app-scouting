@@ -1,4 +1,4 @@
-# Thị trường ngách — top 10 app mỗi nhóm × Top Free 200 của 8 nước (2026-11-21)
+# Thị trường ngách — top 10 app mỗi nhóm × Top Free 200 của 8 nước (2026-11-22)
 
 Điểm 0-100: Cầu ×1, Toàn cầu ×1, App thắng ×2, Thói quen ×2, IAA ×1 (xem docstring scripts/market.py).
 `Lịch sử` = số ngày ngắn nhất dùng để tính tăng trưởng trong nhóm: < 7 thì cột Cầu là TB vòng đời (installs ÷ tuổi), từ 7 ngày là tăng installs/ngày thật (tối đa 30 ngày).
@@ -8,51 +8,51 @@
 
 | # | Nhóm | Điểm | Cầu: median DL/ngày/app | Lịch sử | Số nước TB | App thắng | % review thói quen | % ads | % app <2 năm | Rating | Top 3 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Puzzle/Merge games | 72.3 | 39,390 | 3 | 5.8 | 7/10 | 1.8% | 100% | 70% | 4.71 | Royal Smash! - Physics Puzzl (87k), Tasty Travels: Merge Game (61k), Frost Valley™: Merge & Story (61k) |
-| 2 | Mini/ASMR games | 70.6 | 104,904 | 19 | 7.8 | 6/10 | 0.5% | 100% | 60% | 4.55 | MemeMix Challenge: Funny Par (202k), Relax Mini Games (174k), Perfect Makeover Cleaning AS (121k) |
-| 3 | Drawing/Trace | 61.8 | 37,374 | 5 | 8.0 | 5/10 | 1.0% | 80% | 50% | 4.41 | Artrace: AR Easy Draw & Sket (86k), Draw Anime - AR Tracing App (81k), Artmate: Drawing Together (77k) |
-| 4 | Music player | 61.5 | 38,022 | 24 | 8.0 | 0/10 | 2.2% | 100% | 0% | 4.60 | Lark Player:Music Player & M (240k), Music Player & MP3 - DDMusic (129k), Music Player & MP3 Player (56k) |
-| 5 | Voice changer/Talking | 61.0 | 116,110 | 8 | 7.2 | 1/10 | 1.8% | 100% | 20% | 4.30 | My Talking Tom 2: Pet Game (233k), My Talking Tom Friends (163k), My Talking Angela 2 (153k) |
-| 6 | Keyboard | 60.7 | 28,234 | 23 | 6.9 | 5/10 | 1.0% | 100% | 50% | 4.51 | Learn Piano - Real Keyboard (55k), Easy Piano Keyboard - Piano8 (53k), Facemoji AI Emoji Keyboard (42k) |
-| 7 | Widget/Icon/Theme | 58.5 | 36,130 | 2 | 7.9 | 3/10 | 0.8% | 100% | 30% | 4.64 | iControl: Easy Widgets Theme (76k), Color Widgets, Theme: iWidge (67k), Neon Love Theme (55k) |
-| 8 | Collage/Photo edit | 56.3 | 33,950 | 20 | 7.6 | 2/10 | 2.8% | 70% | 20% | 4.52 | Lightroom Photo Editor & Vid (99k), Wink: Video Enhancer & Edito (61k), AI Face Aging - Photo Editor (43k) |
-| 9 | Coloring | 56.0 | 15,936 | 22 | 5.3 | 4/10 | 2.0% | 100% | 60% | 4.57 | Satisfying Coloring (98k), Paint by Number: Coloring Ga (66k), Zen Color - Color By Number (34k) |
-| 10 | AI chat/Avatar | 52.5 | 73,663 | 2 | 7.2 | 0/10 | 3.8% | 70% | 20% | 4.52 | ChatGPT (2631k), Open Chat - AI bot app (263k), Crunchyroll: Anime Streaming (133k) |
-| 11 | Video edit/Status | 51.9 | 170,782 | 18 | 7.0 | 0/10 | 2.8% | 50% | 30% | 4.67 | CapCut - Video Editor (1199k), Edits: Video Editor (327k), Video Editor & Maker - InSho (272k) |
-| 12 | Screen record/Mirror | 50.5 | 76,690 | 2 | 7.5 | 1/10 | 1.0% | 90% | 20% | 4.41 | Spotify: Music and Podcasts (1105k), Amazon Music: Songs & Podcas (139k), AI Mirror: Screen Mirroring  (90k) |
-| 13 | Lock screen | 50.3 | 22,059 | 8 | 5.5 | 10/10 | 0.0% | 100% | 100% | 4.30 | Trusted Call & SMS, Blocker (82k), AI Voice Lock Screen (50k), Calculator: App Hider & Lock (40k) |
-| 14 | Wallpaper | 50.0 | 23,743 | 15 | 7.6 | 5/10 | 0.2% | 90% | 60% | 4.57 | Zedge™ Wallpapers & Ringtone (102k), Emoji Love Wallpaper WAStick (100k), Silly Smile Wallpaper & Soun (49k) |
-| 15 | Find phone/Clap | 49.5 | 51,207 | 25 | 6.0 | 0/2 | 1.5% | 100% | 0% | 4.49 | Clap to Find My Phone: Whist (89k), Familonet: GPS Find My Phone (13k) |
-| 16 | Battery/Charging | 48.6 | 13,334 | 9 | 6.1 | 8/10 | 0.0% | 100% | 80% | 4.40 | Emoji Battery Icon Customize (25k), Emoji Battery: Icons & Pets (22k), Emoji Battery: Status Bar DI (17k) |
-| 17 | Gallery/Album | 48.4 | 15,005 | 11 | 6.0 | 4/10 | 1.2% | 90% | 40% | 4.54 | Gallery (1012k), Galleryit - Photo Vault, Alb (40k), Photo Gallery - Album, Vault (33k) |
-| 18 | Camera/Beauty filter | 47.8 | 27,989 | 17 | 7.5 | 2/10 | 1.0% | 90% | 20% | 4.60 | Mini Dress Up & Beauty Games (67k), HD Camera for Android: 4K Ca (57k), Timestamp Camera (49k) |
-| 19 | Launcher | 45.6 | 13,671 | 0 | 7.7 | 5/10 | 0.2% | 80% | 60% | 4.38 | Launcher OS™ (49k), Niagara Launcher ‧ Home Scre (22k), Rolling Icon: Live Launcher (20k) |
-| 20 | Palm/Tarot | 42.0 | 7,879 | 1 | 3.2 | 8/10 | 0.0% | 100% | 100% | 4.30 | AI Palm Reading (143k), Astrology: Palm Reader & Tar (43k), NakshAI: Astrology & Tarot (27k) |
-| 21 | Music making | 40.4 | 30,558 | 11 | 6.9 | 3/10 | 0.2% | 90% | 30% | 4.55 | Perfect Piano (48k), Piano Cat: Music Games (41k), DJ Mixer Studio & DJ Mix Mus (34k) |
-| 22 | Prank | 39.8 | 20,791 | 0 | 4.9 | 5/10 | 0.0% | 100% | 50% | 4.44 | Funny Prank Sounds: Fart, Ho (66k), Santa Prank Video Call & Cha (62k), Haircut Prank - Hair Clipper (35k) |
-| 23 | Sticker/Emoji | 38.5 | 11,792 | 0 | 5.3 | 3/10 | 0.5% | 100% | 40% | 4.11 | Love Stickers: Couple & Kiss (55k), Sticker Maker & Funny Emoji (21k), StickTok - animation sticker (17k) |
-| 24 | Ringtone/Sound | 38.2 | 13,221 | 10 | 6.9 | 1/10 | 0.5% | 100% | 10% | 4.68 | Volume Booster - Sound Boost (67k), SoundCloud: Discover Music (56k), Ringtones for Android Phone (42k) |
-| 25 | Craft/Origami | 37.6 | 7,230 | 9 | 5.7 | 5/10 | 0.0% | 100% | 70% | 4.26 | Clicker DIY: ASMR Charm Mast (135k), Origami World: Learn & Play (27k), Widgify - DIY Phone Screen (12k) |
-| 26 | Font | 9.6 | 781 | 22 | 2.4 | 0/8 | 0.0% | 88% | 50% | 4.48 | Letter Fonts - Stylish Text (19k), ArtFonts: Stylish Text (13k), Copy & Paste fonts to IG Sto (1k) |
-| 27 | AI video/photo gen | loại: phụ thuộc API, chi phí server | 90,701 | 18 | 8.0 | 2/10 | 3.5% | 50% | 40% | 4.51 | Canva: AI Photo & Video Edit (348k), Adobe Express: AI Photo, Vid (256k), Picsart AI Photo Editor, Vid (196k) |
-| 28 | Cleaner/Storage | loại: chính sách Play | 10,662 | 0 | 6.6 | 2/10 | 0.8% | 80% | 50% | 4.38 | TeraBox: 1TB Cloud & AI Spac (183k), Cleanup: Phone Storage Clean (102k), Phone Cleaner - AI Cleaner (83k) |
-| 29 | Earn money | loại: chính sách Play (reward/finance) | 12,901 | 7 | 4.6 | 3/10 | 5.3% | 70% | 60% | 4.43 | ReelEarn: Watch & Cash (125k), Playout: Earn Money (75k), JustPlay: Earn Money or Dona (29k) |
-| 30 | GPS/Location | loại: quyền vị trí nhạy cảm | 33,300 | 1 | 5.2 | 5/10 | 0.2% | 90% | 70% | 4.31 | GPS Map Camera - Job Timesta (105k), Life360: Family Safety & GPS (90k), SafeNest — Family GPS (71k) |
-| 31 | Scanner/QR | loại: UA đắt, chính sách | 170,207 | 8 | 7.7 | 2/10 | 1.5% | 100% | 20% | 4.51 | PDF Reader - Easy PDF (316k), WPS Office-PDF, Word, Sheet (280k), Acrobat Reader: PDF Converte (229k) |
-| 32 | Short drama | loại: bản quyền nội dung | 298,591 | 10 | 6.8 | 3/10 | 3.2% | 90% | 40% | 4.57 | ReelShort - Stream Drama & T (624k), NetShort - Popular Dramas &  (370k), DramaBox - Stream Drama Shor (364k) |
-| 33 | VPN | loại: chính sách Play | 111,971 | 4 | 5.2 | 2/9 | 2.5% | 78% | 22% | 4.54 | Proton VPN: Secure & Fast VP (201k), VPN - Super Unlimited Proxy (170k), Turbo VPN - Secure VPN Proxy (153k) |
+| 1 | Puzzle/Merge games | 71.2 | 45,065 | 4 | 5.6 | 7/10 | 1.8% | 100% | 70% | 4.69 | Royal Smash! - Physics Puzzl (89k), Water Flow: Color Sort Puzzl (61k), Tasty Travels: Merge Game (61k) |
+| 2 | Mini/ASMR games | 66.5 | 99,385 | 0 | 7.7 | 6/10 | 0.2% | 100% | 60% | 4.48 | MemeMix Challenge: Funny Par (201k), Relax Mini Games (173k), Perfect Makeover Cleaning AS (115k) |
+| 3 | Keyboard | 63.7 | 27,250 | 8 | 7.1 | 6/10 | 1.0% | 100% | 60% | 4.50 | Learn Piano - Real Keyboard (54k), Easy Piano Keyboard - Piano8 (53k), Facemoji AI Emoji Keyboard (42k) |
+| 4 | Voice changer/Talking | 61.8 | 116,322 | 9 | 7.3 | 1/10 | 1.8% | 100% | 20% | 4.30 | My Talking Tom 2: Pet Game (244k), My Talking Tom Friends (163k), My Talking Angela 2 (158k) |
+| 5 | Music player | 61.5 | 39,325 | 25 | 8.0 | 0/10 | 2.2% | 100% | 0% | 4.60 | Lark Player:Music Player & M (246k), Music Player & MP3 - DDMusic (130k), Music Player & MP3 Player (58k) |
+| 6 | Drawing/Trace | 59.6 | 37,272 | 6 | 8.0 | 5/10 | 1.0% | 80% | 50% | 4.41 | Artrace: AR Easy Draw & Sket (88k), Draw Anime - AR Tracing App (81k), Artmate: Drawing Together (78k) |
+| 7 | Widget/Icon/Theme | 58.8 | 36,430 | 3 | 7.7 | 3/10 | 0.8% | 100% | 30% | 4.64 | iControl: Easy Widgets Theme (74k), Color Widgets, Theme: iWidge (67k), Neon Love Theme (55k) |
+| 8 | Collage/Photo edit | 56.0 | 34,039 | 21 | 7.5 | 2/10 | 2.8% | 70% | 20% | 4.52 | Lightroom Photo Editor & Vid (99k), Wink: Video Enhancer & Edito (63k), AI Face Aging - Photo Editor (43k) |
+| 9 | Coloring | 54.7 | 16,669 | 20 | 4.9 | 4/10 | 2.0% | 100% | 50% | 4.56 | Satisfying Coloring (98k), Paint by Number: Coloring Ga (66k), Zen Color - Color By Number (33k) |
+| 10 | Screen record/Mirror | 52.2 | 74,947 | 3 | 7.6 | 1/10 | 1.0% | 90% | 20% | 4.41 | Spotify: Music and Podcasts (1098k), Amazon Music: Songs & Podcas (138k), AI Mirror: Screen Mirroring  (90k) |
+| 11 | AI chat/Avatar | 51.9 | 72,115 | 3 | 7.1 | 0/10 | 3.8% | 70% | 20% | 4.53 | ChatGPT (2600k), Open Chat - AI bot app (261k), Crunchyroll: Anime Streaming (138k) |
+| 12 | Video edit/Status | 51.1 | 169,326 | 19 | 7.0 | 0/10 | 2.8% | 50% | 30% | 4.66 | CapCut - Video Editor (1185k), Edits: Video Editor (324k), Video Editor & Maker - InSho (262k) |
+| 13 | Gallery/Album | 50.3 | 13,984 | 12 | 5.9 | 5/10 | 1.2% | 90% | 50% | 4.52 | Gallery (1014k), Galleryit - Photo Vault, Alb (40k), Gallery - Photo Gallery, Alb (16k) |
+| 14 | Lock screen | 50.3 | 21,958 | 9 | 5.5 | 10/10 | 0.0% | 100% | 100% | 4.29 | Trusted Call & SMS, Blocker (81k), AI Voice Lock Screen (49k), Liquid Lock Screen: KaLock (41k) |
+| 15 | Find phone/Clap | 50.0 | 50,943 | 26 | 6.0 | 0/2 | 1.5% | 100% | 0% | 4.49 | Clap to Find My Phone: Whist (89k), Familonet: GPS Find My Phone (13k) |
+| 16 | Camera/Beauty filter | 49.2 | 28,329 | 18 | 7.5 | 2/10 | 1.0% | 90% | 20% | 4.59 | Mini Dress Up & Beauty Games (67k), HD Camera for Android: 4K Ca (55k), Timestamp Camera (51k) |
+| 17 | Battery/Charging | 48.9 | 13,562 | 10 | 6.0 | 8/10 | 0.0% | 100% | 80% | 4.39 | Emoji Battery Icon Customize (25k), Emoji Battery: Icons & Pets (22k), Emoji Battery: Status Bar DI (17k) |
+| 18 | Wallpaper | 48.9 | 24,341 | 16 | 7.6 | 5/10 | 0.2% | 90% | 60% | 4.55 | Zedge™ Wallpapers & Ringtone (101k), Emoji Love Wallpaper WAStick (101k), Silly Smile Wallpaper & Soun (49k) |
+| 19 | Launcher | 45.6 | 12,203 | 0 | 7.5 | 6/10 | 0.2% | 80% | 60% | 4.40 | Launcher OS™ (51k), Niagara Launcher ‧ Home Scre (22k), Rolling Icon: Live Launcher (20k) |
+| 20 | Palm/Tarot | 42.0 | 11,316 | 2 | 3.3 | 8/10 | 0.0% | 100% | 100% | 4.33 | AI Palm Reading (142k), Astrology: Palm Reader & Tar (44k), NakshAI: Astrology & Tarot (28k) |
+| 21 | Music making | 41.8 | 30,414 | 12 | 7.0 | 3/10 | 0.2% | 90% | 30% | 4.56 | Perfect Piano (50k), Piano Cat: Music Games (42k), Sprunki All Phases Beat Make (34k) |
+| 22 | Craft/Origami | 40.4 | 7,140 | 0 | 5.8 | 6/10 | 0.0% | 100% | 80% | 4.24 | Clicker DIY: ASMR Charm Mast (135k), Origami World: Learn & Play (27k), Widgify - DIY Phone Screen (12k) |
+| 23 | Ringtone/Sound | 38.7 | 13,022 | 11 | 6.9 | 1/10 | 0.5% | 100% | 10% | 4.68 | Volume Booster - Sound Boost (67k), SoundCloud: Discover Music (58k), Ringtones for Android Phone (43k) |
+| 24 | Prank | 38.5 | 20,733 | 1 | 5.1 | 5/10 | 0.0% | 100% | 50% | 4.43 | Funny Prank Sounds: Fart, Ho (69k), Santa Prank Video Call & Cha (62k), Haircut Prank - Hair Clipper (36k) |
+| 25 | Sticker/Emoji | 36.8 | 11,882 | 1 | 5.1 | 2/10 | 0.5% | 100% | 30% | 4.31 | Sticker Maker & Funny Emoji (21k), StickTok - animation sticker (18k), Sticker & Emoji - Memes Make (15k) |
+| 26 | Font | 9.6 | 778 | 23 | 2.5 | 0/8 | 0.0% | 88% | 50% | 4.48 | Letter Fonts - Stylish Text (19k), ArtFonts: Stylish Text (13k), Copy & Paste fonts to IG Sto (1k) |
+| 27 | AI video/photo gen | loại: phụ thuộc API, chi phí server | 91,877 | 19 | 8.0 | 2/10 | 3.5% | 50% | 40% | 4.51 | Canva: AI Photo & Video Edit (348k), Adobe Express: AI Photo, Vid (257k), Picsart AI Photo Editor, Vid (189k) |
+| 28 | Cleaner/Storage | loại: chính sách Play | 37,979 | 1 | 6.5 | 3/10 | 0.5% | 80% | 50% | 4.36 | TeraBox: 1TB Cloud & AI Spac (188k), Cleanup: Phone Storage Clean (101k), Phone Cleaner - AI Cleaner (85k) |
+| 29 | Earn money | loại: chính sách Play (reward/finance) | 13,084 | 8 | 4.5 | 3/10 | 3.5% | 70% | 60% | 4.44 | ReelEarn: Watch & Cash (129k), Playout: Earn Money (79k), JustPlay: Earn Money or Dona (30k) |
+| 30 | GPS/Location | loại: quyền vị trí nhạy cảm | 33,312 | 2 | 4.9 | 5/10 | 0.2% | 90% | 70% | 4.29 | GPS Map Camera - Job Timesta (109k), Life360: Family Safety & GPS (90k), SafeNest — Family GPS (71k) |
+| 31 | Scanner/QR | loại: UA đắt, chính sách | 176,355 | 1 | 7.7 | 1/10 | 1.8% | 90% | 10% | 4.51 | PDF Reader - Easy PDF (316k), WPS Office-PDF, Word, Sheet (279k), Acrobat Reader: PDF Converte (237k) |
+| 32 | Short drama | loại: bản quyền nội dung | 289,060 | 0 | 7.0 | 2/10 | 3.2% | 80% | 30% | 4.55 | ReelShort - Stream Drama & T (634k), NetShort - Popular Dramas &  (363k), DramaBox - Stream Drama Shor (358k) |
+| 33 | VPN | loại: chính sách Play | 111,885 | 0 | 5.0 | 2/9 | 2.0% | 78% | 22% | 4.62 | Proton VPN: Secure & Fast VP (200k), VPN - Super Unlimited Proxy (172k), Turbo VPN - Secure VPN Proxy (158k) |
 
 ## Category
 
 | # | Nhóm | Điểm | Cầu: median DL/ngày/app | Lịch sử | Số nước TB | App thắng | % review thói quen | % ads | % app <2 năm | Rating | Top 3 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | GAME_CASUAL | 61.4 | 160,177 | 16 | 8.0 | 4/10 | 1.0% | 100% | 40% | 4.66 | Candy Crush Saga (587k), Bus Fever Party! (302k), My Talking Tom 2: Pet Game (233k) |
-| 2 | PRODUCTIVITY | 57.9 | 346,282 | 12 | 8.0 | 0/10 | 6.5% | 30% | 0% | 4.66 | Google Gemini (5536k), ChatGPT (2631k), Claude by Anthropic (426k) |
-| 3 | ART_AND_DESIGN | 56.4 | 83,268 | 25 | 8.0 | 3/10 | 3.5% | 50% | 50% | 4.47 | Canva: AI Photo & Video Edit (348k), Adobe Express: AI Photo, Vid (256k), Google Flow (193k) |
-| 4 | ENTERTAINMENT | 55.7 | 320,869 | 10 | 7.2 | 1/10 | 4.0% | 80% | 20% | 4.56 | Netflix (831k), ReelShort - Stream Drama & T (624k), NetShort - Popular Dramas &  (370k) |
-| 5 | PERSONALIZATION | 51.4 | 49,415 | 3 | 8.0 | 5/10 | 0.2% | 90% | 60% | 4.53 | Emoji Love Wallpaper WAStick (100k), Clap to Find My Phone: Whist (89k), iControl: Easy Widgets Theme (76k) |
-| 6 | LIFESTYLE | 50.0 | 70,958 | 20 | 7.4 | 2/10 | 5.0% | 50% | 20% | 4.52 | Google Home (1019k), Pinterest (643k), SmartThings (218k) |
-| 7 | PHOTOGRAPHY | 48.6 | 100,600 | 18 | 8.0 | 0/10 | 5.8% | 40% | 10% | 4.53 | Google Photos (5558k), Gallery (1012k), Video Editor & Maker - InSho (272k) |
-| 8 | TOOLS | 40.0 | 196,653 | 0 | 7.7 | 1/10 | 2.8% | 30% | 20% | 4.29 | Samsung Smart Switch Mobile (1939k), Google’s Find Hub (1712k), ShareKaro: File Share&Transf (644k) |
-| 9 | MUSIC_AND_AUDIO | 39.3 | 107,025 | 25 | 8.0 | 0/10 | 2.5% | 80% | 10% | 4.55 | YouTube Music (4598k), Spotify: Music and Podcasts (1105k), StarMaker: Sing Karaoke Song (206k) |
-| 10 | VIDEO_PLAYERS | 39.3 | 107,221 | 24 | 7.9 | 0/10 | 3.0% | 60% | 10% | 4.26 | YouTube (8139k), CapCut - Video Editor (1199k), Edits: Video Editor (327k) |
+| 1 | GAME_CASUAL | 63.6 | 179,829 | 18 | 8.0 | 5/10 | 0.8% | 100% | 50% | 4.64 | Candy Crush Saga (582k), Bus Fever Party! (302k), My Talking Tom 2: Pet Game (244k) |
+| 2 | ART_AND_DESIGN | 57.1 | 84,896 | 26 | 8.0 | 3/10 | 3.5% | 50% | 50% | 4.47 | Canva: AI Photo & Video Edit (348k), Adobe Express: AI Photo, Vid (257k), Google Flow (192k) |
+| 3 | PRODUCTIVITY | 57.1 | 343,906 | 13 | 8.0 | 0/10 | 6.5% | 30% | 0% | 4.66 | Google Gemini (5709k), ChatGPT (2600k), Claude by Anthropic (427k) |
+| 4 | ENTERTAINMENT | 54.3 | 313,189 | 11 | 7.2 | 1/10 | 4.0% | 80% | 20% | 4.56 | Netflix (826k), ReelShort - Stream Drama & T (634k), NetShort - Popular Dramas &  (363k) |
+| 5 | MUSIC_AND_AUDIO | 51.4 | 106,651 | 26 | 8.0 | 1/10 | 2.8% | 80% | 20% | 4.49 | YouTube Music (4560k), Spotify: Music and Podcasts (1098k), StarMaker: Sing Karaoke Song (198k) |
+| 6 | LIFESTYLE | 50.0 | 73,001 | 21 | 7.4 | 2/10 | 5.5% | 50% | 20% | 4.51 | Google Home (1011k), Pinterest (662k), SmartThings (210k) |
+| 7 | PHOTOGRAPHY | 47.9 | 100,162 | 19 | 8.0 | 0/10 | 5.8% | 40% | 10% | 4.52 | Google Photos (5512k), Gallery (1014k), Video Editor & Maker - InSho (262k) |
+| 8 | PERSONALIZATION | 45.7 | 51,378 | 4 | 7.9 | 5/10 | 0.2% | 90% | 60% | 4.56 | Emoji Love Wallpaper WAStick (101k), Clap to Find My Phone: Whist (89k), iControl: Easy Widgets Theme (74k) |
+| 9 | VIDEO_PLAYERS | 37.1 | 106,613 | 25 | 7.9 | 0/10 | 3.0% | 60% | 10% | 4.26 | YouTube (8060k), CapCut - Video Editor (1185k), Edits: Video Editor (324k) |
+| 10 | TOOLS | 35.7 | 199,958 | 12 | 7.7 | 1/10 | 2.5% | 30% | 20% | 4.26 | Samsung Smart Switch Mobile (1942k), Google’s Find Hub (1698k), ShareKaro: File Share&Transf (625k) |
