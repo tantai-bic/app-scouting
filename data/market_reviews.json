@@ -340,7 +340,7 @@
 "habit": 0.0
 },
 "com.claptofind.phonefinder.whistle": {
-"date": "2026-11-11",
+"date": "2026-11-24",
 "n": 7,
 "habit": 0.0
 },
@@ -950,9 +950,9 @@
 "habit": 0.015
 },
 "com.overwolf.mcpedl": {
-"date": "2026-11-11",
+"date": "2026-11-24",
 "n": 200,
-"habit": 0.02
+"habit": 0.01
 },
 "com.palmistry.ai": {
 "date": "2026-10-28",
@@ -1380,9 +1380,9 @@
 "habit": 0.0201
 },
 "filmcamera.vintagecamera.digitalcamera.retrocamera": {
-"date": "2026-11-11",
+"date": "2026-11-24",
 "n": 200,
-"habit": 0.005
+"habit": 0.0
 },
 "fonts.keyboard.fontboard.stylish": {
 "date": "2026-11-21",
@@ -1630,9 +1630,9 @@
 "habit": 0.005
 },
 "recorderpro.voicememos.audio": {
-"date": "2026-11-11",
-"n": 192,
-"habit": 0.0052
+"date": "2026-11-24",
+"n": 198,
+"habit": 0.0051
 },
 "ringtone.maker.mp3.cutter.audio": {
 "date": "2026-11-18",
@@ -2105,7 +2105,7 @@
 "habit": 0.005
 },
 "com.phellax.drum": {
-"date": "2026-11-09",
+"date": "2026-11-24",
 "n": 200,
 "habit": 0.0
 },
@@ -2320,7 +2320,7 @@
 "habit": 0.0
 },
 "com.editingappsforphotos.hdphotoeditor": {
-"date": "2026-11-17",
+"date": "2026-11-24",
 "n": 200,
 "habit": 0.01
 },
@@ -2365,7 +2365,7 @@
 "habit": 0.0
 },
 "com.hmbl.perfect.makeover.cleaning.asmr": {
-"date": "2026-11-17",
+"date": "2026-11-24",
 "n": 200,
 "habit": 0.0
 },
@@ -2390,14 +2390,14 @@
 "habit": 0.014
 },
 "com.mt.mtxx.mtxx": {
-"date": "2026-11-17",
+"date": "2026-11-24",
 "n": 200,
-"habit": 0.045
+"habit": 0.035
 },
 "com.mwm.sampler": {
-"date": "2026-11-17",
+"date": "2026-11-24",
 "n": 200,
-"habit": 0.0
+"habit": 0.015
 },
 "com.sensemobile.action": {
 "date": "2026-11-03",
@@ -2410,14 +2410,14 @@
 "habit": 0.0
 },
 "com.zyhwplatform.shortplay": {
-"date": "2026-11-17",
+"date": "2026-11-24",
 "n": 200,
-"habit": 0.015
+"habit": 0.01
 },
 "free.ai.photo.generator.collart.ai": {
-"date": "2026-11-17",
+"date": "2026-11-24",
 "n": 200,
-"habit": 0.06
+"habit": 0.055
 },
 "com.Steal.Eggs.Monster.Escape": {
 "date": "2026-11-18",
@@ -2670,14 +2670,14 @@
 "habit": 0.0
 },
 "com.dj.mixer.studio.musicmix.audio": {
-"date": "2026-11-17",
-"n": 25,
+"date": "2026-11-24",
+"n": 31,
 "habit": 0.0
 },
 "com.gopro.smarty": {
-"date": "2026-11-10",
+"date": "2026-11-24",
 "n": 200,
-"habit": 0.04
+"habit": 0.015
 },
 "com.one4studio.one4home": {
 "date": "2026-11-10",
@@ -2705,7 +2705,7 @@
 "habit": 0.015
 },
 "photo.hidepicture.album.gallery": {
-"date": "2026-11-17",
+"date": "2026-11-24",
 "n": 200,
 "habit": 0.005
 },
@@ -2910,9 +2910,9 @@
 "habit": 0.095
 },
 "app.ninjavpn.android": {
-"date": "2026-11-17",
+"date": "2026-11-24",
 "n": 200,
-"habit": 0.02
+"habit": 0.015
 },
 "com.cleaner.rez.cleantotal": {
 "date": "2026-11-17",
@@ -2920,8 +2920,8 @@
 "habit": 0.0
 },
 "com.swiftclean.pro.max": {
-"date": "2026-11-17",
-"n": 10,
+"date": "2026-11-24",
+"n": 16,
 "habit": 0.0
 },
 "bus.traffic.fever.jam.puzzle.busgo": {
@@ -3113,5 +3113,35 @@
 "date": "2026-11-23",
 "n": 109,
 "habit": 0.0
+},
+"busflow.traffic.puzzle": {
+"date": "2026-11-24",
+"n": 200,
+"habit": 0.02
+},
+"com.RC80.fidget.dumpling.master": {
+"date": "2026-11-24",
+"n": 54,
+"habit": 0.0
+},
+"com.claptofindphonewithflash.clapdetector": {
+"date": "2026-11-24",
+"n": 10,
+"habit": 0.0
+},
+"com.familytracker.gpslocation.mobile": {
+"date": "2026-11-24",
+"n": 7,
+"habit": 0.0
+},
+"com.kiteharbormaze": {
+"date": "2026-11-24",
+"n": 200,
+"habit": 0.0
+},
+"com.short.reels.drama.sh": {
+"date": "2026-11-24",
+"n": 200,
+"habit": 0.02
 }
 }
