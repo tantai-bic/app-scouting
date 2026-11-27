@@ -330,7 +330,7 @@
 "habit": 0.0
 },
 "com.charginganimation.charging.screen.theme.app.battery.show": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 200,
 "habit": 0.0
 },
@@ -430,8 +430,8 @@
 "habit": 0.04
 },
 "com.draw.drawing.pixel.art.color.coloring.by.number": {
-"date": "2026-11-20",
-"n": 33,
+"date": "2026-11-27",
+"n": 34,
 "habit": 0.0
 },
 "com.draw.sketch.ardrawing.paint.anime": {
@@ -465,8 +465,8 @@
 "habit": 0.005
 },
 "com.emoji.battery.icon.status.bar": {
-"date": "2026-11-20",
-"n": 148,
+"date": "2026-11-27",
+"n": 153,
 "habit": 0.0
 },
 "com.emoji.cutekeyboard.themes.fontkeyboard": {
@@ -780,7 +780,7 @@
 "habit": 0.02
 },
 "com.locker.lockscreen.os12": {
-"date": "2026-10-28",
+"date": "2026-11-27",
 "n": 200,
 "habit": 0.0
 },
@@ -1310,7 +1310,7 @@
 "habit": 0.025
 },
 "com.widgetkit.widget.theme.wallpaper.icon.sceen.scape": {
-"date": "2026-11-13",
+"date": "2026-11-27",
 "n": 200,
 "habit": 0.01
 },
@@ -1350,7 +1350,7 @@
 "habit": 0.01
 },
 "com.zipperlock.ziplock.lockscreen": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 200,
 "habit": 0.01
 },
@@ -1440,9 +1440,9 @@
 "habit": 0.005
 },
 "in.krosbits.musicolet": {
-"date": "2026-10-28",
+"date": "2026-11-27",
 "n": 200,
-"habit": 0.085
+"habit": 0.07
 },
 "in.mohalla.magicshare": {
 "date": "2026-10-28",
@@ -2150,12 +2150,12 @@
 "habit": 0.035
 },
 "ai.app.ai": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 200,
-"habit": 0.05
+"habit": 0.04
 },
 "cashgiraffe.app": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 200,
 "habit": 0.065
 },
@@ -2170,7 +2170,7 @@
 "habit": 0.005
 },
 "com.creativedesigners.fontini": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 42,
 "habit": 0.0
 },
@@ -2210,12 +2210,12 @@
 "habit": 0.0
 },
 "com.santa.prankcall.customize.chat.funny.stimulator": {
-"date": "2026-11-20",
-"n": 7,
+"date": "2026-11-27",
+"n": 12,
 "habit": 0.0
 },
 "com.uc.gym.clicker": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 200,
 "habit": 0.01
 },
@@ -2225,8 +2225,8 @@
 "habit": 0.0
 },
 "romanticwallpaper.lovewallpaper.hd": {
-"date": "2026-11-20",
-"n": 22,
+"date": "2026-11-27",
+"n": 24,
 "habit": 0.0
 },
 "style.chat.niko.android": {
@@ -2290,9 +2290,9 @@
 "habit": 0.005
 },
 "com.video.editor.greattalent": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 200,
-"habit": 0.0
+"habit": 0.005
 },
 "dj.music.mixer.sound.effects": {
 "date": "2026-11-25",
@@ -2525,7 +2525,7 @@
 "habit": 0.03
 },
 "com.stickerstudio.sticktok": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 49,
 "habit": 0.0
 },
@@ -2535,7 +2535,7 @@
 "habit": 0.0
 },
 "easycontrol.controlcenter.controlpanel.simple": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 200,
 "habit": 0.01
 },
@@ -2780,12 +2780,12 @@
 "habit": 0.0
 },
 "com.fc.bk.zipper.lock.screen.wallpaper": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 100,
 "habit": 0.0
 },
 "com.gamma.pdfreader": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 200,
 "habit": 0.01
 },
@@ -2970,18 +2970,18 @@
 "habit": 0.015
 },
 "com.astrotech.aipalmistry.palmreader.app": {
-"date": "2026-11-20",
-"n": 38,
+"date": "2026-11-27",
+"n": 40,
 "habit": 0.0
 },
 "com.familytracker.locationmap": {
-"date": "2026-11-20",
-"n": 8,
+"date": "2026-11-27",
+"n": 16,
 "habit": 0.0
 },
 "com.gamesvalley.nap.run": {
-"date": "2026-11-20",
-"n": 1,
+"date": "2026-11-27",
+"n": 10,
 "habit": 0.0
 },
 "com.gismart.drum.pads.machine": {
@@ -2995,7 +2995,7 @@
 "habit": 0.045
 },
 "com.tarot.psychic.zodiac.relationship.answers": {
-"date": "2026-11-20",
+"date": "2026-11-27",
 "n": 1,
 "habit": 0.0
 },
@@ -3213,5 +3213,15 @@
 "date": "2026-11-26",
 "n": 17,
 "habit": 0.0
+},
+"camerafilter.hd.ultracamera.app": {
+"date": "2026-11-27",
+"n": 73,
+"habit": 0.0
+},
+"com.ola.drama": {
+"date": "2026-11-27",
+"n": 200,
+"habit": 0.005
 }
 }
