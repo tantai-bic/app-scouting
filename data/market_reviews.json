@@ -90,7 +90,7 @@
 "habit": 0.03
 },
 "co.transparentwallpaper.livewallpaper.wallpaperfree": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 142,
 "habit": 0.0
 },
@@ -360,7 +360,7 @@
 "habit": 0.0
 },
 "com.couplemaker.animecouple.couplelove": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 184,
 "habit": 0.0
 },
@@ -455,7 +455,7 @@
 "habit": 0.04
 },
 "com.edjing.edjingdjturntable": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.02
 },
@@ -575,7 +575,7 @@
 "habit": 0.0
 },
 "com.gallery.albums.photomanager": {
-"date": "2026-11-04",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.02
 },
@@ -920,8 +920,8 @@
 "habit": 0.0
 },
 "com.ots.prank.sound": {
-"date": "2026-11-19",
-"n": 31,
+"date": "2026-11-28",
+"n": 33,
 "habit": 0.0
 },
 "com.outfit7.mytalkingangela2": {
@@ -1005,7 +1005,7 @@
 "habit": 0.1
 },
 "com.prank.sound.airhorn.haircut.razor.clipper": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.005
 },
@@ -2085,9 +2085,9 @@
 "habit": 0.0051
 },
 "com.fatr.global": {
-"date": "2026-11-12",
+"date": "2026-11-28",
 "n": 200,
-"habit": 0.015
+"habit": 0.02
 },
 "com.freevpnplanet": {
 "date": "2026-11-21",
@@ -2100,7 +2100,7 @@
 "habit": 0.075
 },
 "com.mwm.procolor": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.005
 },
@@ -2160,8 +2160,8 @@
 "habit": 0.065
 },
 "co.voicescreenlock": {
-"date": "2026-11-21",
-"n": 163,
+"date": "2026-11-28",
+"n": 160,
 "habit": 0.0
 },
 "com.Gamnest.GunChase": {
@@ -2255,7 +2255,7 @@
 "habit": 0.015
 },
 "com.commsource.beautyplus": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.1
 },
@@ -2335,7 +2335,7 @@
 "habit": 0.08
 },
 "com.webelinx.tarot": {
-"date": "2026-11-18",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.075
 },
@@ -2550,13 +2550,13 @@
 "habit": 0.005
 },
 "com.cheezteam.org": {
-"date": "2026-11-14",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.0
 },
 "com.hp.clicker.diy.asmr.charm.master": {
-"date": "2026-11-21",
-"n": 158,
+"date": "2026-11-28",
+"n": 200,
 "habit": 0.0
 },
 "com.rare.wallpapers": {
@@ -2650,9 +2650,9 @@
 "habit": 0.0
 },
 "topsurveys.paid.survey.money.cash": {
-"date": "2026-11-09",
+"date": "2026-11-28",
 "n": 200,
-"habit": 0.035
+"habit": 0.05
 },
 "com.app.tech.town.pdf.viewer.reader": {
 "date": "2026-11-10",
@@ -3015,22 +3015,22 @@
 "habit": 0.02
 },
 "brokenscreen.prank.on.touch.crackscreen": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.0
 },
 "com.mini1derworld.shark.empire": {
-"date": "2026-11-21",
-"n": 3,
+"date": "2026-11-28",
+"n": 8,
 "habit": 0.0
 },
 "com.planetarynetmeter.speedapp": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 200,
 "habit": 0.0
 },
 "com.space.illusion.himoji": {
-"date": "2026-11-21",
+"date": "2026-11-28",
 "n": 180,
 "habit": 0.0
 },
@@ -3223,5 +3223,35 @@
 "date": "2026-11-27",
 "n": 200,
 "habit": 0.005
+},
+"com.ai.translate.ocr.subtitle.foreign.offline": {
+"date": "2026-11-28",
+"n": 2,
+"habit": 0.0
+},
+"com.hdcamera.digitalfiltercam.digitalcamera": {
+"date": "2026-11-28",
+"n": 2,
+"habit": 0.0
+},
+"com.iApp.ar.drawing.traceanything": {
+"date": "2026-11-28",
+"n": 200,
+"habit": 0.005
+},
+"com.pointaway.gp": {
+"date": "2026-11-28",
+"n": 68,
+"habit": 0.0
+},
+"com.sh.mini.antistress.relaxing.games": {
+"date": "2026-11-28",
+"n": 200,
+"habit": 0.005
+},
+"pdfgo.pdfreader.allofficedocumentreader": {
+"date": "2026-11-28",
+"n": 62,
+"habit": 0.0
 }
 }
